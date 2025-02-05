@@ -1,0 +1,2465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="template.xsl"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+   <teiHeader xml:lang="it">
+    <fileDesc>
+        <titleStmt>
+            <title type="main">La Rassegna Settimanale</title>
+            <title type="sub">Di politica, scienza, lettere ed arti</title>
+            <author ref="#SS">Sidney Sonnino</author>
+            <author ref="#LF">Leopoldo Franchetti</author>
+            <sponsor role="foundingSupporter" ref="#PV">Pasquale Villari</sponsor>
+            <respStmt>
+                <resp>Gerente responsabile</resp>
+                <name ref="#AG">Angiolo Gherardini</name>
+            </respStmt>
+        </titleStmt>
+        
+        <editionStmt>
+            <edition>Edizione digitale realizzata per l'esame di Codifica di Testi del Corso di Laurea in Informatica Umanistica, a.a. 2023-24</edition>
+            <respStmt>
+                <resp>Progetto coordinato da:</resp>
+                <name ref="#AMDG">Angelo Mario Del Grosso</name>
+            </respStmt>
+            <respStmt>
+                <resp>Grafica e conversione TEI P5 a cura di:</resp>
+                <name ref="#GC">Giulio Caligiore</name>
+            </respStmt>
+        </editionStmt>
+        
+        
+        <publicationStmt>
+                <publisher>
+                    <orgName full="yes" ref="#UniPi">Università di Pisa</orgName>
+                </publisher>
+
+                <pubPlace ref="#PI">Pisa</pubPlace>
+                <address>
+                    <postCode>56127</postCode>
+                    <name type="place">Italia</name>
+                </address>
+
+                <availability status="free"><p>Opera ad accesso libero</p></availability>
+
+				<date when="2024-12">Dicembre 2024</date>
+            </publicationStmt>
+        
+        
+        <notesStmt>
+            <note type="biographical" xml:id="bioMM">
+                Marco Minghetti (Bologna, <date when="1818-11-08">8 novembre 1818</date> – Roma, <date when="1886-12-10">10 dicembre 1886</date>) 
+                è stato un <term type="role">politico</term>, <term type="role">diplomatico</term> e <term type="role">giornalista</term> italiano, 
+                appartenente alla <orgName ref="#DestraStorica">destra storica</orgName>.
+            </note>
+        </notesStmt>
+
+
+        <sourceDesc>
+            <bibl>
+                <title type="work">La Rassegna Settimanale</title>
+                <author>
+                    <persName ref="#SS">
+                        <forename>Sidney</forename>
+                        <surname>Sonnino</surname>
+                    </persName>
+                </author>
+                <author>
+                    <persName ref="#LF">
+                        <forename>Leopoldo</forename>
+                        <surname>Franchetti</surname>
+                    </persName>
+                </author>
+                <publisher ref="#CEB">Casa Editrice Barbèra</publisher>
+                <pubPlace ref="#FI">Firenze</pubPlace>
+                <date notAfter="1878-11-03" when="1878-01-06">6 gennaio 1878 - 3 novembre 1878</date>
+                <note>Fase fiorentina fino al n. 18.</note>
+            </bibl>
+            <bibl>
+                <title type="work">La Rassegna Settimanale</title>
+                <publisher ref="#CEB">Casa Editrice Barbèra</publisher>
+                <pubPlace ref="#RM">Roma</pubPlace>
+                <date notBefore="1878-11-03" notAfter="1882-01-29">3 novembre 1878 - 29 gennaio 1882</date>
+                <respStmt>
+                    <resp>Direttore responsabile</resp>
+                    <name ref="#PP">Piero Pampaloni</name>
+                </respStmt>
+                <note>La rivista concluse la pubblicazione con il n. 213.</note>
+            </bibl>
+            <msDesc>
+                <msContents>
+                    <msItem>
+                        <title>Corrispondenza da Lecce. La raccolta delle olive</title>
+                        <author>Anonimo</author>
+                        <textLang mainLang="it">Italiano</textLang>
+                        <biblScope type="pages">p.382</biblScope>
+                    </msItem>
+                    <msItem>
+                        <title>Le previsioni finanziarie</title>
+                        <author>
+                            <persName>
+                                <forename>Marco</forename>
+                                <surname>Minghetti</surname>
+                            </persName>
+                        </author>
+                        <textLang mainLang="it">Italiano</textLang>
+                        <biblScope type="pages">p.384</biblScope>
+                    </msItem>
+                    <msItem>
+                        <title>Bibliografia</title>
+                        <subtitle>Etnologia.</subtitle>
+                        <author>Anonimo</author>
+                        <textLang mainLang="it">Italiano</textLang>
+                        <biblScope type="pages">p.386</biblScope>
+                    </msItem>
+                    <msItem>
+                        <title>Bibliografia</title>
+                        <subtitle>Scienze militari.</subtitle>
+                        <author>Anonimo</author>
+                        <textLang mainLang="it">Italiano</textLang>
+                        <biblScope type="pages">p.387</biblScope>
+                    </msItem>
+                    <msItem>
+                        <title>Notizie</title>
+                        <author>Anonimo</author>
+                        <textLang mainLang="it">Italiano</textLang>
+                        <biblScope type="pages">p.388</biblScope>
+                    </msItem>
+                </msContents>
+
+                <physDesc>
+                    <supportDesc>
+                        <support>carta stampata</support>
+                    </supportDesc>
+                    <extent>
+                        <measure type="pages">40</measure>
+                        <dimensions unit="cm">
+                            <height>31</height>
+                            <width>22</width>
+                        </dimensions>
+                    </extent>
+                    <layoutDesc>
+                        <layout columns="2">
+                            <p>Due colonne per pagina, testo giustificato.</p>
+                        </layout>
+                    </layoutDesc>
+                    <condition>
+                        <p>Nessun segno di usura.</p>
+                    </condition>
+                    <typeDesc>
+                        <form>Giornale</form>
+                        <function>Pubblicazione settimanale di carattere politico, culturale e informativo.</function>
+                    </typeDesc>
+                </physDesc>
+                <history>
+                    <origin>
+                        <date when="1878-01-06">6 gennaio 1878</date>
+                        <placeName ref="#FI">Firenze</placeName>
+                        <p>La pubblicazione de <title type="work" ref="#Rassegna">La Rassegna Settimanale</title> è iniziata a Firenze.</p>
+                    </origin>
+                    <provenance>
+                        <date when="1878-11-03">3 novembre 1878</date>
+                        <placeName ref="#RM">Roma</placeName>
+                        <p>Dal fascicolo n. 18 del 3 novembre 1878, la sede della rivista è stata trasferita a Roma.</p>
+                    </provenance>
+                    <provenance>
+                        <date when="1882-01-29">29 gennaio 1882</date>
+                        <p>L'ultimo numero pubblicato è il n. 213, il 29 gennaio 1882.</p>
+                    </provenance>
+                </history>
+
+            </msDesc>
+
+        </sourceDesc>
+    </fileDesc>
+
+
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="themes">
+                <category xml:id="agriculture">
+                    <title>agriculture</title>
+                    <catDesc>
+                    - Coltivazione e raccolta delle olive  
+                    - Produzione e lavorazione dell'olio  
+                    - Gestione dei vigneti  
+                    - Sistemi colturali  
+                    - Strumenti e metodi agricoli  
+                    </catDesc>
+                </category>
+                
+                <category xml:id="labor">
+                    <title>labor</title>
+                    <catDesc>
+                    - Condizioni di lavoro  
+                    - Migrazione dei lavoratori  
+                    - Salari e retribuzioni  
+                    - Organizzazione del lavoro  
+                    - Lavoro stagionale  
+                    </catDesc>
+                </category>
+
+                <category xml:id="technology">
+                    <title>technology</title>
+                    <catDesc>
+                    - Attrezzature industriali  
+                    - Processi di produzione  
+                    - Sviluppo delle infrastrutture  
+                    - Sistemi di trasporto  
+                    - Innovazione tecnologica  
+                    </catDesc>
+                </category>
+
+                <category xml:id="historical">
+                    <title>historical</title>
+                    <catDesc>
+                    - Eventi del passato  
+                    - Cambiamenti storici  
+                    - Transizioni politiche  
+                    - Trasformazioni sociali  
+                    - Storia regionale  
+                    </catDesc>
+                </category>
+
+                <category xml:id="culture">
+                     <title>culture</title>
+                    <catDesc>
+                    - Tradizioni regionali  
+                    - Costumi sociali  
+                    - Lingua e dialetti  
+                    - Pratiche culturali  
+                    - Identità locali  
+                    </catDesc>
+                </category>
+
+                <category xml:id="nature">
+                    <title>nature</title>
+                    <catDesc>
+                    - Risorse naturali  
+                    - Caratteristiche geografiche  
+                    - Condizioni ambientali  
+                    - Flora e fauna  
+                    - Fattori climatici  
+                    </catDesc>
+                </category>
+
+                <category xml:id="politics">
+                    <title>politics</title>
+                    <catDesc>
+                    - Istituzioni politiche  
+                    - Politiche di governo  
+                    - Amministrazione regionale  
+                    - Riforme politiche  
+                    - Unità nazionale  
+                    </catDesc>
+                </category>
+
+                <category xml:id="social">
+                    <title>social</title>
+                    <catDesc>
+                    - Relazioni di classe  
+                    - Dinamiche rurali/urbane  
+                    - Condizioni di vita  
+                    - Ruoli di genere  
+                    - Mobilità sociale  
+                    </catDesc>
+                </category>
+
+                <category xml:id="economy">
+                    <title>economy</title>
+                    <catDesc>
+                    - Commercio e affari  
+                    - Condizioni di mercato  
+                    - Sviluppo economico  
+                    - Politiche finanziarie  
+                    - Economie regionali  
+                    </catDesc>
+                </category>
+
+                <category xml:id="poverty">
+                    <title>poverty</title>
+                    <catDesc>
+                    - Difficoltà economiche  
+                    - Condizioni di vita  
+                    - Emarginazione sociale  
+                    - Disparità regionali  
+                    - Lotte per la sussistenza  
+                    </catDesc>
+                </category>
+
+                <category xml:id="military">
+                     <title>military</title>
+                    <catDesc>
+                    - Organizzazione dell'esercito  
+                    - Addestramento militare  
+                    - Struttura di comando  
+                    - Riforme militari  
+                    - Requisiti di servizio  
+                    </catDesc>
+                </category>
+
+                <category xml:id="administration">
+                <title>administration</title>
+                    <catDesc>
+                    - Istituzioni pubbliche  
+                    - Burocrazia  
+                    - Attuazione delle politiche  
+                    - Governo regionale  
+                    - Riforma amministrativa  
+                    </catDesc>
+                </category>
+
+                <category xml:id="linguistics">
+                <title>linguistics</title>
+                    <catDesc>
+                    - Varietà linguistiche  
+                    - Dialetti regionali  
+                    - Uso della lingua  
+                    - Caratteristiche linguistiche  
+                    - Modelli di comunicazione  
+                    </catDesc>
+                </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+
+        <profileDesc>
+            <langUsage>
+                <language ident="it">Italiano</language>
+            </langUsage>
+            <textClass>
+                <channel mode="w">Testo scritto e pubblicato su carta stampata.</channel>
+                
+               
+            </textClass>
+            
+            <listPerson>
+                <!-- Autori e Contributori -->
+                <person xml:id="SS">
+                    <persName>
+                        <forename>Sidney</forename>
+                        <surname>Sonnino</surname>
+                    </persName>
+                    <occupation>Politico, giornalista</occupation>
+                    <note>Co-fondatore de La Rassegna Settimanale</note>
+                </person>
+
+                <person xml:id="LF">
+                    <persName>
+                        <forename>Leopoldo</forename>
+                        <surname>Franchetti</surname>
+                    </persName>
+                    <occupation>Politico, giornalista</occupation>
+                    <note>Co-fondatore de La Rassegna Settimanale</note>
+                </person>
+
+                <person xml:id="PV">
+                    <persName>
+                        <forename>Pasquale</forename>
+                        <surname>Villari</surname>
+                    </persName>
+                    <occupation>Storico, politico</occupation>
+                    <note>Fondatore sostenitore de La Rassegna Settimanale</note>
+                </person>
+
+                <person xml:id="AG">
+                    <persName>
+                        <forename>Angiolo</forename>
+                        <surname>Gherardini</surname>
+                    </persName>
+                    <occupation>Editore</occupation>
+                    <note>Gerente responsabile de La Rassegna Settimanale</note>
+                </person>
+
+                <person xml:id="VH">
+                    <persName>
+                        <forename>Victor</forename>
+                        <surname>Hehn</surname>
+                    </persName>
+                    <occupation>Autore, storico della cultura</occupation>
+                </person>
+
+                <person xml:id="GR">
+                    <persName>
+                        <forename>Gaston</forename>
+                        <surname>Raynaud</surname>
+                    </persName>
+                    <occupation>Studioso</occupation>
+                </person>
+
+                <person xml:id="MD">
+                    <persName>
+                        <forename>Mathaus</forename>
+                        <surname>Declara</surname>
+                    </persName>
+                    <occupation>Sacerdote, traduttore</occupation>
+                    <note>Parroco di Marco, traduttore di testi ladini</note>
+                </person>
+
+                <person xml:id="MM">
+                    <persName>
+                        <forename>Marco</forename>
+                        <surname>Minghetti</surname>
+                    </persName>
+                    <birth when="1818-11-08"/>
+                    <death when="1886-12-10"/>
+                    <occupation>Politico, diplomatico, giornalista</occupation>
+                    <note>Membro della Destra Storica</note>
+                </person>
+
+                <person xml:id="Shakespeare">
+                    <persName>Shakespeare</persName>
+                    <occupation>Drammaturgo, poeta</occupation>
+                </person>
+
+                <person xml:id="Ricotti">
+                    <persName>
+                        <surname>Ricotti</surname>
+                    </persName>
+                    <occupation>Generale</occupation>
+                    <note>Ex Ministro della Guerra</note>
+                </person>
+
+                <person xml:id="FP">
+                    <persName>F.P.</persName>
+                    <note>Autore di "Sull'ordinamento militare"</note>
+                </person>
+
+                <person xml:id="Pagano">
+                    <persName>
+                        <surname>Pagano</surname>
+                    </persName>
+                </person>
+
+                <person xml:id="Bidermann">
+                    <persName>
+                        <surname>Bidermann</surname>
+                    </persName>
+                    <note>Autore di un'opera sulle lingue neolatine in Austria</note>
+                </person>
+
+                <!-- Figure Militari Storiche -->
+                <person xml:id="GC">
+                    <persName>
+                        <forename>Louis</forename> 
+                        <addName type="nobility">Grand Condé</addName>
+                        <surname>de Bourbon</surname>
+                    </persName>
+                    <birth when="1621">1621</birth>
+                    <death when="1686">1686</death>
+                    <occupation>Comandante militare</occupation>
+                    <note>Generale francese e stratega militare</note>
+                </person>
+
+                <person xml:id="GF">
+                    <persName>
+                        <forename>Gaston</forename>
+                        <surname>de Foix</surname>
+                    </persName>
+                    <birth when="1489">1489</birth>
+                    <death when="1512">1512</death>
+                    <occupation>Comandante militare</occupation>
+                    <note>Comandante militare francese, Duca di Nemours</note>
+                </person>
+
+                <person xml:id="PE">
+                    <persName>
+                        <forename>Eugene</forename>
+                        <addName type="nobility">Principe di Savoia</addName>
+                    </persName>
+                    <birth when="1663">1663</birth>
+                    <death when="1736">1736</death>
+                    <occupation>Comandante militare</occupation>
+                    <note>Generale dell'Armata Imperiale</note>
+                </person>
+
+                <person xml:id="AG">
+                    <persName>
+                        <forename>John</forename>
+                        <addName type="nobility">Arciduca d'Austria</addName>
+                    </persName>
+                    <birth when="1782">1782</birth>
+                    <death when="1859">1859</death>
+                    <occupation>Comandante militare</occupation>
+                </person>
+
+                <person xml:id="AM">
+                    <persName>
+                        <forename>Alexander</forename>
+                        <addName>il Grande</addName>
+                    </persName>
+                    <birth when="-356">356 a.C.</birth>
+                    <death when="-323">323 a.C.</death>
+                    <occupation>Comandante militare, re</occupation>
+                </person>
+
+                <person xml:id="NB">
+                    <persName>
+                        <forename>Napoleone</forename>
+                        <surname>Bonaparte</surname>
+                    </persName>
+                    <birth when="1769">1769</birth>
+                    <death when="1821">1821</death>
+                    <occupation>Comandante militare, imperatore</occupation>
+                </person>
+
+            </listPerson>
+
+
+
+            <listOrg>
+                <!-- Istituzioni Accademiche -->
+                <org xml:id="UniPi">
+                    <orgName full="yes">Università di Pisa</orgName>
+                    <desc>Università di Pisa, editore dell'edizione digitale</desc>
+                </org>
+
+                <!-- Case Editrici -->
+                <org xml:id="CEB">
+                    <orgName>Casa Editrice Barbèra</orgName>
+                    <desc>Casa editrice con sedi a Firenze e Roma</desc>
+                </org>
+
+                <!-- Pubblicazioni -->
+                <org xml:id="Rassegna">
+                    <orgName>La Rassegna Settimanale</orgName>
+                    <desc>Giornale di politica, scienza, lettere e arti fondato nel 1878</desc>
+                </org>
+
+                <!-- Istituzioni Politiche -->
+                <org xml:id="Parlamento">
+                    <orgName>Parlamento</orgName>
+                    <desc>Parlamento italiano</desc>
+                </org>
+
+                <org xml:id="Senato">
+                    <orgName>Senato</orgName>
+                    <desc>Senato della Repubblica Italiana</desc>
+                </org>
+
+                <org xml:id="Ministero">
+                    <orgName>Ministero</orgName>
+                    <desc>Ministero del governo italiano</desc>
+                </org>
+
+                <!-- Organizzazioni Militari -->
+                <org xml:id="army">
+                    <orgName>Esercito</orgName>
+                    <desc>Esercito italiano</desc>
+                </org>
+
+                <org xml:id="CorpoStatoMaggiore">
+                    <orgName>Corpo di Stato Maggiore</orgName>
+                    <desc>Corpo di comando dello Stato Maggiore italiano</desc>
+                </org>
+
+                <!-- Organizzazioni Criminali -->
+                <org xml:id="mafia">
+                    <orgName>Mafia</orgName>
+                    <desc>Organizzazione criminale siciliana</desc>
+                </org>
+
+                <!-- Giornali -->
+                <org xml:id="AZ">
+                    <orgName>Allgemeine Zeitung</orgName>
+                    <desc>Giornale tedesco</desc>
+                </org>
+
+                <!-- Gruppi Politici -->
+                <org xml:id="DestraStorica">
+                    <orgName>Destra Storica</orgName>
+                    <desc>Movimento politico italiano della destra storica</desc>
+                </org>
+            </listOrg>
+
+            <listPlace>
+                <!-- Regioni -->
+                <place xml:id="Puglia" type="region">
+                    <placeName>Puglia</placeName>
+                    <country key="IT">Italia</country>
+                </place>
+
+                <place xml:id="Basilicata" type="region">
+                    <placeName>Basilicata</placeName>
+                    <country key="IT">Italia</country>
+                </place>
+
+                <place xml:id="Calabria" type="region">
+                    <placeName>Calabria</placeName>
+                    <country key="IT">Italia</country>
+                </place>
+
+                <place xml:id="Sicilia" type="region">
+                    <placeName>Sicilia</placeName>
+                    <country key="IT">Italia</country>
+                </place>
+
+                <place xml:id="Toscana" type="region">
+                    <placeName>Toscana</placeName>
+                    <country key="IT">Italia</country>
+                </place>
+
+                <place xml:id="Tirolo" type="region">
+                    <placeName>Tirolo</placeName>
+                    <country key="AT">Austria</country>
+                </place>
+
+                <place xml:id="Grigioni" type="region">
+                    <placeName>Grigioni</placeName>
+                    <country key="CH">Svizzera</country>
+                </place>
+
+                <!-- Città -->
+                <place xml:id="FI" type="city">
+                    <placeName>Firenze</placeName>
+                    <region key="Toscana">Toscana</region>
+                    <country key="IT">Italia</country>
+                </place>
+
+                <place xml:id="RM" type="city">
+                    <placeName>Roma</placeName>
+                    <region key="Lazio">Lazio</region>
+                    <country key="IT">Italia</country>
+                </place>
+
+                <place xml:id="PI" type="city">
+                    <placeName>Pisa</placeName>
+                    <region key="Toscana">Toscana</region>
+                    <country key="IT">Italia</country>
+                </place>
+
+                <place xml:id="BA" type="city">
+                    <placeName>Bari</placeName>
+                    <region key="Puglia">Puglia</region>
+                    <country key="IT">Italia</country>
+                </place>
+
+                <place xml:id="LE" type="city">
+                    <placeName>Lecce</placeName>
+                    <region key="Puglia">Puglia</region>
+                    <country key="IT">Italia</country>
+                </place>
+
+                <place xml:id="ME" type="city">
+                    <placeName>Messina</placeName>
+                    <region key="Sicilia">Sicilia</region>
+                    <country key="IT">Italia</country>
+                </place>
+
+                <place xml:id="AN" type="city">
+                    <placeName>Andria</placeName>
+                    <region key="Puglia">Puglia</region>
+                    <country key="IT">Italia</country>
+                </place>
+
+                <place xml:id="BT" type="city">
+                    <placeName>Bitonto</placeName>
+                    <region key="Puglia">Puglia</region>
+                    <country key="IT">Italia</country>
+                </place>
+
+                <place xml:id="BS" type="city">
+                    <placeName>Bisceglie</placeName>
+                    <region key="Puglia">Puglia</region>
+                    <country key="IT">Italia</country>
+                </place>
+
+                <place xml:id="CO" type="city">
+                    <placeName>Corato</placeName>
+                    <region key="Puglia">Puglia</region>
+                    <country key="IT">Italia</country>
+                </place>
+
+                <place xml:id="AL" type="city">
+                    <placeName>Altamura</placeName>
+                    <region key="Puglia">Puglia</region>
+                    <country key="IT">Italia</country>
+                </place>
+
+                <place xml:id="GR" type="city">
+                    <placeName>Gravina</placeName>
+                    <region key="Puglia">Puglia</region>
+                </place>
+
+                <place xml:id="OT" type="city">
+                    <placeName>Otranto</placeName>
+                    <region key="Puglia">Puglia</region>
+                </place>
+
+                <place xml:id="PAR" type="city">
+                    <placeName>Parigi</placeName>
+                    <country key="FR">Francia</country>
+                </place>
+
+                <place xml:id="Pietroburgo" type="city">
+                    <placeName>Pietroburgo</placeName>
+                    <country key="RU">Russia</country>
+                </place>
+
+                <place xml:id="Bressanone" type="city">
+                    <placeName xml:lang="ita">Bressanone</placeName>
+                    <placeName xml:lang="deu">Brixen</placeName>
+                    <region key="Tirolo">Tirolo</region>
+                </place>
+
+                <!-- Elementi naturali -->
+                <place xml:id="Murge" type="natural">
+                    <placeName>Murge</placeName>
+                    <region key="Puglia">Puglia</region>
+                    <country key="IT">Italia</country>
+                    <desc>Altopiano carsico</desc>
+                </place>
+
+                <place xml:id="BoschiOlivi" type="natural">
+                    <placeName>Boschi d'ulivi</placeName>
+                    <desc>Foreste di alberi di ulivo</desc>
+                </place>
+
+                <!-- Stati -->
+                <place xml:id="Italia" type="country">
+                    <placeName>Italia</placeName>
+                    <bloc key="EU">Europa</bloc>
+                </place>
+
+                <place xml:id="Francia" type="country">
+                    <placeName>Francia</placeName>
+                    <bloc key="EU">Europa</bloc>
+                </place>
+
+                <place xml:id="Germania" type="country">
+                    <placeName>Germania</placeName>
+                    <bloc key="EU">Europa</bloc>
+                </place>
+
+                <place xml:id="Prussia" type="historical-country">
+                    <placeName>Prussia</placeName>
+                    <bloc key="EU">Europa</bloc>
+                </place>
+
+                <place xml:id="Grecia" type="country">
+                    <placeName>Grecia</placeName>
+                    <bloc key="EU">Europa</bloc>
+                </place>   
+
+                <place xml:id="Russia" type="country">
+                    <placeName>Russia</placeName>
+                    <bloc key="EU">Europa</bloc>
+                </place>
+
+                <place xml:id="Svizzera" type="country">
+                    <placeName>Svizzera</placeName>
+                    <bloc key="EU">Europa</bloc>
+                </place>
+
+                <!-- Continenti -->
+                <place xml:id="Europa" type="continent">
+                    <placeName>Europa</placeName>
+                </place>
+
+                <place xml:id="Asia" type="continent">
+                    <placeName>Asia</placeName>
+                </place>
+                </listPlace>
+
+
+        </profileDesc>
+        
+    </teiHeader>
+    <facsimile>
+        <surface>
+            <!-- pagina 382 -->
+            <graphic url='images/p382.jpg' width='1126' height='1640' />
+    
+                <zone xml:id="title_main_p382c2" points=' 734,900  967,901  968,923  735,919 ' rendition="default" />
+                <zone xml:id="title_sub_p382c2" points=' 704,924  996,924  997,946  705,946 ' rendition="default" />           
+                <zone xml:id="p382r43c2" points=' 627,944  1101,945  1104,967  627,966 ' rendition="default" />           
+                <zone xml:id="p382r44c2" points=' 601,969  1103,971  1105,991  601,986 ' rendition="default" />           
+                <zone xml:id='p382r45c2' points=' 603,993  1104,994  1107,1009  603,1009 ' rendition="default" />
+                <zone xml:id='p382r46c2' points=' 601,1017  1107,1014  1109,1028  602,1028 ' rendition="default" />
+                <zone xml:id='p382r47c2' points=' 603,1053  603,1036  1108,1036  1109,1053 ' rendition="default" />
+                <zone xml:id='p382r48c2' points=' 604,1076  604,1056  833,1055  835,1071 ' rendition="default" />
+                <zone xml:id='p382r49c2' points=' 635,1078  636,1093  1104,1095  1106,1081 ' rendition="default" />
+                <zone xml:id='p382r50c2' points=' 603,1102  1102,1101  1105,1119  604,1117 ' rendition="default" />       
+                <zone xml:id='p382r51c2' points=' 604,1122  606,1139  1104,1141  1106,1122 ' rendition="default" />           
+                <zone xml:id='p382r52c2' points=' 604,1157  604,1143  1103,1143  1105,1160 ' rendition="default" />            
+                <zone xml:id='p382r53c2' points=' 604,1163  605,1179  1104,1181  1105,1165 ' rendition="default" />            
+                <zone xml:id='p382r54c2' points=' 602,1184  603,1200  1105,1203  1106,1187 ' rendition="default" />            
+                <zone xml:id='p382r55c2' points=' 604,1225  603,1202  1105,1207  1107,1224 ' rendition="default" />            
+                <zone xml:id='p382r56c2' points=' 604,1246  605,1230  1105,1228  1108,1247 ' rendition="default" />            
+                <zone xml:id='p382r57c2' points=' 602,1269  604,1250  898,1248  899,1268 ' rendition="default" />            
+                <zone xml:id='p382r58c2' points=' 631,1288  631,1271  1105,1270  1107,1289 ' rendition="default" />            
+                <zone xml:id='p382r59c2' points=' 605,1310  606,1293  1107,1293  1107,1312 ' rendition="default" />            
+                <zone xml:id='p382r60c2' points=' 605,1333  605,1314  1108,1317  1110,1333 ' rendition="default" />            
+                <zone xml:id='p382r61c2' points=' 603,1354  605,1339  1109,1335  1110,1354 ' rendition="default" />            
+                <zone xml:id='p382r62c2' points=' 605,1374  606,1358  1108,1357  1111,1374 ' rendition="default" />            
+                <zone xml:id='p382r63c2' points=' 605,1395  605,1380  1109,1379  1110,1397 ' rendition="default" />            
+                <zone xml:id='p382r64c2' points=' 605,1417  606,1400  1106,1401  1109,1418 ' rendition="default" />           
+                <zone xml:id='p382r65c2' points=' 606,1439  606,1420  1104,1420  1106,1438 ' rendition="default" />            
+                <zone xml:id='p382r66c2' points=' 606,1463  605,1441  1106,1444  1108,1461 ' rendition="default" />            
+                <zone xml:id='p382r67c2' points=' 605,1484  606,1467  1108,1465  1109,1484 ' rendition="default" />            
+                <zone xml:id='p382r68c2' points=' 606,1506  606,1489  1108,1488  1110,1505 ' rendition="default" />            
+                <zone xml:id='p382r69c2' points=' 604,1525  606,1510  1107,1509  1107,1525 ' rendition="default" />            
+                <zone xml:id='p382r70c2' points=' 605,1550  605,1530  1107,1529  1109,1549 ' rendition="default" />
+        </surface>
+
+        <surface>
+            <!-- pagina 383 -->
+            
+            <graphic url='images/p383.jpg' width='1118' height='1637' />
+            <!-- colonna sx -->
+                <zone xml:id='p383r1c1' points=' 56,122  557,120 557,141 54,140 ' rendition='default' />
+                <zone xml:id='p383r2c1' points=' 54,161  52,143 556,144 557,161 ' rendition='default' />
+                <zone xml:id='p383r3c1' points=' 56,185  54,166 555,166 555,183 ' rendition='default' />
+                <zone xml:id='p383r4c1' points=' 58,205  57,189 557,186 557,203 ' rendition='default' />
+                <zone xml:id='p383r5c1' points=' 57,226  60,210 557,208 558,225 ' rendition='default' />
+                <zone xml:id='p383r6c1' points=' 57,247  59,231 557,229 557,248 ' rendition='default' />
+                <zone xml:id='p383r7c1' points=' 59,270  58,251 557,251 558,269 ' rendition='default' />
+                <zone xml:id='p383r8c1' points=' 57,291  57,273 557,273 557,289 ' rendition='default' />
+                <zone xml:id='p383r9c1' points=' 57,312  57,296 395,296 396,312 ' rendition='default' />
+                <zone xml:id='p383r10c1' points=' 84,333  86,314 559,317 558,335 ' rendition='default' />
+                <zone xml:id='p383r11c1' points=' 57,353  56,336 557,337 557,353 ' rendition='default' />
+                <zone xml:id='p383r12c1' points=' 56,377  55,359 558,358 558,376 ' rendition='default' />
+                <zone xml:id='p383r13c1' points=' 57,398  58,382 555,381 557,399 ' rendition='default' />
+                <zone xml:id='p383r14c1' points=' 57,420  57,403 557,404 557,422 ' rendition='default' />
+                <zone xml:id='p383r15c1' points=' 58,441  58,425 558,426 558,443 ' rendition='default' />
+                <zone xml:id='p383r16c1' points=' 57,462  58,443 557,446 557,463 ' rendition='default' />
+                <zone xml:id='p383r17c1' points=' 59,483  58,467 557,467 558,484 ' rendition='default' />
+                <zone xml:id='p383r18c1' points=' 58,505  58,489 558,491 559,506 ' rendition='default' />
+                <zone xml:id='p383r19c1' points=' 57,526  57,508 560,509 560,525 ' rendition='default' />
+                <zone xml:id='p383r20c1' points=' 58,548  58,530 560,530 560,549 ' rendition='default' />
+                <zone xml:id='p383r21c1' points=' 57,572  57,552 559,553 558,569 ' rendition='default' />
+                <zone xml:id='p383r22c1' points=' 59,592  59,576 560,573 560,591 ' rendition='default' />
+                <zone xml:id='p383r23c1' points=' 59,615  58,596 176,596 175,614 ' rendition='default' />
+                <zone xml:id='p383r24c1' points=' 83,636  83,616 560,617 560,636 ' rendition='default' />
+                <zone xml:id='p383r25c1' points=' 57,656  57,643 562,643 564,656 ' rendition='default' />
+                <zone xml:id='p383r26c1' points=' 57,679  58,661 561,663 562,677 ' rendition='default' />
+                <zone xml:id='p383r27c1' points=' 57,700  58,683 560,681 561,698 ' rendition='default' />
+                <zone xml:id='p383r28c1' points=' 58,721  59,703 560,705 560,723 ' rendition='default' />
+                <zone xml:id='p383r29c1' points=' 57,745  58,724 560,728 561,745 ' rendition='default' />
+                <zone xml:id='p383r30c1' points=' 57,766  57,748 560,749 562,766 ' rendition='default' />
+                <zone xml:id='p383r31c1' points=' 57,786  58,770 561,771 561,786 ' rendition='default' />
+                <zone xml:id='p383r32c1' points=' 58,806  59,791 560,790 562,809 ' rendition='default' />
+                <zone xml:id='p383r33c1' points=' 58,831  58,811 560,811 561,832 ' rendition='default' />
+                <zone xml:id='p383r34c1' points=' 60,852  60,833 560,834 560,848 ' rendition='default' />
+                <zone xml:id='p383r35c1' points=' 60,873  60,856 560,855 562,873 ' rendition='default' />
+                <zone xml:id='p383r36c1' points=' 60,896  60,877 562,877 563,896 ' rendition='default' />
+                <zone xml:id='p383r37c1' points=' 59,916  60,898 562,898 562,916 ' rendition='default' />
+                <zone xml:id='p383r38c1' points=' 61,938  61,920 563,921 563,938 ' rendition='default' />
+                <zone xml:id='p383r39c1' points=' 59,960  59,942 562,941 561,957 ' rendition='default' />
+                <zone xml:id='p383r40c1' points=' 60,981  60,965 563,963 562,980 ' rendition='default' />
+                <zone xml:id='p383r41c1' points=' 60,1002  60,986 563,984 563,1001 ' rendition='default' />
+                <zone xml:id='p383r42c1' points=' 58,1024  59,1006 561,1006 561,1023 ' rendition='default' />
+                <zone xml:id='p383r43c1' points=' 59,1044  58,1028 561,1026 561,1043 ' rendition='default' />
+                <zone xml:id='p383r44c1' points=' 59,1067  58,1050 560,1047 561,1067 ' rendition='default' />
+                <zone xml:id='p383r45c1' points=' 58,1090  58,1071 560,1071 562,1091 ' rendition='default' />
+                <zone xml:id='p383r46c1' points=' 88,1109  88,1092 559,1094 558,1109 ' rendition='default' />
+                <zone xml:id='p383r47c1' points=' 60,1133  60,1112 559,1114 561,1137 ' rendition='default' />
+                <zone xml:id='p383r48c1' points=' 58,1151  58,1136 559,1139 560,1156 ' rendition='default' />
+                <zone xml:id='p383r49c1' points=' 60,1175  60,1156 559,1158 559,1175 ' rendition='default' />
+                <zone xml:id='p383r50c1' points=' 60,1196  61,1178 560,1178 560,1196 ' rendition='default' />
+                <zone xml:id='p383r51c1' points=' 59,1218  58,1200 560,1201 560,1217 ' rendition='default' />
+                <zone xml:id='p383r52c1' points=' 56,1241  56,1221 559,1220 559,1240 ' rendition='default' />
+                <zone xml:id='p383r53c1' points=' 56,1263  56,1244 558,1245 559,1264 ' rendition='default' />
+                <zone xml:id='p383r54c1' points=' 58,1282  58,1267 559,1268 560,1284 ' rendition='default' />
+                <zone xml:id='p383r55c1' points=' 56,1306  55,1287 560,1288 560,1304 ' rendition='default' />
+                <zone xml:id='p383r56c1' points=' 55,1328  55,1308 560,1308 560,1326 ' rendition='default' />
+                <zone xml:id='p383r57c1' points=' 57,1349  57,1330 561,1331 562,1348 ' rendition='default' />
+                <zone xml:id='p383r58c1' points=' 56,1368  55,1351 560,1352 560,1369 ' rendition='default' />
+                <zone xml:id='p383r59c1' points=' 58,1392  58,1373 560,1374 560,1392 ' rendition='default' />
+                <zone xml:id='p383r60c1' points=' 58,1411  58,1396 559,1396 560,1411 ' rendition='default' />
+                <zone xml:id='p383r61c1' points=' 57,1432  57,1417 559,1416 559,1432 ' rendition='default' />
+                <zone xml:id='p383r62c1' points=' 60,1455  59,1438 559,1440 559,1457 ' rendition='default' />
+                <zone xml:id='p383r63c1' points=' 58,1476  58,1460 559,1461 559,1478 ' rendition='default' />
+                <zone xml:id='p383r64c1' points=' 56,1498  56,1479 560,1481 560,1499 ' rendition='default' />
+                <zone xml:id='p383r65c1' points=' 58,1518  58,1501 558,1503 558,1520 ' rendition='default' />
+                <zone xml:id='p383r66c1' points=' 60,1538  60,1523 556,1525 556,1541 ' rendition='default' />
+                <zone xml:id='p383r67c1' points=' 59,1564  59,1546 557,1546 558,1565 ' rendition='default' />
+
+            <!-- colonna dx -->
+                <zone xml:id='p383r1c2' points=' 573,117  1074,117  1074,140  574,138 ' rendition='default' />
+                <zone xml:id='p383r2c2' points=' 573,160  572,141  1075,143  1075,160 ' rendition='default' />
+                <zone xml:id='p383r3c2' points=' 573,182  573,164  1074,162  1075,184 ' rendition='default' />
+                <zone xml:id='p383r4c2' points=' 574,203  574,187  1075,188  1073,203 ' rendition='default' />
+                <zone xml:id='p383r5c2' points=' 575,225  573,205  1075,206  1077,227 ' rendition='default' />
+                <zone xml:id='p383r6c2' points=' 572,248  573,227  1073,230  1073,246 ' rendition='default' />
+                <zone xml:id='p383r7c2' points=' 574,270  573,253  1075,252  1077,269 ' rendition='default' />
+                <zone xml:id='p383r8c2' points=' 574,289  573,270  1076,271  1076,290 ' rendition='default' />
+                <zone xml:id='p383r9c2' points=' 573,310  573,291  1076,292  1076,309 ' rendition='default' />
+                <zone xml:id='p383r10c2' points=' 573,333  573,314  1076,316  1076,332 ' rendition='default' />
+                <zone xml:id='p383r11c2' points=' 573,356  573,336  1076,337  1078,354 ' rendition='default' />
+                <zone xml:id='p383r12c2' points=' 572,377  572,359  1078,359  1079,376 ' rendition='default' />
+                <zone xml:id='p383r13c2' points=' 574,396  575,380  1072,379  1074,397 ' rendition='default' />
+                <zone xml:id='p383r14c2' points=' 574,420  574,403  1074,404  1074,422 ' rendition='default' />
+                <zone xml:id='p383r15c2' points=' 572,440  572,424  1072,425  1072,442 ' rendition='default' />
+                <zone xml:id='p383r16c2' points=' 574,463  575,444  1074,447  1074,464 ' rendition='default' />
+                <zone xml:id='p383r17c2' points=' 577,486  576,470  1075,470  1076,487 ' rendition='default' />
+                <zone xml:id='p383r18c2' points=' 575,506  575,490  1075,492  1076,507 ' rendition='default' />
+                <zone xml:id='p383r19c2' points=' 574,530  574,512  1077,513  1077,529 ' rendition='default' />
+                <zone xml:id='p383r20c2' points=' 575,551  575,533  1077,533  1077,552 ' rendition='default' />
+                <zone xml:id='p383r21c2' points=' 577,574  577,554  1079,555  1078,571 ' rendition='default' />
+                <zone xml:id='p383r22c2' points=' 578,592  578,576  1079,573  1079,591 ' rendition='default' />
+                <zone xml:id='p383r23c2' points=' 577,616  576,597  694,597  693,615 ' rendition='default' />
+                <zone xml:id='p383r24c2' points=' 581,639  581,619  1058,620  1058,639 ' rendition='default' />
+                <zone xml:id='p383r25c2' points=' 573,657  573,644  1078,644  1080,657 ' rendition='default' />
+                <zone xml:id='p383r26c2' points=' 577,681  578,663  1081,665  1082,679 ' rendition='default' />
+                <zone xml:id='p383r27c2' points=' 578,701  579,684  1081,682  1082,699 ' rendition='default' />
+                <zone xml:id='p383r28c2' points=' 578,721  579,703  1080,705  1080,723 ' rendition='default' />
+                <zone xml:id='p383r29c2' points=' 575,747  576,726  1078,730  1079,747 ' rendition='default' />
+                <zone xml:id='p383r30c2' points=' 578,768  578,750  1081,751  1083,768 ' rendition='default' />
+                <zone xml:id='p383r31c2' points=' 577,787  578,771  1081,772  1081,787 ' rendition='default' />
+                <zone xml:id='p383r32c2' points=' 576,807  577,792  1078,791  1080,810 ' rendition='default' />
+                <zone xml:id='p383r33c2' points=' 576,832  576,812  1078,812  1079,833 ' rendition='default' />
+                <zone xml:id='p383r34c2' points=' 579,855  579,836  1079,837  1079,851 ' rendition='default' />
+                <zone xml:id='p383r35c2' points=' 582,874  582,857  1082,856  1084,874 ' rendition='default' />
+                <zone xml:id='p383r36c2' points=' 580,899  580,880  1082,880  1083,899 ' rendition='default' />
+                <zone xml:id='p383r37c2' points=' 580,919  581,901  1083,901  1083,919 ' rendition='default' />
+                <zone xml:id='p383r38c2' points=' 581,940  581,922  1083,923  1083,940 ' rendition='default' />
+                <zone xml:id='p383r39c2' points=' 580,962  580,944  1083,943  1082,959 ' rendition='default' />
+                <zone xml:id='p383r40c2' points=' 580,981  580,965  1083,963  1082,980 ' rendition='default' />
+                <zone xml:id='p383r41c2' points=' 577,1002  577,986  1080,984  1080,1001 ' rendition='default' />
+                <zone xml:id='p383r42c2' points=' 576,1027  577,1009  1079,1009  1079,1026 ' rendition='default' />
+                <zone xml:id='p383r43c2' points=' 578,1046  577,1030  1080,1028  1080,1045 ' rendition='default' />
+                <zone xml:id='p383r44c2' points=' 579,1070  578,1053  1080,1050  1081,1070 ' rendition='default' />
+                <zone xml:id='p383r45c2' points=' 577,1091  577,1072  1079,1072  1081,1092 ' rendition='default' />
+                <zone xml:id='p383r46c2' points=' 581,1109  581,1092  1052,1094  1051,1109 ' rendition='default' />
+                <zone xml:id='p383r47c2' points=' 576,1135  576,1114  1075,1116  1077,1139 ' rendition='default' />
+                <zone xml:id='p383r48c2' points=' 580,1153  580,1138  1081,1141  1082,1158 ' rendition='default' />
+                <zone xml:id='p383r49c2' points=' 579,1177  579,1158  1078,1160  1078,1177 ' rendition='default' />
+                <zone xml:id='p383r50c2' points=' 579,1199  580,1181  1079,1181  1079,1199 ' rendition='default' />
+                <zone xml:id='p383r51c2' points=' 576,1221  575,1203  1077,1204  1077,1220 ' rendition='default' />
+                <zone xml:id='p383r52c2' points=' 575,1242  575,1222  1078,1221  1078,1241 ' rendition='default' />
+                <zone xml:id='p383r53c2' points=' 573,1266  573,1247  1075,1248  1076,1267 ' rendition='default' />
+                <zone xml:id='p383r54c2' points=' 578,1283  578,1268  1079,1269  1080,1285 ' rendition='default' />
+                <zone xml:id='p383r55c2' points=' 576,1307  575,1288  1080,1289  1080,1305 ' rendition='default' />
+                <zone xml:id='p383r56c2' points=' 574,1331  574,1311  1079,1311  1079,1329 ' rendition='default' />
+                <zone xml:id='p383r57c2' points=' 577,1351  577,1332  1081,1333  1082,1350 ' rendition='default' />
+                <zone xml:id='p383r58c2' points=' 577,1371  576,1354  1081,1355  1081,1372 ' rendition='default' />
+                <zone xml:id='p383r59c2' points=' 578,1393  578,1374  1080,1375  1080,1393 ' rendition='default' />
+                <zone xml:id='p383r60c2' points=' 576,1412  576,1397  1077,1397  1078,1412 ' rendition='default' />
+                <zone xml:id='p383r61c2' points=' 578,1435  578,1420  1080,1419  1080,1435 ' rendition='default' />
+                <zone xml:id='p383r62c2' points=' 576,1456  575,1439  1075,1441  1075,1458 ' rendition='default' />
+                <zone xml:id='p383r63c2' points=' 574,1476  574,1460  1075,1461  1075,1478 ' rendition='default' />
+                <zone xml:id='p383r64c2' points=' 574,1498  574,1479  1078,1481  1078,1499 ' rendition='default' />
+                <zone xml:id='p383r65c2' points=' 577,1518  577,1501  1077,1503  1077,1520 ' rendition='default' />
+                <zone xml:id='p383r66c2' points=' 577,1538  577,1523  1073,1525  1073,1541 ' rendition='default' />
+                <zone xml:id='p383r67c2' points=' 577,1564  577,1546  1075,1546  1076,1565 ' rendition='default' />
+        </surface>
+        <surface>
+            <!-- pagina 384 -->
+
+            <graphic url='images/p384.jpg' width='1139' height='1683' />
+            <!-- colonna sx -->
+
+            <zone xml:id='p384r1c1' points=' 58,148  58,131  558,130  559,148 ' rendition='default' />        
+            <zone xml:id='p384r2c1' points=' 58,169  56,151  558,150  559,167 ' rendition='default' />
+            <zone xml:id='p384r3c1' points=' 57,193  58,171  557,171  558,193 ' rendition='default' />
+            <zone xml:id='p384r4c1' points=' 57,216  58,196  558,195  559,213 ' rendition='default' />
+            <zone xml:id='p384r5c1' points=' 56,235  58,218  558,216  559,233 ' rendition='default' />
+            <zone xml:id='p384r6c1' points=' 55,257  56,238  556,233  557,254 ' rendition='default' />
+            <zone xml:id='p384r7c1' points=' 56,279  56,260  558,257  560,276 ' rendition='default' />
+            <zone xml:id='p384r8c1' points=' 57,296  58,281  558,279  559,298 ' rendition='default' />
+            <zone xml:id='p384r9c1' points=' 55,320  56,302  559,300  559,320 ' rendition='default' />
+            <zone xml:id='p384r10c1' points=' 55,340  56,322  557,322  559,340 ' rendition='default' />
+            <zone xml:id='p384r11c1' points=' 55,364  56,343  558,344  558,362 ' rendition='default' />
+            <zone xml:id='p384r12c1' points=' 54,384  56,366  557,365  559,385 ' rendition='default' />
+            <zone xml:id='p384r13c1' points=' 54,405  54,387  559,387  558,407 ' rendition='default' />
+            <zone xml:id='p384r14c1' points=' 54,429  54,409  558,412  558,428 ' rendition='default' />
+            <zone xml:id='p384r15c1' points=' 54,450  54,432  558,430  559,451 ' rendition='default' />
+            <zone xml:id='p384r16c1' points=' 53,473  54,453  559,454  560,472 ' rendition='default' />
+            <zone xml:id='p384r17c1' points=' 53,491  54,475  558,475  559,491 ' rendition='default' />
+            <zone xml:id='p384r18c1' points=' 52,512  53,496  556,495  556,513 ' rendition='default' />
+            <zone xml:id='p384r19c1' points=' 52,535  51,517  557,517  557,535 ' rendition='default' />
+            <zone xml:id='p384r20c1' points=' 51,555  51,537  556,538  556,558 ' rendition='default' />
+            <zone xml:id='p384r21c1' points=' 51,577  52,558  557,562  557,577 ' rendition='default' />
+            <zone xml:id='p384r22c1' points=' 52,601  53,582  557,580  557,598 ' rendition='default' />
+            <zone xml:id='p384r23c1' points=' 52,621  54,602  558,600  558,620 ' rendition='default' />
+            <zone xml:id='p384r24c1' points=' 54,642  55,624  560,625  559,642 ' rendition='default' />
+            <zone xml:id='p384r25c1' points=' 52,662  53,646  558,645  560,664 ' rendition='default' />
+            <zone xml:id='p384r26c1' points=' 53,687  53,665  559,667  560,685 ' rendition='default' />
+            <zone xml:id='p384r27c1' points=' 49,706  51,690  558,688  558,707 ' rendition='default' />
+            <zone xml:id='p384r28c1' points=' 53,731  50,712  558,710  560,732 ' rendition='default' />
+            <zone xml:id='p384r29c1' points=' 53,752  53,734  557,735  558,754 ' rendition='default' />
+            <zone xml:id='p384r30c1' points=' 52,774  53,756  558,757  558,775 ' rendition='default' />
+            <zone xml:id='p384r31c1' points=' 55,795  54,775  559,778  560,798 ' rendition='default' />
+            <zone xml:id='p384r32c1' points=' 55,815  55,800  555,799  555,814 ' rendition='default' />
+            <zone xml:id='p384r33c1' points=' 55,835  55,821  556,820  557,835 ' rendition='default' />
+            <zone xml:id='p384r34c1' points=' 55,859  54,840  558,840  558,858 ' rendition='default' />
+            <zone xml:id='p384r35c1' points=' 54,879  53,865  557,861  558,877 ' rendition='default' />
+            <zone xml:id='p384r36c1' points=' 54,899  53,882  556,882  558,900 ' rendition='default' />
+            <zone xml:id='p384r37c1' points=' 55,923  55,901  558,903  558,922 ' rendition='default' />
+            <zone xml:id='p384r38c1' points=' 53,942  53,925  556,925  558,945 ' rendition='default' />
+            <zone xml:id='p384r39c1' points=' 55,964  54,947  556,947  557,964 ' rendition='default' />
+            <zone xml:id='p384r40c1' points=' 55,985  55,968  556,968  556,987 ' rendition='default' />
+            <zone xml:id='p384r41c1' points=' 55,1009  55,988  557,991  558,1007 ' rendition='default' />
+            <zone xml:id='p384r42c1' points=' 58,1028  58,1012  558,1010  558,1030 ' rendition='default' />
+            <zone xml:id='p384r43c1' points=' 55,1051  55,1035  557,1035  558,1053 ' rendition='default' />
+            <zone xml:id='p384r44c1' points=' 56,1074  55,1055  557,1055  557,1073 ' rendition='default' />
+            <zone xml:id='p384r45c1' points=' 54,1095  53,1079  557,1076  558,1096 ' rendition='default' />
+            <zone xml:id='p384r46c1' points=' 53,1118  54,1101  558,1099  558,1117 ' rendition='default' />
+            <zone xml:id='p384r47c1' points=' 53,1137  54,1121  558,1120  558,1140 ' rendition='default' />
+            <zone xml:id='p384r48c1' points=' 54,1160  53,1141  558,1143  558,1162 ' rendition='default' />
+            <zone xml:id='p384r49c1' points=' 53,1181  54,1164  557,1164  558,1180 ' rendition='default' />
+            <zone xml:id='p384r50c1' points=' 54,1200  54,1186  557,1187  558,1202 ' rendition='default' />
+            <zone xml:id='p384r51c1' points=' 53,1225  54,1205  558,1205  558,1225 ' rendition='default' />
+            <zone xml:id='p384r52c1' points=' 53,1245  53,1229  556,1228  558,1246 ' rendition='default' />
+            <zone xml:id='p384r53c1' points=' 53,1266  52,1249  556,1247  556,1265 ' rendition='default' />
+            <zone xml:id='p384r54c1' points=' 54,1287  55,1271  555,1271  557,1290 ' rendition='default' />
+            <zone xml:id='p384r55c1' points=' 56,1310  56,1294  556,1294  557,1312 ' rendition='default' />
+            <zone xml:id='p384r56c1' points=' 58,1330  56,1313  558,1315  558,1332 ' rendition='default' />
+            <zone xml:id='p384r57c1' points=' 56,1352  56,1333  556,1337  558,1355 ' rendition='default' />
+            <zone xml:id='p384r58c1' points=' 55,1373  54,1355  558,1359  558,1376 ' rendition='default' />
+            <zone xml:id='p384r59c1' points=' 53,1396  54,1377  557,1378  558,1397 ' rendition='default' />
+            <zone xml:id='p384r60c1' points=' 55,1418  54,1400  557,1400  558,1418 ' rendition='default' />
+            <zone xml:id='p384r61c1' points=' 55,1441  54,1423  557,1423  558,1440 ' rendition='default' />
+            <zone xml:id='p384r62c1' points=' 53,1461  53,1443  558,1444  559,1462 ' rendition='default' />
+            <zone xml:id='p384r63c1' points=' 53,1484  54,1466  558,1466  558,1484 ' rendition='default' />
+            <zone xml:id='p384r64c1' points=' 53,1504  53,1488  556,1489  557,1506 ' rendition='default' />
+            <zone xml:id='p384r65c1' points=' 54,1527  51,1511  559,1511  558,1529 ' rendition='default' />
+            <zone xml:id='p384r66c1' points=' 55,1551  55,1533  558,1533  558,1548 ' rendition='default' />
+            <zone xml:id='p384r67c1' points=' 55,1571  57,1552  558,1551  558,1574 ' rendition='default' />
+
+            <!-- colonna dx -->
+            
+    
+            <zone xml:id='p384r1c2' points=' 572,145  572,128  1072,127  1073,145 ' rendition='default' />
+            <zone xml:id='p384r2c2' points=' 577,168  575,150  1077,149  1078,166 ' rendition='default' />
+            <zone xml:id='p384r3c2' points=' 575,191  576,169  1075,169  1076,191 ' rendition='default' />
+            <zone xml:id='p384r4c2' points=' 574,214  575,194  1075,193  1076,211 ' rendition='default' />
+            <zone xml:id='p384r5c2' points=' 575,232  577,215  1077,213  1078,230 ' rendition='default' />
+            <zone xml:id='p384r6c2' points=' 574,252  575,233  1075,228  1076,249 ' rendition='default' />
+            <zone xml:id='p384r7c2' points=' 573,274  573,255  1075,252  1077,271 ' rendition='default' />
+            <zone xml:id='p384r8c2' points=' 575,294  576,279  1076,277  1077,296 ' rendition='default' />
+            <zone xml:id='p384r9c2' points=' 574,316  575,298  1078,296  1078,316 ' rendition='default' />
+            <zone xml:id='p384r10c2' points=' 578,339  579,321  1080,321  1082,339 ' rendition='default' />
+            <zone xml:id='p384r11c2' points=' 576,362  577,341  1079,342  1079,360 ' rendition='default' />
+            <zone xml:id='p384r12c2' points=' 576,382  578,364  1079,363  1081,383 ' rendition='default' />
+            <zone xml:id='p384r13c2' points=' 572,401  572,383  1077,383  1076,403 ' rendition='default' />
+            <zone xml:id='p384r14c2' points=' 578,425  578,405  1082,408  1082,424 ' rendition='default' />
+            <zone xml:id='p384r15c2' points=' 574,446  574,428  1078,426  1079,447 ' rendition='default' />
+            <zone xml:id='p384r16c2' points=' 575,467  576,447  1081,448  1082,466 ' rendition='default' />
+            <zone xml:id='p384r17c2' points=' 567,487  568,471  1072,471  1073,487 ' rendition='default' />
+            <zone xml:id='p384r18c2' points=' 575,509  576,493  1079,492  1079,510 ' rendition='default' />
+            <zone xml:id='p384r19c2' points=' 575,533  574,515  1080,515  1080,533 ' rendition='default' />
+            <zone xml:id='p384r20c2' points=' 568,553  568,535  1073,536  1073,556 ' rendition='default' />
+    
+            <!-- LE PREVISIONI FINANZIARIE -->
+
+            <zone xml:id='title_main' points=' 569,593  570,574  1075,578  1075,593 ' rendition='default' />
+            <zone xml:id='p384c2byline"' points=' 638,599  750,601  750,618  636,619 ' rendition="default" />
+            <zone xml:id='p384c2date_line' points=' 891,602  890,618  1053,618  1053,605 ' rendition='default' />
+            <zone xml:id='p384r21c2' points=' 575,641  577,622  1081,620  1081,640 ' rendition='default' />
+            <zone xml:id='p384r22c2' points=' 574,663  575,645  1080,646  1079,663 ' rendition='default' />
+            <zone xml:id='p384r23c2' points=' 570,684  571,668  1076,667  1078,686 ' rendition='default' />
+            <zone xml:id='p384r24c2' points=' 574,707  574,685  1080,687  1081,705 ' rendition='default' />
+            <zone xml:id='p384r25c2' points=' 572,726  574,710  1081,708  1081,727 ' rendition='default' />
+            <zone xml:id='p384r26c2' points=' 574,749  571,730  1079,728  1081,750 ' rendition='default' />
+            <zone xml:id='p384r27c2' points=' 574,770  574,752  1078,753  1079,772 ' rendition='default' />
+            <zone xml:id='p384r28c2' points=' 570,791  571,773  1076,774  1076,792 ' rendition='default' />
+            <zone xml:id='p384r29c2' points=' 574,811  573,791  1078,794  1079,814 ' rendition='default' />
+            <zone xml:id='p384r30c2' points=' 568,834  568,819  1068,818  1068,833 ' rendition='default' />
+            <zone xml:id='p384r31c2' points=' 574,854  574,840  1075,839  1076,854 ' rendition='default' />
+            <zone xml:id='p384r32c2' points=' 573,875  572,856  1076,856  1076,874 ' rendition='default' />
+            <zone xml:id='p384r33c2' points=' 572,897  571,883  1075,879  1076,895 ' rendition='default' />
+            <zone xml:id='p384r34c2' points=' 574,922  573,905  1076,905  1078,923 ' rendition='default' />
+            <zone xml:id='p384r35c2' points=' 572,945  572,923  1075,925  1075,944 ' rendition='default' />
+            <zone xml:id='p384r36c2' points=' 571,963  571,946  1074,946  1076,966 ' rendition='default' />
+            <zone xml:id='p384r37c2' points=' 574,984  573,967  1075,967  1076,984 ' rendition='default' />
+            <zone xml:id='p384r38c2' points=' 573,1007  573,990  1074,990  1074,1009 ' rendition='default' />
+            <zone xml:id='p384r39c2' points=' 573,1030  573,1009  1075,1012  1076,1028 ' rendition='default' />
+            <zone xml:id='p384r40c2' points=' 574,1051  574,1035  1074,1033  1074,1053 ' rendition='default' />
+            <zone xml:id='p384r41c2' points=' 576,1070  576,1054  1078,1054  1079,1072 ' rendition='default' />
+            <zone xml:id='p384r42c2' points=' 574,1093  573,1074  1075,1074  1075,1092 ' rendition='default' />
+            <zone xml:id='p384r43c2' points=' 571,1113  570,1097  1074,1094  1075,1114 ' rendition='default' />
+            <zone xml:id='p384r44c2' points=' 571,1136  572,1119  1076,1117  1076,1135 ' rendition='default' />
+            <zone xml:id='p384r45c2' points=' 572,1157  573,1141  1077,1140  1077,1160 ' rendition='default' />
+            <zone xml:id='p384r46c2' points=' 573,1178  572,1159  1077,1161  1077,1180 ' rendition='default' />
+            <zone xml:id='p384r47c2' points=' 570,1200  571,1183  1074,1183  1075,1199 ' rendition='default' />
+            <zone xml:id='p384r48c2' points=' 572,1218  572,1204  1075,1205  1076,1220 ' rendition='default' />
+            <zone xml:id='p384r49c2' points=' 571,1244  572,1224  1076,1224  1076,1244 ' rendition='default' />
+            <zone xml:id='p384r50c2' points=' 572,1264  572,1248  1075,1247  1077,1265 ' rendition='default' />
+            <zone xml:id='p384r51c2' points=' 570,1287  569,1270  1073,1268  1073,1286 ' rendition='default' />
+            <zone xml:id='p384r52c2' points=' 572,1306  573,1290  1073,1290  1075,1309 ' rendition='default' />
+            <zone xml:id='p384r53c2' points=' 573,1328  573,1312  1073,1312  1074,1330 ' rendition='default' />
+            <zone xml:id='p384r54c2' points=' 574,1352  572,1335  1074,1337  1074,1354 ' rendition='default' />
+            <zone xml:id='p384r55c2' points=' 573,1373  573,1354  1073,1358  1075,1376 ' rendition='default' />
+            <zone xml:id='p384r56c2' points=' 572,1395  571,1377  1075,1381  1075,1398 ' rendition='default' />
+            <zone xml:id='p384r57c2' points=' 572,1416  573,1397  1076,1398  1077,1417 ' rendition='default' />
+            <zone xml:id='p384r58c2' points=' 573,1439  572,1421  1075,1421  1076,1439 ' rendition='default' />
+            <zone xml:id='bibliografia' points=' 576,1476  575,1458  1078,1458  1079,1475 ' rendition='default' />
+
+        </surface>
+        <surface>
+            <!-- pagina 386 -->
+            
+            
+            <graphic url='images/p386.jpg' width='1134' height='1686' />
+
+            <!-- colonna dx -->
+            
+            <zone xml:id='title_sub_p386c2' points=' 583,700  1094,691  1094,722  585,721 ' rendition="default" />
+            <zone xml:id='p386r23c2' points=' 588,743  587,724  1089,724  1088,742 ' rendition="default" />
+            <zone xml:id='p386r24c2' points=' 592,764  589,746  1090,743  1091,765 ' rendition="default" />
+            <zone xml:id='p386r25c2' points=' 594,785  593,767  1090,768  1091,789 ' rendition="default" />
+            <zone xml:id='p386r26c2' points=' 593,808  592,786  1087,791  1088,809 ' rendition="default" />
+            <zone xml:id='p386r27c2' points=' 591,832  590,812  1090,811  1090,831 ' rendition="default" />
+            <zone xml:id='p386r28c2' points=' 586,856  584,835  1089,834  1090,854 ' rendition="default" />
+            <zone xml:id='p386r29c2' points=' 587,874  587,858  1092,856  1092,876 ' rendition="default" />
+            <zone xml:id='p386r30c2' points=' 586,895  585,878  1092,878  1092,897 ' rendition="default" />
+            <zone xml:id='p386r31c2' points=' 586,920  585,899  1092,900  1093,922 ' rendition="default" />
+            <zone xml:id='p386r32c2' points=' 586,939  585,921  1091,925  1092,941 ' rendition="default" />
+            <zone xml:id='p386r33c2' points=' 585,961  585,940  1091,943  1092,961 ' rendition="default" />
+            <zone xml:id='p386r34c2' points=' 587,983  586,964  1092,965  1093,983 ' rendition="default" />
+            <zone xml:id='p386r35c2' points=' 585,1002  584,986  1093,985  1094,1007 ' rendition="default" />
+            <zone xml:id='p386r36c2' points=' 584,1025  584,1007  1090,1009  1091,1026 ' rendition="default" />
+            <zone xml:id='p386r37c2' points=' 587,1046  586,1029  1090,1029  1092,1049 ' rendition="default" />
+            <zone xml:id='p386r38c2' points=' 585,1068  584,1048  1092,1052  1093,1069 ' rendition="default" />
+            <zone xml:id='p386r39c2' points=' 584,1088  584,1071  1091,1074  1091,1092 ' rendition="default" />
+            <zone xml:id='p386r40c2' points=' 585,1112  584,1094  1090,1095  1091,1113 ' rendition="default" />
+            <zone xml:id='p386r41c2' points=' 585,1133  585,1115  1091,1115  1091,1133 ' rendition="default" />
+            <zone xml:id='p386r42c2' points=' 585,1155  585,1135  1090,1137  1090,1158 ' rendition="default" />
+            <zone xml:id='p386r43c2' points=' 586,1178  587,1158  1092,1160  1092,1177 ' rendition="default" />
+            <zone xml:id='p386r44c2' points=' 585,1199  585,1182  1091,1180  1091,1198 ' rendition="default" />
+            <zone xml:id='p386r45c2' points=' 584,1222  584,1201  1091,1201  1091,1219 ' rendition="default" />
+            <zone xml:id='p386r46c2' points=' 586,1241  585,1225  1092,1223  1093,1242 ' rendition="default" />
+            <zone xml:id='p386r47c2' points=' 585,1261  585,1244  1092,1245  1093,1263 ' rendition="default" />
+            <zone xml:id='p386r48c2' points=' 584,1284  584,1264  1092,1267  1093,1286 ' rendition="default" />
+            <zone xml:id='p386r49c2' points=' 585,1306  585,1287  1093,1288  1093,1305 ' rendition="default" />
+            <zone xml:id='p386r50c2' points=' 585,1327  584,1309  1094,1309  1094,1328 ' rendition="default" />
+            <zone xml:id='p386r51c2' points=' 586,1348  585,1330  1094,1332  1094,1349 ' rendition="default" />
+            <zone xml:id='p386r52c2' points=' 585,1370  585,1351  1095,1351  1096,1370 ' rendition="default" />
+            <zone xml:id='p386r53c2' points=' 587,1390  586,1373  1093,1373  1093,1392 ' rendition="default" />
+            <zone xml:id='p386r54c2' points=' 586,1413  586,1393  1094,1395  1094,1414 ' rendition="default" />
+            <zone xml:id='p386r55c2' points=' 585,1434  584,1414  1092,1415  1093,1435 ' rendition="default" />
+            <zone xml:id='p386r56c2' points=' 587,1456  586,1437  1094,1436  1095,1455 ' rendition="default" />
+            <zone xml:id='p386r57c2' points=' 587,1476  588,1460  1093,1458  1093,1477 ' rendition="default" />
+            <zone xml:id='p386r58c2' points=' 586,1500  585,1480  1093,1480  1093,1499 ' rendition="default" />
+            <zone xml:id='p386r59c2' points=' 587,1522  587,1503  1093,1502  1094,1520 ' rendition="default" />
+            <zone xml:id='p386r60c2' points=' 589,1543  589,1523  1092,1522  1091,1541 ' rendition="default" />
+            <zone xml:id='p386r61c2' points=' 592,1564  590,1545  1091,1543  1093,1565 ' rendition="default" />
+        </surface>
+        
+
+        <surface>
+                <graphic url='images/p387.jpg' width='1154' height='1665' />
+
+                <!-- colonna sx -->
+    
+            <zone xml:id='p387r1c1' points=' 39,135  39,152  539,152  539,136 ' rendition="default" />
+        
+            <zone xml:id='p387r2c1' points=' 35,174  35,158  538,158  538,174 ' rendition="default" />
+        
+            <zone xml:id='p387r3c1' points=' 36,194  36,178  537,177  537,195 ' rendition="default" />
+        
+            <zone xml:id='p387r4c1' points=' 36,219  36,202  537,199  537,220 ' rendition="default" />
+        
+            <zone xml:id='p387r5c1' points=' 37,239  37,222  537,222  538,237 ' rendition="default" />
+        
+            <zone xml:id='p387r6c1' points=' 35,260  35,242  539,242  539,260 ' rendition="default" />
+        
+            <zone xml:id='p387r7c1' points=' 33,281  33,264  539,262  538,281 ' rendition="default" />
+        
+            <zone xml:id='p387r8c1' points=' 35,301  35,286  538,286  538,303 ' rendition="default" />
+        
+            <zone xml:id='p387r9c1' points=' 33,324  32,304  538,307  538,327 ' rendition="default" />
+        
+            <zone xml:id='p387r10c1' points=' 33,345  33,330  539,330  539,346 ' rendition="default" />
+        
+            <zone xml:id='p387r11c1' points=' 35,368  33,350  539,352  539,368 ' rendition="default" />
+        
+            <zone xml:id='p387r12c1' points=' 33,388  32,372  539,371  538,389 ' rendition="default" />
+        
+            <zone xml:id='p387r13c1' points=' 33,409  33,392  539,391  539,411 ' rendition="default" />
+        
+            <zone xml:id='p387r14c1' points=' 32,428  33,412  539,415  539,431 ' rendition="default" />
+        
+            <zone xml:id='p387r15c1' points=' 33,454  32,434  538,435  537,452 ' rendition="default" />
+        
+            <zone xml:id='p387r16c1' points=' 34,476  33,458  537,458  537,474 ' rendition="default" />
+        
+            <zone xml:id='p387r17c1' points=' 29,496  29,480  541,477  541,496 ' rendition="default" />
+        
+            <zone xml:id='p387r18c1' points=' 32,516  32,501  539,500  539,516 ' rendition="default" />
+        
+            <zone xml:id='p387r19c1' points=' 31,538  31,521  539,520  539,538 ' rendition="default" />
+        
+            <zone xml:id='p387r20c1' points=' 32,562  29,542  538,542  537,558 ' rendition="default" />
+        
+            <zone xml:id='p387r21c1' points=' 32,584  32,566  538,564  537,584 ' rendition="default" />
+        
+            <zone xml:id='p387r22c1' points=' 31,606  32,588  539,587  538,604 ' rendition="default" />
+        
+            <zone xml:id='p387r23c1' points=' 32,626  32,610  539,608  539,626 ' rendition="default" />
+        
+            <zone xml:id='p387r24c1' points=' 29,648  29,632  539,629  539,646 ' rendition="default" />
+        
+            <zone xml:id='p387r25c1' points=' 33,670  33,652  537,651  537,668 ' rendition="default" />
+        
+            <zone xml:id='p387r26c1' points=' 31,689  31,674  539,672  538,691 ' rendition="default" />
+        
+            <zone xml:id='p387r27c1' points=' 33,712  33,694  538,696  538,711 ' rendition="default" />
+        
+            <zone xml:id='p387r28c1' points=' 31,735  31,716  537,716  537,732 ' rendition="default" />
+        
+            <zone xml:id='p387r29c1' points=' 33,757  33,738  538,736  537,755 ' rendition="default" />
+        
+            <zone xml:id='p387r30c1' points=' 33,779  32,760  536,760  536,778 ' rendition="default" />
+
+
+            <!-- SCIENZE MILITARI -->
+
+
+            <zone xml:id='title_sub_p387c1' points=' 31,832  29,811  535,811  535,835 ' rendition="default" />
+            <zone xml:id='bibl_ScienzeMilitari' points=' 33,833  30,878  534,878  538,835 ' rendition="default" />
+        
+            <zone xml:id='imtArea_31' points=' 27,859  28,836  537,839  537,859 ' rendition="default" />
+        
+            <zone xml:id='imtArea_32' points=' 31,876  28,860  535,862  535,880 ' rendition="default" />
+        
+
+
+            <zone xml:id='p387r31c1' points=' 30,907  29,889  539,892  538,910 ' rendition="default" />
+        
+            <zone xml:id='p387r32c1' points=' 31,927  32,913  537,912  537,928 ' rendition="default" />
+        
+            <zone xml:id='p387r33c1' points=' 32,951  32,935  537,933  538,952 ' rendition="default" />
+        
+            <zone xml:id='p387r34c1' points=' 34,972  34,956  538,955  538,972 ' rendition="default" />
+        
+            <zone xml:id='p387r35c1' points=' 33,992  33,978  538,979  537,994 ' rendition="default" />
+        
+            <zone xml:id='p387r36c1' points=' 33,1016  33,997  537,996  537,1015 ' rendition="default" />
+        
+            <zone xml:id='p387r37c1' points=' 35,1038  34,1023  537,1018  539,1035 ' rendition="default" />
+        
+            <zone xml:id='p387r38c1' points=' 34,1063  33,1043  539,1038  539,1058 ' rendition="default" />
+        
+            <zone xml:id='p387r39c1' points=' 35,1083  35,1066  538,1063  538,1078 ' rendition="default" />
+        
+            <zone xml:id='p387r40c1' points=' 33,1104  33,1086  537,1081  537,1101 ' rendition="default" />
+        
+            <zone xml:id='p387r41c1' points=' 33,1126  32,1109  539,1105  536,1123 ' rendition="default" />
+        
+            <zone xml:id='p387r42c1' points=' 33,1148  33,1129  537,1130  537,1145 ' rendition="default" />
+        
+            <zone xml:id='p387r43c1' points=' 32,1168  31,1152  535,1148  535,1167 ' rendition="default" />
+        
+            <zone xml:id='p387r44c1' points=' 31,1192  29,1172  536,1171  536,1188 ' rendition="default" />
+        
+            <zone xml:id='p387r45c1' points=' 34,1211  33,1197  535,1193  535,1210 ' rendition="default" />
+        
+            <zone xml:id='p387r46c1' points=' 33,1232  32,1217  534,1215  534,1234 ' rendition="default" />
+        
+            <zone xml:id='p387r47c1' points=' 31,1254  31,1237  535,1236  536,1254 ' rendition="default" />
+        
+            <zone xml:id='p387r48c1' points=' 33,1274  29,1260  536,1258  536,1277 ' rendition="default" />
+        
+            <zone xml:id='p387r49c1' points=' 34,1300  33,1284  535,1281  535,1298 ' rendition="default" />
+        
+            <zone xml:id='p387r50c1' points=' 34,1321  33,1303  459,1303  459,1322 ' rendition="default" />
+        
+            <zone xml:id='p387r51c1' points=' 32,1342  29,1324  535,1321  535,1340 ' rendition="default" />
+        
+            <zone xml:id='p387r52c1' points=' 33,1361  32,1344  536,1343  535,1362 ' rendition="default" />
+        
+            <zone xml:id='p387r53c1' points=' 33,1382  33,1366  535,1365  535,1382 ' rendition="default" />
+        
+            <zone xml:id='p387r54c1' points=' 30,1405  30,1388  536,1386  536,1404 ' rendition="default" />
+        
+            <zone xml:id='p387r55c1' points=' 29,1428  27,1409  535,1408  535,1428 ' rendition="default" />
+        
+            <zone xml:id='p387r56c1' points=' 31,1456  31,1478  537,1478  535,1456 ' rendition="default" />
+        
+            <zone xml:id='p387r57c1' points=' 31,1496  32,1480  536,1480  537,1494 ' rendition="default" />
+        
+            <zone xml:id='p387r58c1' points=' 32,1513  31,1500  535,1499  535,1512 ' rendition="default" />
+        
+            <zone xml:id='p387r59c1' points=' 32,1533  31,1518  537,1514  535,1530 ' rendition="default" />
+        
+            <zone xml:id='p387r60c1' points=' 33,1551  33,1538  534,1535  534,1552 ' rendition="default" />
+        
+            <zone xml:id='p387r61c1' points=' 31,1575  31,1555  534,1558  535,1576 ' rendition="default" />
+            
+            
+            <!-- colonna dx -->
+
+           
+    
+            <zone xml:id='p387r1c2' points=' 553,135  553,152  1053,152  1053,136 ' rendition="default" />
+        
+            <zone xml:id='p387r2c2' points=' 553,172  553,156  1056,156  1056,172 ' rendition="default" />
+        
+            <zone xml:id='p387r3c2' points=' 553,192  553,176  1054,175  1054,193 ' rendition="default" />
+        
+            <zone xml:id='p387r4c2' points=' 555,213  555,196  1056,193  1056,214 ' rendition="default" />
+        
+            <zone xml:id='p387r5c2' points=' 555,235  555,218  1055,218  1056,233 ' rendition="default" />
+        
+            <zone xml:id='p387r6c2' points=' 556,258  556,240  1060,240  1060,258 ' rendition="default" />
+        
+            <zone xml:id='p387r7c2' points=' 555,279  555,262  1061,260  1060,279 ' rendition="default" />
+        
+            <zone xml:id='p387r8c2' points=' 554,301  554,286  1057,286  1057,303 ' rendition="default" />
+        
+            <zone xml:id='p387r9c2' points=' 556,323  555,303  1061,306  1061,326 ' rendition="default" />
+        
+            <zone xml:id='p387r10c2' points=' 557,343  557,328  1063,328  1063,344 ' rendition="default" />
+        
+            <zone xml:id='p387r11c2' points=' 556,365  554,347  1060,349  1060,365 ' rendition="default" />
+        
+            <zone xml:id='p387r12c2' points=' 554,385  553,369  1060,368  1059,386 ' rendition="default" />
+        
+            <zone xml:id='p387r13c2' points=' 553,410  553,393  1059,392  1059,412 ' rendition="default" />
+        
+            <zone xml:id='p387r14c2' points=' 553,430  554,414  1060,417  1060,433 ' rendition="default" />
+        
+            <zone xml:id='p387r15c2' points=' 554,454  553,434  1059,435  1058,452 ' rendition="default" />
+        
+            <zone xml:id='p387r16c2' points=' 555,475  554,457  1058,457  1058,473 ' rendition="default" />
+        
+            <zone xml:id='p387r17c2' points=' 556,496  556,480  1068,477  1068,496 ' rendition="default" />
+        
+            <zone xml:id='p387r18c2' points=' 553,514  553,499  1060,498  1060,514 ' rendition="default" />
+        
+            <zone xml:id='p387r19c2' points=' 549,537  549,520  1057,519  1057,537 ' rendition="default" />
+        
+            <zone xml:id='p387r20c2' points=' 555,561  552,541  1061,541  1060,557 ' rendition="default" />
+        
+            <zone xml:id='p387r21c2' points=' 552,582  552,564  1058,562  1057,582 ' rendition="default" />
+        
+            <zone xml:id='p387r22c2' points=' 549,604  550,586  1057,585  1056,602 ' rendition="default" />
+        
+            <zone xml:id='p387r23c2' points=' 554,626  554,610  1061,608  1061,626 ' rendition="default" />
+        
+            <zone xml:id='p387r24c2' points=' 552,646  552,630  1062,627  1062,644 ' rendition="default" />
+        
+            <zone xml:id='p387r25c2' points=' 555,668  555,650  1059,649  1059,666 ' rendition="default" />
+        
+            <zone xml:id='p387r26c2' points=' 552,687  552,672  1060,670  1059,689 ' rendition="default" />
+        
+            <zone xml:id='p387r27c2' points=' 551,710  551,692  1056,694  1056,709 ' rendition="default" />
+        
+            <zone xml:id='p387r28c2' points=' 554,733  554,714  1060,714  1060,730 ' rendition="default" />
+        
+            <zone xml:id='p387r29c2' points=' 555,754  555,735  1060,733  1059,752 ' rendition="default" />
+        
+            <zone xml:id='p387r30c2' points=' 557,777  556,758  1060,758  1060,776 ' rendition="default" />
+        
+            <zone xml:id='p387r31c2' points=' 559,799  557,778  1063,778  1063,802 ' rendition="default" />
+        
+            <zone xml:id='p387r32c2' points=' 546,822  547,799  1056,802  1056,822 ' rendition="default" />
+        
+            <zone xml:id='p387r33c2' points=' 553,840  550,824  1057,826  1057,844 ' rendition="default" />
+        
+            <zone xml:id='p387r34c2' points=' 553,861  552,843  1062,846  1061,864 ' rendition="default" />
+        
+            <zone xml:id='p387r35c2' points=' 553,880  554,866  1059,865  1059,881 ' rendition="default" />
+        
+            <zone xml:id='p387r36c2' points=' 554,902  554,886  1059,884  1060,903 ' rendition="default" />
+        
+            <zone xml:id='p387r37c2' points=' 553,925  553,909  1057,908  1057,925 ' rendition="default" />
+        
+            <zone xml:id='p387r38c2' points=' 554,943  554,929  1059,930  1058,945 ' rendition="default" />
+        
+            <zone xml:id='p387r39c2' points=' 556,969  556,950  1060,949  1060,968 ' rendition="default" />
+        
+            <zone xml:id='p387r40c2' points=' 551,988  550,973  1053,968  1055,985 ' rendition="default" />
+        
+            <zone xml:id='p387r41c2' points=' 549,1014  548,994  1054,989  1054,1009 ' rendition="default" />
+        
+            <zone xml:id='p387r42c2' points=' 552,1034  552,1017  1055,1014  1055,1029 ' rendition="default" />
+        
+            <zone xml:id='p387r43c2' points=' 551,1056  551,1038  1055,1033  1055,1053 ' rendition="default" />
+        
+            <zone xml:id='p387r44c2' points=' 554,1077  553,1060  1060,1056  1057,1074 ' rendition="default" />
+        
+            <zone xml:id='p387r45c2' points=' 552,1099  552,1080  1056,1081  1056,1096 ' rendition="default" />
+        
+            <zone xml:id='p387r46c2' points=' 553,1119  552,1103  1056,1099  1056,1118 ' rendition="default" />
+        
+            <zone xml:id='p387r47c2' points=' 550,1144  548,1124  1055,1123  1055,1140 ' rendition="default" />
+        
+            <zone xml:id='p387r48c2' points=' 552,1161  551,1147  1053,1143  1053,1160 ' rendition="default" />
+        
+            <zone xml:id='p387r49c2' points=' 555,1182  554,1167  1056,1165  1056,1184 ' rendition="default" />
+        
+            <zone xml:id='p387r50c2' points=' 553,1207  553,1190  1057,1189  1058,1207 ' rendition="default" />
+        
+            <zone xml:id='p387r51c2' points=' 553,1227  549,1213  1056,1211  1056,1230 ' rendition="default" />
+        
+            <zone xml:id='p387r52c2' points=' 554,1249  553,1233  1055,1230  1055,1247 ' rendition="default" />
+        
+            <zone xml:id='p387r53c2' points=' 553,1270  550,1252  1056,1249  1056,1268 ' rendition="default" />
+        
+            <zone xml:id='p387r54c2' points=' 553,1290  552,1273  1056,1272  1055,1291 ' rendition="default" />
+        
+            <zone xml:id='p387r55c2' points=' 556,1314  556,1298  1058,1297  1058,1314 ' rendition="default" />
+        
+            <zone xml:id='p387r56c2' points=' 553,1335  553,1318  1059,1316  1059,1334 ' rendition="default" />
+        
+            <zone xml:id='p387r57c2' points=' 552,1356  550,1337  1058,1336  1058,1356 ' rendition="default" />
+        
+            <zone xml:id='p387r58c2' points=' 551,1360  551,1382  1057,1382  1055,1360 ' rendition="default" />
+        
+            <zone xml:id='p387r59c2' points=' 552,1400  553,1384  1057,1384  1058,1398 ' rendition="default" />
+        
+            <zone xml:id='p387r60c2' points=' 555,1420  554,1407  1058,1406  1058,1419 ' rendition="default" />
+        
+            <zone xml:id='p387r61c2' points=' 555,1443  554,1428  1060,1424  1058,1440 ' rendition="default" />
+        
+            <zone xml:id='p387r62c2' points=' 553,1462  553,1449  1054,1446  1054,1463 ' rendition="default" />
+        
+            <zone xml:id='p387r63c2' points=' 553,1487  553,1467  1056,1470  1057,1488 ' rendition="default" />
+        
+            <zone xml:id='p387r64c2' points=' 553,1510  553,1491  1052,1492  1052,1510 ' rendition="default" />
+        
+            <zone xml:id='p387r65c2' points=' 549,1535  548,1513  1050,1513  1050,1533 ' rendition="default" />
+        
+            <zone xml:id='p387r66c2' points=' 550,1537  550,1550  1051,1558  1052,1535 ' rendition="default" />
+        
+            <zone xml:id='p387r67c2' points=' 550,1575  549,1556  1046,1557  1047,1576 ' rendition="default" />
+
+
+        </surface>
+
+        <surface>
+
+        <graphic url='images/p388.jpg' width='1163' height='1673' />
+
+             <!-- scienza militari -->
+
+             <!-- colonna sx -->
+    
+            <zone xml:id='p388r1c1' points=' 120,143  115,166  631,167  631,148 ' rendition="default" />
+        
+            <zone xml:id='p388r2c1' points=' 120,188  120,172  629,169  627,189 ' rendition="default" />
+        
+            <zone xml:id='p388r3c1' points=' 123,210  123,193  628,193  628,210 ' rendition="default" />
+        
+            <zone xml:id='p388r4c1' points=' 125,232  123,216  629,215  629,234 ' rendition="default" />
+        
+            <zone xml:id='p388r5c1' points=' 123,255  123,236  628,237  628,254 ' rendition="default" />
+        
+            <zone xml:id='p388r6c1' points=' 125,273  125,258  627,256  627,272 ' rendition="default" />
+        
+            <zone xml:id='p388r7c1' points=' 127,296  126,279  627,278  627,296 ' rendition="default" />
+        
+            <zone xml:id='p388r8c1' points=' 125,318  124,299  629,301  629,320 ' rendition="default" />
+        
+            <zone xml:id='p388r9c1' points=' 126,338  125,321  628,320  627,337 ' rendition="default" />
+        
+            <zone xml:id='p388r10c1' points=' 125,360  124,342  628,341  628,362 ' rendition="default" />
+        
+            <zone xml:id='p388r11c1' points=' 127,380  126,363  629,365  629,381 ' rendition="default" />
+        
+            <zone xml:id='p388r12c1' points=' 126,404  124,384  629,384  629,404 ' rendition="default" />
+        
+            <zone xml:id='p388r13c1' points=' 123,427  123,410  629,409  629,425 ' rendition="default" />
+        
+            <zone xml:id='p388r14c1' points=' 125,447  124,431  630,431  629,450 ' rendition="default" />
+        
+            <zone xml:id='p388r15c1' points=' 125,469  125,451  629,453  629,470 ' rendition="default" />
+        
+            <zone xml:id='p388r16c1' points=' 125,489  125,473  628,474  627,492 ' rendition="default" />
+        
+            <zone xml:id='p388r17c1' points=' 123,512  123,493  628,496  628,516 ' rendition="default" />
+        
+            <zone xml:id='p388r18c1' points=' 123,534  123,516  629,519  627,534 ' rendition="default" />
+        
+            <zone xml:id='p388r19c1' points=' 124,555  123,538  627,538  627,554 ' rendition="default" />
+        
+            <zone xml:id='p388r20c1' points=' 125,578  123,557  629,559  629,577 ' rendition="default" />
+        
+            <zone xml:id='p388r21c1' points=' 125,600  124,584  625,580  625,599 ' rendition="default" />
+        
+            <zone xml:id='p388r22c1' points=' 122,621  123,604  627,603  627,618 ' rendition="default" />
+        
+            <zone xml:id='p388r23c1' points=' 125,644  124,626  627,622  627,644 ' rendition="default" />
+        
+            <zone xml:id='p388r24c1' points=' 125,662  125,647  625,646  625,661 ' rendition="default" />
+        
+            <zone xml:id='p388r25c1' points=' 128,682  127,668  627,666  627,683 ' rendition="default" />
+        
+            <zone xml:id='p388r26c1' points=' 126,706  126,689  627,689  628,708 ' rendition="default" />
+        
+            <zone xml:id='p388r27c1' points=' 126,726  126,712  627,712  627,728 ' rendition="default" />
+        
+            <zone xml:id='p388r28c1' points=' 125,746  122,732  627,732  627,750 ' rendition="default" />
+        
+            <zone xml:id='p388r29c1' points=' 122,772  122,752  627,754  627,769 ' rendition="default" />
+        
+            <zone xml:id='p388r30c1' points=' 123,791  123,776  628,773  627,792 ' rendition="default" />
+        
+            <zone xml:id='p388r31c1' points=' 126,815  125,797  630,794  630,813 ' rendition="default" />
+        
+            <zone xml:id='p388r32c1' points=' 126,836  126,818  631,817  630,836 ' rendition="default" />
+        
+            <zone xml:id='p388r33c1' points=' 126,858  125,840  630,838  629,856 ' rendition="default" />
+        
+            <zone xml:id='p388r34c1' points=' 126,877  125,860  629,859  629,877 ' rendition="default" />
+        
+            <zone xml:id='p388r35c1' points=' 122,902  123,880  632,880  631,897 ' rendition="default" />
+        
+            <zone xml:id='p388r36c1' points=' 127,922  125,905  631,902  631,921 ' rendition="default" />
+        
+            <zone xml:id='p388r37c1' points=' 125,944  125,926  629,923  629,945 ' rendition="default" />
+        
+            <zone xml:id='p388r38c1' points=' 122,966  121,948  633,947  632,966 ' rendition="default" />
+        
+            <zone xml:id='p388r39c1' points=' 127,989  125,969  631,968  631,988 ' rendition="default" />
+        
+            <zone xml:id='p388r40c1' points=' 123,1008  123,992  629,990  629,1006 ' rendition="default" />
+        
+            <zone xml:id='p388r41c1' points=' 124,1030  124,1014  630,1012  627,1030 ' rendition="default" />
+        
+            <zone xml:id='p388r42c1' points=' 121,1054  121,1036  630,1033  630,1051 ' rendition="default" />
+        
+            <zone xml:id='p388r43c1' points=' 121,1071  121,1057  629,1056  629,1070 ' rendition="default" />
+        
+            <zone xml:id='p388r44c1' points=' 125,1094  125,1076  631,1076  629,1097 ' rendition="default" />
+        
+            <zone xml:id='p388r45c1' points=' 123,1118  123,1098  626,1100  627,1120 ' rendition="default" />
+
+             <!-- colonna dx -->
+              <!-- NOTIZIE -->
+
+             <zone xml:id='title_main_p388c2' points=' 771,1029  767,1051  1039,1049  1042,1027 ' rendition="default" />
+        
+            <zone xml:id='p388r41c2' points=' 669,1072  668,1054  1152,1054  1150,1076 ' rendition="default" />
+        
+            <zone xml:id='p388r42c2' points=' 643,1092  642,1077  1149,1076  1149,1093 ' rendition="default" />
+        
+            <zone xml:id='p388r43c2' points=' 647,1110  646,1094  1148,1094  1148,1109 ' rendition="default" />
+        
+            <zone xml:id='p388r44c2' points=' 645,1128  644,1115  1149,1111  1149,1128 ' rendition="default" />
+        
+            <zone xml:id='p388r45c2' points=' 646,1149  645,1133  1141,1131  1142,1144 ' rendition="default" />
+        
+            <zone xml:id='p388r46c2' points=' 664,1166  662,1152  1149,1149  1149,1166 ' rendition="default" />
+        
+            <zone xml:id='p388r47c2' points=' 647,1188  647,1174  1150,1170  1149,1186 ' rendition="default" />
+        
+            <zone xml:id='p388r48c2' points=' 647,1204  647,1192  1148,1190  1148,1206 ' rendition="default" />
+        
+            <zone xml:id='p388r49c2' points=' 647,1228  647,1210  1148,1208  1147,1226 ' rendition="default" />
+        
+            <zone xml:id='p388r50c2' points=' 649,1246  649,1232  1150,1228  1149,1244 ' rendition="default" />
+        
+            <zone xml:id='p388r51c2' points=' 649,1264  649,1250  1149,1247  1149,1262 ' rendition="default" />
+        
+            <zone xml:id='p388r52c2' points=' 648,1284  648,1268  1151,1266  1151,1283 ' rendition="default" />
+        
+            <zone xml:id='p388r53c2' points=' 647,1305  647,1290  1151,1285  1151,1302 ' rendition="default" />
+        
+            <zone xml:id='p388r54c2' points=' 647,1326  646,1308  1151,1306  1151,1322 ' rendition="default" />
+        
+            <zone xml:id='p388r55c2' points=' 649,1342  648,1328  1149,1326  1148,1340 ' rendition="default" />
+        
+            <zone xml:id='p388r56c2' points=' 646,1361  645,1346  1149,1345  1149,1363 ' rendition="default" />
+        
+            <zone xml:id='p388r57c2' points=' 648,1384  649,1365  1148,1366  1147,1380 ' rendition="default" />
+        
+            <zone xml:id='p388r58c2' points=' 947,1400  948,1385  1145,1384  1145,1400 ' rendition="default" />
+        </surface>
+
+    </facsimile>
+
+  <!-- Corpo del testo -->
+  <text>
+    <front>
+        <!-- Testata del giornale -->
+        <div type="titlePage">
+        <head>La Rassegna Settimanale</head>
+        <p>Di politica, scienze, lettere ed arti.</p>
+        <p>
+            <term type="volume">Vol. 3°</term>, 
+            <placeName type="urban" ref="#Roma">Roma</placeName>, 
+            <date when="1879-05-18">18 Maggio 1879</date>, 
+            <term type="issue">N° 72</term>.
+        </p>
+        </div>
+    </front>
+    <body>
+        <div type="article" n="1">
+            <div type="page" n="382">
+                <div type="column" n="2">
+                    <head>
+                        <title type="main" xml:id="title_main_p382c2" facs="#title_main_p382c2">CORRISPONDENZA DA <placeName type="urban" ref="#Lecce" key="LE">LECCE</placeName></title>
+                        <title type="sub" xml:id="title_sub_p382c2" facs="#title_sub_p382c2">LA RACCOLTA DELLE OLIVE</title>
+                    </head>
+                    <p>
+                        <lb xml:id="r43c2p382" facs="#p382r43c2" n="1"/>Appena cessato l'allegro canto della <term type="theme" subtype="agriculture">vendemmia</term>, si co-
+                        <lb xml:id="r44c2p382" facs="#p382r44c2" n="2"/>mincia la <term type="theme" subtype="agriculture">raccolta delle olive</term>. Alla tiepida aria d'autunno,
+                        <lb xml:id="r45c2p382" facs="#p382r45c2" n="3"/>profumata dal forte odore del <term type="theme" subtype="agriculture">mosto</term> <placeName type="region" ref="#Puglia" key="PUG">pugliese</placeName>, succede la
+                        <lb xml:id="r46c2p382" facs="#p382r46c2" n="4"/>rigida atmosfera invernale, impregnata dal grato odore del
+                        <lb xml:id="r47c2p382" facs="#p382r47c2" n="5"/><term type="theme" subtype="agriculture">nocciolo di olive</term> che brucia continuamente nei <term type="theme" subtype="agriculture">frantoi</term>, qui 
+                        <lb xml:id="r48c2p382" facs="#p382r48c2" n="6"/>detti volgarmente <term type="verbum" xml:lang="dialect"><hi rend="italic">trappeti</hi></term>.
+                    </p>
+                    <p>
+                       
+                            <lb xml:id="r49c2p382" facs="#p382r49c2" n="7"/>Gli <placeName type="natural" ref="#Appennini" key="AP">Appennini</placeName> presso <placeName type="urban" ref="#Avigliano" key="AV">Avigliano</placeName> si biforcano; un ramo
+                            <lb xml:id="r50c2p382" facs="#p382r50c2" n="8"/>si avanza per la <placeName type="region" ref="#Basilicata" key="BAS">Basilicata</placeName> e le <placeName type="region" ref="#Calabria" key="CAL">Calabrie</placeName> giù fino allo stretto
+                            <lb xml:id="r51c2p382" facs="#p382r51c2" n="9"/>di <placeName type="urban" ref="#Messina" key="ME">Messina</placeName>, ed un altro con più umili altezze corre sul <placeName type="urban" ref="#Bari" key="BA">Ba-</placeName>
+                            <lb xml:id="r52c2p382" facs="#p382r52c2" n="10"/><placeName type="urban" ref="#Bari" key="BA">rese</placeName> ed il <placeName type="urban" ref="#Lecce" key="LE">Leccese</placeName>, formando le così dette <placeName type="natural" ref="#Murge" key="MU">Murge</placeName>, che non
+                            <lb xml:id="r53c2p382" facs="#p382r53c2" n="11"/>sono in verità monti, ma colline, anzi altipiani, che segnano
+                            <lb xml:id="r54c2p382" facs="#p382r54c2" n="12"/>il confine naturale della Provincia di <placeName type="urban" ref="#Bari" key="BA">Bari</placeName> e della <placeName type="region" ref="#Basilicata" key="BAS">Basilicata</placeName>.
+                            <lb xml:id="r55c2p382" facs="#p382r55c2" n="13"/>Le <placeName type="natural" ref="#Murge" key="MU">Murge</placeName>, dopo aver raggiunto la maggiore loro elevatezza
+                            <lb xml:id="r56c2p382" facs="#p382r56c2" n="14"/>presso <placeName type="urban" ref="#Oria" key="OR">Oria</placeName>, si abbassano e si spandono nel <placeName type="urban" ref="#Lecce" key="LE">Leccese</placeName>, dando
+                            <lb xml:id="r57c2p382" facs="#p382r57c2" n="15"/>al suolo la più capricciosa varietà.
+                        
+                    </p>
+                    <p>
+                        <lb xml:id="r58c2p382" facs="#p382r58c2" n="16"/>L'operosità degli abitanti ha fatto mutar faccia alla Pro-
+                        <lb xml:id="r59c2p382" facs="#p382r59c2" n="17"/>vincia di <placeName type="urban" ref="#Bari" key="BA">Bari</placeName> che, quasi deserta negli altipiani delle <placeName type="natural" ref="#Murge" key="MU">Murge</placeName>,
+                        <lb xml:id="r60c2p382" facs="#p382r60c2" n="18"/>a misura che scende con dolce pendio fino al mare si co-
+                        <lb xml:id="r61c2p382" facs="#p382r61c2" n="19"/>pre di vigne ed oliveti, tempestata qua e là di giardini fio-
+                        <lb xml:id="r62c2p382" facs="#p382r62c2" n="20"/>riti e di agrumeti. Questa artificiale e varia floridezza di 
+                        <lb xml:id="r63c2p382" facs="#p382r63c2" n="21"/>suolo va cessando nelle terre d'<placeName type="urban" ref="#Otranto" key="OT">Otranto</placeName>, dove si addensano 
+                        <lb xml:id="r64c2p382" facs="#p382r64c2" n="22"/>foreste di olive, che col loro cinereo fogliame danno un ma-
+                        <lb xml:id="r65c2p382" facs="#p382r65c2" n="23"/>linconico aspetto alla provincia. La vite sul litorale <placeName type="urban" ref="#Bari" key="BA">barese</placeName>
+                        <lb xml:id="r66c2p382" facs="#p382r66c2" n="24"/>è consociata all'ulivo, crescono da anni ed anni insieme, e 
+                        <lb xml:id="r67c2p382" facs="#p382r67c2" n="25"/>non si sa quasi concepire un vigneto spogliato di ulivi. La 
+                        <lb xml:id="r68c2p382" facs="#p382r68c2" n="26"/>vite allevata, curata, accarezzata dal contadino barese colle 
+                        <lb xml:id="r69c2p382" facs="#p382r69c2" n="27"/>maggiori sollecitudini ed esposta ai perpetui raggi del sole,
+                        <lb xml:id="r70c2p382" facs="#p382r70c2" n="28" next="r1c1p383"/>qui nel <placeName type="urban" ref="#Leccese" key="LE">Leccese</placeName> serpeggia per terra, sporca il suo frutto,
+                    </p>
+                
+                </div>
+            </div>
+            
+            <div type="page" n="383">
+                <div type="column" n="1">
+                    <p>
+                        <lb xml:id="r1c1p383" facs="#p383r1c1" n="29" previous="r28c2p382"/>che quasi per rinfaccio offre al colono il più generoso vino
+                        <lb xml:id="r2c1p383" facs="#p383r2c1" n="30"/>della <placeName type="urban" ref="#Italia">penisola</placeName>; e invece si eleva sovra essa gigante e mae-
+                        <lb xml:id="r3c1p383" facs="#p383r3c1" n="31"/>stoso l’olivo. Non è già che il <term type="ethnic" ref="#Barese">Barese</term> dia solo più cura alla
+                        <lb xml:id="r4c1p383" facs="#p383r4c1" n="32"/>vite e il <term type="ethnic" ref="#Leccese">Leccese</term> all’olivo; ma perché l’olivo nella terra d’<placeName ref="#Otranto">O-</placeName>
+                        <lb xml:id="r5c1p383" facs="#p383r5c1" n="33"/><placeName ref="#Otranto">tranto</placeName> cresce per forza ingenita del suolo a bosco e a fore-
+                        <lb xml:id="r6c1p383" facs="#p383r6c1" n="34"/>sta. Gli alberi coi loro rami vigorosi e colossali in qualche
+                        <lb xml:id="r7c1p383" facs="#p383r7c1" n="35"/>luogo si avvicinano, s’intrecciano, vietando fin ai raggi
+                        <lb xml:id="r8c1p383" facs="#p383r8c1" n="36"/>del sole di farsi strada al suolo, su cui cresce umido e ver-
+                        <lb xml:id="r9c1p383" facs="#p383r9c1" n="37"/>de di muschio e non altra vegetazione.
+                    </p>
+                    <p>
+                        <lb xml:id="r10c1p383" facs="#p383r10c1" n="38"/>Dalle vicine province di <placeName type="urban" ref="#Basilicata">Basilicata</placeName> e di <placeName type="urban" ref="#Bari">Bari</placeName> scendono
+                        <lb xml:id="r11c1p383" facs="#p383r11c1" n="39"/>in quella di <placeName type="urban" ref="#Lecce">Lecce</placeName> numerose schiere di contadini, che finiti
+                        <lb xml:id="r12c1p383" facs="#p383r12c1" n="40"/>i lavori della stagione risalgono ai villaggi o ai monti na-
+                        <lb xml:id="r13c1p383" facs="#p383r13c1" n="41"/>tali, per ridiscendere ai bisogni della stagione novella. Que-
+                        <lb xml:id="r14c1p383" facs="#p383r14c1" n="42"/>sta emigrazione ed immigrazione di lavoratori è una specie
+                        <lb xml:id="r15c1p383" facs="#p383r15c1" n="43"/>di marea vivente, che si rinnova tre volte l’anno. La provincia
+                        <lb xml:id="r16c1p383" facs="#p383r16c1" n="44"/>di <placeName type="urban" ref="#Lecce">Lecce</placeName> ha una popolazione di <num value="493594" type="population">493.594</num> abitanti sparsa sopra
+                        <lb xml:id="r17c1p383" facs="#p383r17c1" n="45"/>un’estensione di suolo di chilometri quadrati <num value="8529" type="area" unit="km2">8.529</num> coltivati in
+                        <lb xml:id="r18c1p383" facs="#p383r18c1" n="46"/>parte a vigne e a ulivi, il rimanente a pascoli ed a granaglie.
+                        <lb xml:id="r19c1p383" facs="#p383r19c1" n="47"/>La popolazione è insufficiente ai bisogni dell’agricoltura, spe-
+                        <lb xml:id="r20c1p383" facs="#p383r20c1" n="48"/>cialmente per le raccolte delle granaglie e delle ulive. A questa
+                        <lb xml:id="r21c1p383" facs="#p383r21c1" n="49"/>insufficienza della popolazione si aggiunge un’altra causa, che
+                        <lb xml:id="r22c1p383" facs="#p383r22c1" n="50"/>determina questa immigrazione di contadini nella provin-
+                        <lb xml:id="r23c1p383" facs="#p383r23c1" n="51"/>cia di <placeName type="urban" ref="#Lecce">Lecce</placeName>.
+                    </p>
+                    <p>
+                        <lb xml:id="r24c1p383" facs="#p383r24c1" n="52"/>Nel <placeName type="region" ref="#Bari" key="BA">Barese</placeName> la condizione della plebe campagnola è <term type="theme" subtype="poverty">mi-</term>
+                        <lb xml:id="r25c1p383" facs="#p383r25c1" n="53"/><term type="theme" subtype="poverty">serissima</term>; l'agricoltura specialmente lungo il litorale vive
+                        <lb xml:id="r26c1p383" facs="#p383r26c1" n="54"/><term type="theme" subtype="agriculture">miserabilmente</term>. Chi non è stato nelle province meridio-
+                        <lb xml:id="r27c1p383" facs="#p383r27c1" n="55"/>nali, o, per dir più specificatamente, nelle <placeName type="region" ref="#Puglia" key="PUG">Puglie</placeName>, avrà un
+                        <lb xml:id="r28c1p383" facs="#p383r28c1" n="56"/>falso concetto del comune rurale e del comune urbano.
+                        <lb xml:id="r29c1p383" facs="#p383r29c1" n="57"/>Nelle nostre statistiche sono ritenuti per urbani quei co-
+                        <lb xml:id="r30c1p383" facs="#p383r30c1" n="58"/>muni che hanno un centro almeno di <num value="6000" type="population">6.000</num> abitanti di po-
+                        <lb xml:id="r31c1p383" facs="#p383r31c1" n="59"/>polazione agglomerata. Or bene, in <placeName type="region" ref="#Puglia" key="PUG">Puglia</placeName> il grosso della
+                        <lb xml:id="r32c1p383" facs="#p383r32c1" n="60"/><term type="theme" subtype="verismo">popolazione delle grandi città</term> è costituito da contadini,
+                        <lb xml:id="r33c1p383" facs="#p383r33c1" n="61"/>tranne soltanto quella di <placeName type="urban" ref="#Bari" key="BA">Bari</placeName> e di <placeName type="urban" ref="#Trani" key="TR">Trani</placeName>. Da ciascuno di
+                        <lb xml:id="r34c1p383" facs="#p383r34c1" n="62"/>questi grossi casolani, come <placeName type="urban" ref="#Andria" key="AN">Andria</placeName>, <placeName type="urban" ref="#Bitonto" key="BT">Bitonto</placeName>, <placeName type="urban" ref="#Bisceglie" key="BS">Bisceglie</placeName>, <placeName type="urban" ref="#Corato" key="CO">Co-</placeName>
+                        <lb xml:id="r35c1p383" facs="#p383r35c1" n="63"/><placeName type="urban" ref="#Corato" key="CO">rato</placeName>, <placeName type="urban" ref="#Altamura" key="AL">Altamura</placeName>, ogni mattina esce una popolazione di quattro
+                        <lb xml:id="r36c1p383" facs="#p383r36c1" n="64"/>o cinque mila abitanti, il fiore della popolazione più vigorosa
+                        <lb xml:id="r37c1p383" facs="#p383r37c1" n="65"/>d'ambo i sessi, che si spande nelle campagne per far ritorno
+                        <lb xml:id="r38c1p383" facs="#p383r38c1" n="66"/>in città al tramonto del sole. Gli altipiani, come le <placeName type="natural" ref="#Murge" key="MU">Murge</placeName>
+                        <lb xml:id="r39c1p383" facs="#p383r39c1" n="67"/>di <placeName type="urban" ref="#Gravina" key="GR">Gravina</placeName> e di <placeName type="urban" ref="#Altamura" key="AL">Altamura</placeName>, sono deserti di abitanti, mentre
+                        <lb xml:id="r40c1p383" facs="#p383r40c1" n="68"/>nelle città brulicano innumerevoli famiglie di miseri e fa-
+                        <lb xml:id="r41c1p383" facs="#p383r41c1" n="69"/>melici <term xml:lang="dialect"><hi rend="italic">cozzali</hi></term> per altro operosi e intelligenti, che ad ogni
+                        <lb xml:id="r42c1p383" facs="#p383r42c1" n="70"/>nuova bisogna dei campi si rovesciano a ondate nella <placeName type="urban" ref="#Foggia" key="FG">Capi-</placeName>
+                        <lb xml:id="r43c1p383" facs="#p383r43c1" n="71"/><placeName type="urban" ref="#Foggia" key="FG">tanata</placeName> e nel <placeName type="urban" ref="#Lecce" key="LE">Leccese</placeName>. L'abilità di questi diseredati nella
+                        <lb xml:id="r44c1p383" facs="#p383r44c1" n="72"/>coltura specialmente degli ulivi è tale, che da per tutto si
+                        <lb xml:id="r45c1p383" facs="#p383r45c1" n="73"/><term type="verbum">dice</term> in <placeName type="region" ref="#Puglia" key="PUG">Puglia</placeName> <quote>che l'accetta del <term type="ethnic" ref="#MarinaDiGinosa">marinese</term> ha il taglio d'oro</quote>.
+                    </p>
+                    <p>
+                        <lb xml:id="r46c1p383" facs="#p383r46c1" n="74"/>Più <term type="theme" subtype="poverty">lagrimevole</term> ancora è la condizione del contadino
+                        <lb xml:id="r47c1p383" facs="#p383r47c1" n="75"/>della <placeName type="region" ref="#Basilicata" key="BAS">Basilicata</placeName>; che, come tutti sanno e italiani e stranieri,
+                        <lb xml:id="r48c1p383" facs="#p383r48c1" n="76"/>caccia i figli <term type="theme" subtype="migration">errabondi pel mondo</term>, incapace a sostenerli.
+                        <lb xml:id="r49c1p383" facs="#p383r49c1" n="77"/>Prima che avessero conosciuto ed agognato nuovi cieli e lon-
+                        <lb xml:id="r50c1p383" facs="#p383r50c1" n="78"/>tani posti, i <term type="ethnic" ref="#Lucania">Lucani</term> discendevano con più modesti desideri
+                        <lb xml:id="r51c1p383" facs="#p383r51c1" n="79"/>alla pianura pugliese. La loro abilità essendo di tutto in-
+                        <lb xml:id="r52c1p383" facs="#p383r52c1" n="80"/>feriore a quella del contadino <term type="ethnic" ref="#Barese">barese</term>, essi sono <term type="theme" subtype="poverty">rimunerati</term>
+                        <lb xml:id="r53c1p383" facs="#p383r53c1" n="81"/><term type="theme" subtype="poverty">assai meno</term> di questo. Ai primi venti del novembre, che
+                        <lb xml:id="r54c1p383" facs="#p383r54c1" n="82"/>sgravano gli alberi di buona parte di <term type="theme" subtype="agriculture">ulive</term>, scendono dunque
+                        <lb xml:id="r55c1p383" facs="#p383r55c1" n="83"/>alla buona di Dio <term type="theme" subtype="labor">compagnie numerose</term> d'ambo i sessi di tutte
+                        <lb xml:id="r56c1p383" facs="#p383r56c1" n="84"/>le età e si <term type="verbum">spandono</term> per tutta la provincia fra questi immensi
+                        <lb xml:id="r57c1p383" facs="#p383r57c1" n="85"/><placeName type="natural" ref="#BoschiOlivi">boschi d'ulivi</placeName>, dove comincia la <term type="theme" subtype="agriculture">raccolta</term> che dura per quasi
+                        <lb xml:id="r58c1p383" facs="#p383r58c1" n="86"/>tutto l'inverno. Per la sterminata estensione degli <term type="theme" subtype="agriculture">oliveti</term>
+                        <lb xml:id="r59c1p383" facs="#p383r59c1" n="87"/>non si pone cura alla qualità, ma alla quantità del <term type="theme" subtype="agriculture">prodotto</term>;
+                        <lb xml:id="r60c1p383" facs="#p383r60c1" n="88"/>quindi si <term type="theme" subtype="agriculture">raccolgono le olive</term> quando sono già nere e quando
+                        <lb xml:id="r61c1p383" facs="#p383r61c1" n="89"/>già gli alberi agitati dai venti ne hanno lasciato cadere
+                        <lb xml:id="r62c1p383" facs="#p383r62c1" n="90"/>buona parte al suolo. Gli uomini montano su gli alberi e
+                        <lb xml:id="r63c1p383" facs="#p383r63c1" n="91"/>squassano vigorosamente i rami, o li percuotono con per-
+                        <lb xml:id="r64c1p383" facs="#p383r64c1" n="92"/>tiche, sicché colle olive cadono al suolo foglie e messe no-
+                        <lb xml:id="r65c1p383" facs="#p383r65c1" n="93"/>velle, che al prossimo anno sarebbero state fruttifere. Non
+                        <lb xml:id="r66c1p383" facs="#p383r66c1" n="94"/>voglio già dire che non vi siano <term type="theme" subtype="poverty">padroni che costringono</term>
+                        <lb xml:id="r67c1p383" facs="#p383r67c1" n="95" next="r1c2p383"/>questi barbari contadini a usare altri mezzi meno distrut-
+                    </p>
+
+                </div>
+                <div type="column" n="2">
+                    <p>
+                        <lb xml:id="r1c2p383" facs="#p383r1c2" n="96" previous="r67c1p383"/>tivi; ma per lo più il padrone diretto è assente dai suoi
+                        <lb xml:id="r2c2p383" facs="#p383r2c2" n="97"/>feudi, e tutta la sua campagna è affidata alle cure di un
+                        <lb xml:id="r3c2p383" facs="#p383r3c2" n="98"/>estraneo. Le donne raccolgono dal suolo le <term type="theme" subtype="agriculture">olive</term> cadute,
+                        <lb xml:id="r4c2p383" facs="#p383r4c2" n="99"/>che con appositi carri vengono trasportate al <term type="theme" subtype="agriculture"><hi rend="italic">trappeto</hi></term>.
+                    </p>
+                    <p>
+                        <lb xml:id="r5c2p383" facs="#p383r5c2" n="100"/>I <term type="ethnic" ref="#Toscani">Toscani</term> difficilmente possono giungere a concepire
+                        <lb xml:id="r6c2p383" facs="#p383r6c2" n="101"/>uno di questi nostri <term type="theme" subtype="agriculture">frantoi</term>, oscuri, immondi, nauseanti. <term type="theme" subtype="verismo">Im-</term>
+                        <lb xml:id="r7c2p383" facs="#p383r7c2" n="102"/><term type="theme" subtype="verismo">mensi fabbricati</term> dove <term type="theme" subtype="labor">giorno e notte si lavora</term> a luce d'olio, e
+                        <lb xml:id="r8c2p383" facs="#p383r8c2" n="103"/>dove brucia perpetuamente il nocciolo per dar all'am-
+                        <lb xml:id="r9c2p383" facs="#p383r9c2" n="104"/>biente il maggiore calore possibile e fare staccare facil-
+                        <lb xml:id="r10c2p383" facs="#p383r10c2" n="105"/>mente le molecole oleose dalle altre materie, che le impri-
+                        <lb xml:id="r11c2p383" facs="#p383r11c2" n="106"/>gionano. Le <term type="theme" subtype="agriculture">olive</term> sono gettate e ammassate in fossi profondi
+                        <lb xml:id="r12c2p383" facs="#p383r12c2" n="107"/>e quadrati dove si lasciano fermentare, dando quell'odore
+                        <lb xml:id="r13c2p383" facs="#p383r13c2" n="108"/>fetido, che è la ragione prima del <term type="theme" subtype="economy">deprezzamento dell'olio</term>
+                        <lb xml:id="r14c2p383" facs="#p383r14c2" n="109"/><placeName type="urban" ref="#Lecce" key="LE">leccese</placeName>.
+                    </p>
+                    <p>
+                        <lb xml:id="r15c2p383" facs="#p383r15c2" n="110"/>I <term type="theme" subtype="agriculture"><hi rend="italic">trappeti</hi></term> sono affatto insufficienti in proporzione all'esten-
+                        <lb xml:id="r16c2p383" facs="#p383r16c2" n="111"/>sione degli oliveti, perciò alcuni signori hanno introdotto il
+                        <lb xml:id="r17c2p383" facs="#p383r17c2" n="112"/>motore a vapore per macinare e comprimere le <term type="theme" subtype="agriculture">olive</term>. Del resto
+                        <lb xml:id="r18c2p383" facs="#p383r18c2" n="113"/>generalmente si adoperano i torchi di ferro e di legno e più
+                        <lb xml:id="r19c2p383" facs="#p383r19c2" n="114"/>raramente strettoi idraulici, dopo averle stritolate sotto
+                        <lb xml:id="r20c2p383" facs="#p383r20c2" n="115"/>ruote di pietra dura, meccanismo detto <term type="theme" subtype="technology"><hi rend="italic">vasca</hi></term>.
+                    </p>
+                    <p>
+                        <lb xml:id="r21c2p383" facs="#p383r21c2" n="116"/>Non è già che quivi sieno ignorati i migliori metodi di
+                        <lb xml:id="r22c2p383" facs="#p383r22c2" n="117"/>fabbricazione degli <term type="theme" subtype="agriculture">oli</term>, per cui sono così pregiati da poco
+                        <lb xml:id="r23c2p383" facs="#p383r23c2" n="118"/>tempo quelli della vicina provincia di <placeName type="urban" ref="#Bari" key="BA">Bari</placeName> e da gran tempo
+                        <lb xml:id="r24c2p383" facs="#p383r24c2" n="119"/>quelli di <placeName type="region" ref="#Toscana" key="TOS">Toscana</placeName>. Si sa, per esempio, che le <term type="theme" subtype="agriculture">olive</term> debbono
+                        <lb xml:id="r25c2p383" facs="#p383r25c2" n="120"/>essere <term type="theme" subtype="agriculture">raccolte quando sono ancor verdi</term>, e a mano e non
+                        <lb xml:id="r26c2p383" facs="#p383r26c2" n="121"/>già a quella maniera vandalica; che se non possono essere
+                        <lb xml:id="r27c2p383" facs="#p383r27c2" n="122"/><term type="theme" subtype="agriculture">frante e compresse appena raccolte</term>, debbono essere almeno
+                        <lb xml:id="r28c2p383" facs="#p383r28c2" n="123"/>depositate, non ammonticchiate, in luoghi asciutti e ventilati
+                        <lb xml:id="r29c2p383" facs="#p383r29c2" n="124"/>per non farle riscaldare; che i <term type="theme" subtype="agriculture">frantoi</term> debbono essere arieg-
+                        <lb xml:id="r30c2p383" facs="#p383r30c2" n="125"/>giati, e pulitissimi i tini, dove si lascia a raffinare l'olio;
+                        <lb xml:id="r31c2p383" facs="#p383r31c2" n="126"/>poiché colla <term type="theme" subtype="agriculture">estrazione dell'olio a freddo</term> si ottengono oli della
+                        <lb xml:id="r32c2p383" facs="#p383r32c2" n="127"/>migliore qualità; e niuno vieta di sottoporre al caldo le acque
+                        <lb xml:id="r33c2p383" facs="#p383r33c2" n="128"/>fecciose e gli altri residui, come le <term type="theme" subtype="agriculture">sanse</term> per ottenere una qua-
+                        <lb xml:id="r34c2p383" facs="#p383r34c2" n="129"/>lità scadente di oli. I nemici capitali degli oli fini sono il
+                        <lb xml:id="r35c2p383" facs="#p383r35c2" n="130"/>calore e il cattivo odore, che quasi istantaneamente si <term type="verbum">pro-</term>
+                        <lb xml:id="r36c2p383" facs="#p383r36c2" n="131"/><term type="verbum">paga</term> e infetta qualunque gran massa d'olio. Sono novità
+                        <lb xml:id="r37c2p383" facs="#p383r37c2" n="132"/>queste di cui son già piene le fosse, ma tant'è, l'uomo è
+                        <lb xml:id="r38c2p383" facs="#p383r38c2" n="133"/>anch'esso un animale d'abitudini, e la nostra coscienza, di-
+                        <lb xml:id="r39c2p383" facs="#p383r39c2" n="134"/>ceva bene <persName ref="#Shakespeare" type="real">Shakespeare</persName>, <quote>è un accumulazione di queste abi-
+                        <lb xml:id="r40c2p383" facs="#p383r40c2" n="135"/>tudini</quote>. Il contadino è per sua natura tenace del passato,
+                        <lb xml:id="r41c2p383" facs="#p383r41c2" n="136"/>è conservatore per eccellenza; e questo vi spiega in parte
+                        <lb xml:id="r42c2p383" facs="#p383r42c2" n="137"/>perché l'agricoltura sia fra le industrie la più tarda a pro-
+                        <lb xml:id="r43c2p383" facs="#p383r43c2" n="138"/>gredire. Essa specialmente si giova degli <term type="theme" subtype="social">ultimi strati sociali</term>;
+                        <lb xml:id="r44c2p383" facs="#p383r44c2" n="139"/>e non c'è verso di farla avanzare d'un passo, se <term type="theme" subtype="economy">capitali ed</term>
+                        <lb xml:id="r45c2p383" facs="#p383r45c2" n="140"/><term type="theme" subtype="economy">istituzioni economiche e politiche</term> non facciano da leva per
+                        <lb xml:id="r46c2p383" facs="#p383r46c2" n="141"/><term type="verbum">smuovere</term> e <term type="verbum">infondere</term> nuovo vigore nell'<term type="theme" subtype="poverty">infima plebe cam-</term>
+                        <lb xml:id="r47c2p383" facs="#p383r47c2" n="142"/><term type="theme" subtype="poverty">pagnuola</term>.
+                    </p>
+
+                    <p>
+                        <lb xml:id="r48c2p383" facs="#p383r48c2" n="143"/>La Provincia di <placeName type="urban" ref="#Lecce" key="LE">Lecce</placeName> sente il <term type="theme" subtype="social">disagio comune ad altre</term>
+                        <lb xml:id="r49c2p383" facs="#p383r49c2" n="144"/><term type="theme" subtype="social">provincie</term>; anzi per essa ci sono pure ragioni speciali di
+                        <lb xml:id="r50c2p383" facs="#p383r50c2" n="145"/>desideri nutriti o fatti nutrire, di speranze accarezzate
+                        <lb xml:id="r51c2p383" facs="#p383r51c2" n="146"/>invano, che accrescono vie più il <term type="theme" subtype="social">malcontento</term>. Al princi-
+                        <lb xml:id="r52c2p383" facs="#p383r52c2" n="147"/>pio della <term type="theme" subtype="historical">unificazione italiana</term>, e quando specialmente co-
+                        <lb xml:id="r53c2p383" facs="#p383r53c2" n="148"/>minciarono i <term type="theme" subtype="economy">lavori ferroviari</term> e quelli del porto di <placeName type="urban" ref="#Brindisi" key="BR">Brin-</placeName>
+                        <lb xml:id="r54c2p383" facs="#p383r54c2" n="149"/><placeName type="urban" ref="#Brindisi" key="BR">disi</placeName>, i <term type="theme" subtype="economy">prezzi di tutte le derrate salirono</term>; quindi contenti i
+                        <lb xml:id="r55c2p383" facs="#p383r55c2" n="150"/><term type="theme" subtype="labor">lavoratori</term>, contentissimi i proprietari; gli <term type="theme" subtype="agriculture">oli lucidi leccesi</term>
+                        <lb xml:id="r56c2p383" facs="#p383r56c2" n="151"/>ebbero un rapido slancio di prezzo per il gran numero
+                        <lb xml:id="r57c2p383" facs="#p383r57c2" n="152"/>cresciuto delle macchine, per uso delle quali furono trovati
+                        <lb xml:id="r58c2p383" facs="#p383r58c2" n="153"/>eccellenti. Ma le macchine non potevano crescere tutti i
+                        <lb xml:id="r59c2p383" facs="#p383r59c2" n="154"/>giorni e la richiesta venne a mancare; e il porto di <placeName type="urban" ref="#Brindisi" key="BR">Brin-</placeName>
+                        <lb xml:id="r60c2p383" facs="#p383r60c2" n="155"/><placeName type="urban" ref="#Brindisi" key="BR">disi</placeName> che prometteva mari e mondi, e le ferrovie interne
+                        <lb xml:id="r61c2p383" facs="#p383r61c2" n="156"/>promesse e mancate furono una vera <term type="theme" subtype="social">disillusione</term>. Il pro-
+                        <lb xml:id="r62c2p383" facs="#p383r62c2" n="157"/>prietario di <term type="theme" subtype="agriculture">oli</term> si vide ben presto <term type="theme" subtype="economy">diminuire le entrate</term> dei
+                        <lb xml:id="r63c2p383" facs="#p383r63c2" n="158"/>suoi oliveti, quando già aveva intrapreso lavori di miglioria
+                        <lb xml:id="r64c2p383" facs="#p383r64c2" n="159"/>così nei <term type="theme" subtype="agriculture">frantoi</term>, come nei fondi, ma non si vide certo
+                        <lb xml:id="r65c2p383" facs="#p383r65c2" n="160"/>scemare le <term type="theme" subtype="economy">tasse</term>. I contadini, che avevano gongolato nei
+                        <lb xml:id="r66c2p383" facs="#p383r66c2" n="161"/>primi anni al luccicare delle belle <term type="theme" subtype="economy">monete d'argento</term> e alla
+                        <lb xml:id="r67c2p383" facs="#p383r67c2" n="162" next="r1c1p384"/>gran richiesta dei lavori, non avevano badato al prezzo sem-
+                    </p>
+
+
+
+
+                </div>
+            </div>
+            
+            <div type="page" n="384">
+                <div type="column" n="1">
+                    <p>
+                        <lb xml:id="r1c1p384" facs="#p384r1c1" n="163" previous="r67c2p383"/>pre crescente del <term type="theme" subtype="economy">pane e delle altre materie prime</term>. Ma ora...
+                        <lb xml:id="r2c1p384" facs="#p384r2c1" n="164"/>ai <term type="theme" subtype="economy">danni provenienti da ordine economico</term> si sono aggiunti
+                        <lb xml:id="r3c1p384" facs="#p384r3c1" n="165"/>quelli di ordine naturale: per un decennio gli <term type="theme" subtype="agriculture">oliveti</term> si sono
+                        <lb xml:id="r4c1p384" facs="#p384r4c1" n="166"/>ostinati a non <term type="theme" subtype="agriculture">produrre</term> affatto. E i proprietari, pur colle
+                        <lb xml:id="r5c1p384" facs="#p384r5c1" n="167"/>migliori intenzioni del mondo per la <term type="theme" subtype="economy">deficienza di numerario</term>
+                        <lb xml:id="r6c1p384" facs="#p384r6c1" n="168"/>e per la vastità delle tenute a oliveto, non hanno potuto
+                        <lb xml:id="r7c1p384" facs="#p384r7c1" n="169"/>migliorare sensibilmente la <term type="theme" subtype="agriculture">coltivazione degli ulivi e la fab-</term>
+                        <lb xml:id="r8c1p384" facs="#p384r8c1" n="170"/><term type="theme" subtype="agriculture">bricazione degli oli</term>. Per contraccolpo ne ha patito anche
+                        <lb xml:id="r9c1p384" facs="#p384r9c1" n="171"/>quel <term type="theme" subtype="poverty">povero popolo emigrante</term>, già <term xml:lang="dialect"><hi rend="italic">caparrato</hi></term> nella <term xml:lang="dialect">state</term> pei
+                        <lb xml:id="r10c1p384" facs="#p384r10c1" n="172"/>lavori del <term xml:lang="dialect">verno</term>; sicché le <term type="theme" subtype="labor">magre mercedi giornaliere</term> sono
+                        <lb xml:id="r11c1p384" facs="#p384r11c1" n="173"/>in parte sfumate prima ancora che cominci la <term type="theme" subtype="agriculture">raccolta delle</term>
+                        <lb xml:id="r12c1p384" facs="#p384r12c1" n="174"/><term type="theme" subtype="agriculture">olive</term>. Come sempre, il maschio piglia maggiore <term type="theme" subtype="economy">mercede</term>
+                        <lb xml:id="r13c1p384" facs="#p384r13c1" n="175"/>della donna, l'uno da <measure type="currency" unit="LIT" quantity="1.00-1.50">una lira a 1,50</measure> e l'altra da <measure type="currency" unit="LIT" quantity="0.50-0.75">10 a 15 soldi</measure>
+                        <lb xml:id="r14c1p384" facs="#p384r14c1" n="176"/>(s'intende bene senza pane), secondo le varie costuman-
+                        <lb xml:id="r15c1p384" facs="#p384r15c1" n="177"/>ze agricole locali e la generosità dei padroni. Le ragazze
+                        <lb xml:id="r16c1p384" facs="#p384r16c1" n="178"/>anch'esse sono <term xml:lang="dialect">caparrate</term> e talora corrono alla rinfusa in
+                        <lb xml:id="r17c1p384" facs="#p384r17c1" n="179"/>cerca di lavoro, o affidate a conoscenti o in mezzo ad altre
+                        <lb xml:id="r18c1p384" facs="#p384r18c1" n="180"/>amiche; o se no alla buona di Dio! <term type="theme" subtype="social">Queste fanciulle slom-</term>
+                        <lb xml:id="r19c1p384" facs="#p384r19c1" n="181"/><term type="theme" subtype="social">bate dalle fatiche, e accasciate dalla miseria hanno molto</term>
+                        <lb xml:id="r20c1p384" facs="#p384r20c1" n="182"/><term type="theme" subtype="social">limitato il sentimento del pudore</term>; la loro cara gioventù fugge,
+                        <lb xml:id="r21c1p384" facs="#p384r21c1" n="183"/>fugge via presto, e chi l'ha goduta, l'ha goduta. Dormono
+                        <lb xml:id="r22c1p384" facs="#p384r22c1" n="184"/>in grandi stanzoni delle fattorie, per lo più separati i maschi
+                        <lb xml:id="r23c1p384" facs="#p384r23c1" n="185"/>dalle femmine; talvolta anche insieme negli stessi stanzoni.
+                        <lb xml:id="r24c1p384" facs="#p384r24c1" n="186"/>Qual paura vi sarebbe?<term type="theme" subtype="social">Prostrati sulla paglia, oppressi dal</term>
+                        <lb xml:id="r25c1p384" facs="#p384r25c1" n="187"/><term type="theme" subtype="social">sonno, giacciano come carcami</term>; se qualche più potente istin-
+                        <lb xml:id="r26c1p384" facs="#p384r26c1" n="188"/>to giovanile tiene desta qualche pupilla, non oso dire che
+                        <lb xml:id="r27c1p384" facs="#p384r27c1" n="189"/>quella gente sia più corrotta della <term type="theme" subtype="social">plebe cittadina</term>. Del resto
+                        <lb xml:id="r28c1p384" facs="#p384r28c1" n="190"/>certi <term type="theme" subtype="social">peccati sono peccati veniali nei bassi fondi sociali</term>,
+                        <lb xml:id="r29c1p384" facs="#p384r29c1" n="191"/>dove l'ambiente e l'aria stessa è satura di vizi, e <term type="theme" subtype="social">la donna,</term>
+                        <lb xml:id="r30c1p384" facs="#p384r30c1" n="192"/><term type="theme" subtype="social">come l'uomo, è costretta ad affrontare colla sua audacia</term>
+                        <lb xml:id="r31c1p384" facs="#p384r31c1" n="193"/><term type="theme" subtype="social">giorno per giorno le asprezze e le urgenze della vita fisica</term>;
+                        <lb xml:id="r32c1p384" facs="#p384r32c1" n="194"/>e che pudore, e che virtù, e che istruzione! vivere e solo
+                        <lb xml:id="r33c1p384" facs="#p384r33c1" n="195"/>vivere per non morire è il premio d'ogni suo sforzo, della sua
+                        <lb xml:id="r34c1p384" facs="#p384r34c1" n="196"/>lotta indeclinabile ed incessante. Se le donne o le fanciulle non
+                        <lb xml:id="r35c1p384" facs="#p384r35c1" n="197"/>perdono affatto l'onestà, la verecondia e la grazia restano nel
+                        <lb xml:id="r36c1p384" facs="#p384r36c1" n="198"/>loro cuore qualità alterate, come corde che non danno più
+                        <lb xml:id="r37c1p384" facs="#p384r37c1" n="199"/>l'usata armonia. Chi prima di tutti e più di tutti usufruisce
+                        <lb xml:id="r38c1p384" facs="#p384r38c1" n="200"/>di quella prostrazione morale è un qualche <persName type="fictional" ref="#DonRodrigo" source="IPromessiSposi">D. Rodrigo</persName>
+                        <lb xml:id="r39c1p384" facs="#p384r39c1" n="201"/>del luogo; e sono quasi tentato a dire che non c'è peccato
+                        <lb xml:id="r40c1p384" facs="#p384r40c1" n="202"/>di quella classe al quale <term type="theme" subtype="social">l'agiato ed ozioso proprietario</term> non
+                        <lb xml:id="r41c1p384" facs="#p384r41c1" n="203"/>abbia dato causa o almeno stimoli.
+                    </p>
+
+                    <p>
+                        <lb xml:id="r42c1p384" facs="#p384r42c1" n="204"/>Compiuta la <term type="theme" subtype="agriculture">raccolta</term>, tutta questa <term type="theme" subtype="social">gente</term> torna alla
+                        <lb xml:id="r43c1p384" facs="#p384r43c1" n="205"/>spicciolata ai lontani <term type="theme" subtype="social">casali</term>; ci torna gaia e frettolosa;
+                        <lb xml:id="r44c1p384" facs="#p384r44c1" n="206"/>il <term type="theme" subtype="economy">guadagno è scarso</term> e la fatica ha consumato qualche
+                        <lb xml:id="r45c1p384" facs="#p384r45c1" n="207"/>anno della loro giovinezza; ma che monta? Con quel
+                        <lb xml:id="r46c1p384" facs="#p384r46c1" n="208"/><term type="theme" subtype="economy">po' di danaro serbato</term> hanno innanzi a loro dei giorni si-
+                        <lb xml:id="r47c1p384" facs="#p384r47c1" n="209"/>curi e tanto basta per farli contenti; e il mattino non si
+                        <lb xml:id="r48c1p384" facs="#p384r48c1" n="210"/><term type="theme" subtype="social">desteranno intirizziti sulla paglia della fattoria al vociare</term>
+                        <lb xml:id="r49c1p384" facs="#p384r49c1" n="211"/><term type="theme" subtype="social">antipatico del <term xml:lang="dialect">soprastante</term></term>, e poi rivedranno qualche persona
+                        <lb xml:id="r50c1p384" facs="#p384r50c1" n="212"/><term type="theme" subtype="social">cara, qualche viso sognato; poiché un po' di cuore, crede-</term>
+                        <lb xml:id="r51c1p384" facs="#p384r51c1" n="213"/><term type="theme" subtype="social">telo a me, resta sempre sotto quelle vesti di fustagno</term>. Ri-
+                        <lb xml:id="r52c1p384" facs="#p384r52c1" n="214"/>tornano dunque ai luoghi natali; avanti! la strada non ha
+                        <lb xml:id="r53c1p384" facs="#p384r53c1" n="215"/>più ciottoli e l'aria sferza invano quelle facce gioconde; e
+                        <lb xml:id="r54c1p384" facs="#p384r54c1" n="216"/>la loro mesta cantilena è un ultimo saluto alla fattoria del
+                        <lb xml:id="r55c1p384" facs="#p384r55c1" n="217"/>padrone, agli abitanti che restano, a quei <placeName type="natural" ref="#BoschiOlivi">boschi d'ulivi</placeName>.
+                    </p>
+                    <p>
+                        <lb xml:id="r56c1p384" facs="#p384r56c1" n="218"/>La <term type="theme" subtype="agriculture">raccolta è finita</term>, ma dura ancora nei chiusi frantoi
+                        <lb xml:id="r57c1p384" facs="#p384r57c1" n="219"/>la <term type="theme" subtype="agriculture">estrazione degli oli</term>; e quivi sono adoperati gli <term type="theme" subtype="labor">operai</term>
+                        <lb xml:id="r58c1p384" facs="#p384r58c1" n="220"/><term type="theme" subtype="labor">più intelligenti, che faticano eccessivamente</term>, ma sono per
+                        <lb xml:id="r59c1p384" facs="#p384r59c1" n="221"/>altro <term type="theme" subtype="economy">rimunerati per questi paesi molto bene</term>. È difficile ri-
+                        <lb xml:id="r60c1p384" facs="#p384r60c1" n="222"/>durre in cifre le mercedi di questi operai, poiché i patti che
+                        <lb xml:id="r61c1p384" facs="#p384r61c1" n="223"/>stabiliscono coi padroni differiscono da luogo a luogo e ta-
+                        <lb xml:id="r62c1p384" facs="#p384r62c1" n="224"/>lora da padrone a padrone; alcuni proprietari di fatti si
+                        <lb xml:id="r63c1p384" facs="#p384r63c1" n="225"/><term type="theme" subtype="labor">obbligano di somministrare una minestra di legumi con pane</term>
+                        <lb xml:id="r64c1p384" facs="#p384r64c1" n="226"/>e <measure type="volume" unit="L" quantity="0.5">mezzo litro</measure> di vino al giorno per individuo e la <term type="theme" subtype="economy">mercede</term>
+                        <lb xml:id="r65c1p384" facs="#p384r65c1" n="227"/>in tal caso non è mai superiore ad <measure type="currency" unit="LIT" quantity="1">una lira</measure>: altri poi non
+                        <lb xml:id="r66c1p384" facs="#p384r66c1" n="228"/>danno cibo di sorta ma pagano da <measure type="currency" unit="LIT" quantity="1.50-2.00">1,50 a L. 2.00</measure> al giorno.
+                    </p>
+                    <p>
+                       <lb xml:id="r67c1p384" facs="#p384r67c1" n="229" next="r1c2p384"/>Io mi trovo molto imbrogliato a dirvi la rendita di un
+                    </p> 
+                </div>
+                <div type="column" n="2">
+                    <p>
+                        <lb xml:id="r1c2p384" facs="#p384r1c2" n="230" previous="r67c1p384"/><term type="theme" subtype="agriculture">oliveto</term>, innanzi tutto perchè dovrei trovarvi la media <term type="theme" subtype="agriculture">pro-</term>
+                        <lb xml:id="r2c2p384" facs="#p384r2c2" n="231"/><term type="theme" subtype="agriculture">duzione di un decennio</term>, e poi, perchè l'<term type="theme" subtype="agriculture">olio</term> subisce <term type="theme" subtype="economy">varia-</term>
+                        <lb xml:id="r3c2p384" facs="#p384r3c2" n="232"/><term type="theme" subtype="economy">zione di prezzo molto sensibili</term> secondo che il <term type="theme" subtype="agriculture">frantoio</term> o
+                        <lb xml:id="r4c2p384" facs="#p384r4c2" n="233"/>la conserva degli <term type="theme" subtype="agriculture">oli</term> è posta vicino o lontano dalla <term type="theme" subtype="technology">fer-</term>
+                        <lb xml:id="r5c2p384" facs="#p384r5c2" n="234"/><term type="theme" subtype="technology">rovia</term>; poichè l'<term type="theme" subtype="agriculture">olio</term>, più di qualunque liquido, ha bisogno
+                        <lb xml:id="r6c2p384" facs="#p384r6c2" n="235"/>di forti ed ottimi <term type="theme" subtype="technology">recipienti</term>, e, pel suo grande valore, di
+                        <lb xml:id="r7c2p384" facs="#p384r7c2" n="236"/>essere custodito da persone di somma fiducia. E poi in ta-
+                        <lb xml:id="r8c2p384" facs="#p384r8c2" n="237"/>lune contrade gli <term type="theme" subtype="agriculture">olivi</term> sono serrati e fitti a foreste, al-
+                        <lb xml:id="r9c2p384" facs="#p384r9c2" n="238"/>trove piuttosto lontani, e di sotto si semina ogni sorta di
+                        <lb xml:id="r10c2p384" facs="#p384r10c2" n="239"/><term type="theme" subtype="agriculture">granaglie</term>. Questo soltanto posso dire, che ogni <term type="theme" subtype="agriculture">tomolo</term> di
+                        <lb xml:id="r11c2p384" facs="#p384r11c2" n="240"/><term type="theme" subtype="agriculture">olive</term> dà circa uno <term type="theme" subtype="agriculture">staio</term> di <term type="theme" subtype="agriculture">olio</term>; ma il <term type="theme" subtype="economy">prezzo commerciale</term>
+                        <lb xml:id="r12c2p384" facs="#p384r12c2" n="241"/><term type="theme" subtype="economy">di quest'olio</term>, ognuno può leggerlo nei <term type="theme" subtype="economy">listini di borsa</term>, è
+                        <lb xml:id="r13c2p384" facs="#p384r13c2" n="242"/>sempre da una metà a un terzo inferiore a quello di <placeName type="urban" ref="#Bari">Bari</placeName>.
+                    </p>
+                    <p>
+                        <lb xml:id="r14c2p384" facs="#p384r14c2" n="243"/>Non debbo qui tralasciare di dire che molti proprietari
+                        <lb xml:id="r15c2p384" facs="#p384r15c2" n="244"/>di <term type="theme" subtype="economy">centri commerciali</term> s'ingegnano a produrre <term type="theme" subtype="agriculture">oli</term> fini coi
+                        <lb xml:id="r16c2p384" facs="#p384r16c2" n="245"/><term type="theme" subtype="economy">metodi novelli</term>, ed io non posso che fare un augurio a questa
+                        <lb xml:id="r17c2p384" facs="#p384r17c2" n="246"/>terra geniale e a questi intelligentissimi abitanti, nella cui
+                        <lb xml:id="r18c2p384" facs="#p384r18c2" n="247"/>terra suona il più gentile <term type="theme" subtype="social">dialetto meridionale</term>: che, cioè,
+                        <lb xml:id="r19c2p384" facs="#p384r19c2" n="248"/>sieno al più presto soddisfatti i desideri che nutrono da pa-
+                        <lb xml:id="r20c2p384" facs="#p384r20c2" n="249"/>recchi anni di <term type="theme" subtype="economy">buone vie</term> e di <term type="theme" subtype="economy">migliori porti</term>.
+                    </p>
+
+
+
+
+                </div>
+            </div>      
+        </div>
+        <div type="article" n="2">
+            <div type="page" n="384">
+                <div type="column" n="2">    
+                    <note type="biographical">
+                        Marco Minghetti (Bologna, <date when="1818-11-08">8 novembre 1818</date> – Roma, <date when="1886-12-10">10 dicembre 1886</date>) 
+                        è stato un <term type="role">politico</term>, <term type="role">diplomatico</term> e <term type="role">giornalista</term> italiano, 
+                        appartenente alla <orgName ref="#DestraStorica">destra storica</orgName>.
+                    </note>
+                    
+                   
+                    <head>
+                        <title type="main" xml:id="title_main_p384c2" facs="#title_main_p384c2">LE PREVISIONI FINANZIARIE.</title>
+                        <author><persName type="real" ref="#MM" corresp="#bioMM">
+                            <forename>MARCO</forename> 
+                            <surname>MINGHETTI</surname>
+                        </persName></author>
+                        <byline facs="#p384c2byline">Ai Direttori. </byline> <dateline facs="#p384c2date_line"><placeName type="urban" ref="#Roma">Roma</placeName><docDate when="1879-05-15">15 maggio 1879</docDate></dateline>
+                    </head>
+
+                    <p>
+                        <lb xml:id="r21c2p384" facs="#p384r21c2" n="250"/>Bisogna bene che le voci sparse con insistenza, ancor-
+                        <lb xml:id="r22c2p384" facs="#p384r22c2" n="251"/>chè dimostrate erronee, lascino pure delle tracce, se anche la
+                        <lb xml:id="r23c2p384" facs="#p384r23c2" n="252"/><orgName ref="#Rassegna"><hi rend="italic">Rassegna</hi></orgName>, che ha tanta cura di essere e di mostrarsi impar-
+                        <lb xml:id="r24c2p384" facs="#p384r24c2" n="253"/>ziale, raccoglie e ripete un'accusa spesso lanciatami e da
+                        <lb xml:id="r25c2p384" facs="#p384r25c2" n="254"/>me in <orgName ref="#Parlamento">Parlamento</orgName> più volte respinta.
+                    </p>
+
+                    <p>
+                        <lb xml:id="r26c2p384" facs="#p384r26c2" n="255"/>Dice la <orgName ref="#Rassegna"><hi rend="italic">Rassegna</hi></orgName> nel suo ultimo numero (<ref type="issue" n="71">N. 71</ref>): <quote>Fin</quote>
+                        <lb xml:id="r27c2p384" facs="#p384r27c2" n="256"/><quote>dal <date when="1863">1863</date> quando la dura realtà s'era rivelata in un <term type="theme" subtype="economy">disa-</term></quote>
+                        <lb xml:id="r28c2p384" facs="#p384r28c2" n="257"/><quote><term type="theme" subtype="economy">vanzo di parecchie centinaia di milioni</term>, il <persName type="real" ref="#MM">Minghetti</persName> non</quote>
+                        <lb xml:id="r29c2p384" facs="#p384r29c2" n="258"/><quote>esitò a tracciare un piano per il quale il <term type="theme" subtype="economy">bilancio</term> si sarebbe</quote>
+                        <lb xml:id="r30c2p384" facs="#p384r30c2" n="259"/><quote>pareggiato in quattro anni.</quote>
+                    </p>
+
+                    <p>
+                        <lb xml:id="r31c2p384" facs="#p384r31c2" n="260"/>So bene che l'articolo non attribuisce questo difetto sol-
+                        <lb xml:id="r32c2p384" facs="#p384r32c2" n="261"/>tanto a me, ma eziandio a tutti i <term type="theme" subtype="economy">ministri di finanza</term> passati ed
+                        <lb xml:id="r33c2p384" facs="#p384r33c2" n="262"/>al presente; e non ha altro scopo che di mostrare la incertezza
+                        <lb xml:id="r34c2p384" facs="#p384r34c2" n="263"/>delle <term type="theme" subtype="economy">previsioni un po' lontane in materia di Bilancio</term>. Ma,
+                        <lb xml:id="r35c2p384" facs="#p384r35c2" n="264"/>senza contraddire al concetto generale, mi sia lecito rettifi-
+                        <lb xml:id="r36c2p384" facs="#p384r36c2" n="265"/>care quanto mi riguarda.
+                    </p>
+                    <p>
+                        <lb xml:id="r37c2p384" facs="#p384r37c2" n="266"/>Nel piano esposto il <date when="1863-02-14">14 febbraio 1863</date> al quale si allude,
+                        <lb xml:id="r38c2p384" facs="#p384r38c2" n="267"/>io parlai soltanto del <term type="theme" subtype="economy">pareggio delle spese ordinarie</term>, e posi
+                        <lb xml:id="r39c2p384" facs="#p384r39c2" n="268"/>dinanzi agli occhi del <orgName ref="#Parlamento">Parlamento</orgName> come per molti anni an-
+                        <lb xml:id="r40c2p384" facs="#p384r40c2" n="269"/>cora le <term type="theme" subtype="economy">forze contributive del paese</term> non avrebbero potuto
+                        <lb xml:id="r41c2p384" facs="#p384r41c2" n="270"/>provvedere alle <term type="theme" subtype="economy">spese straordinarie</term>. Le quali però io rac-
+                        <lb xml:id="r42c2p384" facs="#p384r42c2" n="271"/>comandava non superassero possibilmente i <measure type="currency" unit="LIT" quantity="100000000">100 milioni
+                        <lb xml:id="r43c2p384" facs="#p384r43c2" n="272"/>annui</measure>. E più tardi dovendo ritornare sull'argomento, in
+                        <lb xml:id="r44c2p384" facs="#p384r44c2" n="273"/><orgName ref="#Senato">Senato</orgName> espressi di nuovo il concetto con queste parole:
+                        <lb xml:id="r45c2p384" facs="#p384r45c2" n="274"/><quote>Io non posso non ripetere che l'<placeName type="country" ref="#Italia">Italia</placeName> avrà per molto</quote>
+                        <lb xml:id="r46c2p384" facs="#p384r46c2" n="275"/><quote>tempo mestieri di spese straordinarie, alle quali dovrà far</quote>
+                        <lb xml:id="r47c2p384" facs="#p384r47c2" n="276"/><quote>fronte con risorse straordinarie.</quote>
+                    </p>
+
+                    <p>
+                        <lb xml:id="r48c2p384" facs="#p384r48c2" n="277"/>Non è mio compito di fare la storia successiva della
+                        <lb xml:id="r49c2p384" facs="#p384r49c2" n="278"/>nostra finanza, e di ricordare i <term type="theme" subtype="historical">trasferimenti della capitale</term>,
+                        <lb xml:id="r50c2p384" facs="#p384r50c2" n="279"/>le <term type="theme" subtype="historical">guerre</term>, le <term type="theme" subtype="historical">agitazioni interne</term> che allora e poi per lungo
+                        <lb xml:id="r51c2p384" facs="#p384r51c2" n="280"/>tempo perturbarono le previsioni. Però dopo tanti sforzi e
+                        <lb xml:id="r52c2p384" facs="#p384r52c2" n="281"/>tanti sacrifizi l'<placeName type="country" ref="#Italia">Italia</placeName> trionfò di tutti gli ostacoli. Ed io conto
+                        <lb xml:id="r53c2p384" facs="#p384r53c2" n="282"/>fra i più bei giorni della mia vita quel <date when="1876-03-16">16 marzo 1876</date>
+                        <lb xml:id="r54c2p384" facs="#p384r54c2" n="283"/>nel quale potei presentare al <orgName ref="#Parlamento">Parlamento</orgName> un <term type="theme" subtype="economy">bilancio pareg-</term>
+                        <lb xml:id="r55c2p384" facs="#p384r55c2" n="284"/><term type="theme" subtype="economy">giato non solo nelle spese ordinarie, ma eziandio nelle straor-</term>
+                        <lb xml:id="r56c2p384" facs="#p384r56c2" n="285"/><term type="theme" subtype="economy">dinarie</term>.
+                    </p>
+
+                    <p>
+                        <lb xml:id="r57c2p384" facs="#p384r57c2" n="286"/>Gradiscano, signori Direttori, i sensi del mio amiche-
+                        <lb xml:id="r58c2p384" facs="#p384r58c2" n="287"/>vole rispetto.
+                    </p>
+                    <closer>
+                        <signed ref="#MM">M. MINGHETTI.</signed>
+                    </closer>
+                </div>
+            </div>
+        </div>
+        <div type="section" n="bibliografia">
+            <div type="subsection" n="etnologia">
+                <div type="page" n="386">
+                    <div type="column" n="2"> 
+
+
+                        <head>
+                            <title type="sub" xml:id="title__p386c2" facs="#title_sub_p386c2">ETNOLOGIA.</title>
+
+                            
+                            
+                            <bibl facs="#bibl_p386c2">
+                                <lb xml:id="r23c2p386" facs="#p386r23c2" /><author><persName type="real" ref="#VH">VICTOR HEHN</persName></author>, <hi rend="italic"><title type="main" xml:lang="deu">Italien. Ansichten und Streiflighter Zweite stark </title></hi>
+                                <lb xml:id="r24c2p386" facs="#p386r24c2" /><hi rend="italic"><title type="main" xml:lang="deu">vermehrte Auflage</title></hi> (<title type="translated" xml:lang="ita">Italia. Vedute e accidenti di luce. Se-</title>
+                                <lb xml:id="r25c2p386" facs="#p386r25c2" /><title type="translated" xml:lang="ita">conda ediz. molto accresciuta</title>). — <pubPlace><placeName type="urban" ref="#Berlino">Berlino</placeName></pubPlace>, <publisher>Borntraeger</publisher>, 
+                                <lb xml:id="r26c2p386" facs="#p386r26c2" /><date when="1879">1879</date>.
+                            </bibl>
+                        </head>
+
+
+                            <p>
+                                <lb xml:id="r27c2p386" facs="#p386r27c2" n="288"/>Quelli che conoscono il libro di <persName type="real" ref="#VH">Victor Hehn</persName> sull'<placeName type="country" ref="#Italia">Italia</placeName>
+                                <lb xml:id="r28c2p386" facs="#p386r28c2" n="289"/>si maravigliano che sia così poco letto in proporzione del
+                                <lb xml:id="r29c2p386" facs="#p386r29c2" n="290"/>suo merito: e non soltanto in <placeName type="country" ref="#Italia">Italia</placeName>, dov'è rimasto quasi
+                                <lb xml:id="r30c2p386" facs="#p386r30c2" n="291"/>sconosciuto sebbene gl'<term type="ethnic" ref="#Italiani">Italiani</term> non abbiano trovato in nessun
+                                <lb xml:id="r31c2p386" facs="#p386r31c2" n="292"/>altro scrittore maggiori simpatie, ma perfino in <placeName type="country" ref="#Germania">Germania</placeName>,
+                                <lb xml:id="r32c2p386" facs="#p386r32c2" n="293"/>dove i pregi della esposizione avrebbero dovuto più spe-
+                                <lb xml:id="r33c2p386" facs="#p386r33c2" n="294"/>cialmente invitare a leggerlo. Nè possiamo rintracciare
+                                <lb xml:id="r34c2p386" facs="#p386r34c2" n="295"/>nessun'altra ragione di questo strano fenomeno tranne la
+                                <lb xml:id="r35c2p386" facs="#p386r35c2" n="296"/>circostanza che la prima edizione (<date when="1867">1867</date>) è comparsa a <placeName type="urban" ref="#Pietroburgo">Pie-</placeName>
+                                <lb xml:id="r36c2p386" facs="#p386r36c2" n="297"/><placeName type="urban" ref="#Pietroburgo">troburgo</placeName>, di dove era meno facile la diffusione.
+                            </p>
+                        
+                            <p>
+                                <lb xml:id="r37c2p386" facs="#p386r37c2" n="298"/>Questo lavoro che, sebbene in ristretto, ci dà un qua-
+                                <lb xml:id="r38c2p386" facs="#p386r38c2" n="299"/>dro generale della natura e degli abitanti d'<placeName type="country" ref="#Italia">Italia</placeName>, ci sem-
+                                <lb xml:id="r39c2p386" facs="#p386r39c2" n="300"/>bra commendevole non solo per la forma (cosa che inte-
+                                <lb xml:id="r40c2p386" facs="#p386r40c2" n="301"/>ressa più i <term type="ethnic" ref="#Tedeschi">Tedeschi</term> che gl'<term type="ethnic" ref="#Italiani">Italiani</term>) la quale da parecchie
+                                <lb xml:id="r41c2p386" facs="#p386r41c2" n="302"/>diecine di anni non è stata superata in bellezza e originalità
+                                <lb xml:id="r42c2p386" facs="#p386r42c2" n="303"/>forse da nessun'altra <term type="language" xml:lang="deu">prosa tedesca</term>, ma specialmente per
+                                <lb xml:id="r43c2p386" facs="#p386r43c2" n="304"/>le acute osservazioni sulla <term type="theme" subtype="culture">storia della civiltà</term>, che occor-
+                                <lb xml:id="r44c2p386" facs="#p386r44c2" n="305"/>rono in maggior copia nei capitoli ove l'<abbr expan="Autore">A.</abbr> tratta delle
+                                <lb xml:id="r45c2p386" facs="#p386r45c2" n="306"/><term type="theme" subtype="nature">piante coltivate</term>, degli <term type="theme" subtype="nature">animali domestici</term> e della <term type="theme" subtype="linguistics">lingua</term>.
+                            </p>
+
+                            <p>
+                                <lb xml:id="r46c2p386" facs="#p386r46c2" n="307"/>L'autorità dell'<persName type="real" ref="#VH">Hehn</persName> in queste materie è generalmente
+                                <lb xml:id="r47c2p386" facs="#p386r47c2" n="308"/>riconosciuta dopo la pubblicazione del suo pregevole libro:
+                                <lb xml:id="r48c2p386" facs="#p386r48c2" n="309"/><bibl><hi rend="italic"><title xml:lang="ita">Le piante da cultura e gli animali domestici nel loro passaggio</title></hi></bibl>
+                                <lb xml:id="r49c2p386" facs="#p386r49c2" n="310"/><bibl><hi rend="italic"><title>dall'<placeName type="continent" ref="#Asia">Asia</placeName> in <placeName type="country" ref="#Grecia">Grecia</placeName> e nel rimanente d'<placeName type="continent" ref="#Europa">Europa</placeName></title></hi></bibl>. Oltre alla molta
+                                <lb xml:id="r50c2p386" facs="#p386r50c2" n="311"/>erudizione in tal genere egli ha un talento particolare per
+                                <lb xml:id="r51c2p386" facs="#p386r51c2" n="312"/>mettere in rilievo, nella loro importanza rispetto alla <term type="theme" subtype="culture">storia</term>
+                                <lb xml:id="r52c2p386" facs="#p386r52c2" n="313"/><term type="theme" subtype="culture">della civiltà</term>, i fenomeni della vita e degli oggetti da cui
+                                <lb xml:id="r53c2p386" facs="#p386r53c2" n="314"/>siamo circondati ed ai quali ordinariamente facciamo appena
+                                <lb xml:id="r54c2p386" facs="#p386r54c2" n="315"/>attenzione. È pure di grande interesse il capitolo intito-
+                                <lb xml:id="r55c2p386" facs="#p386r55c2" n="316"/>lato <title xml:lang="lat">Pro populo italico</title>, il quale tratta del carattere degl'<term type="ethnic" ref="#Italiani">Ita-</term>
+                                <lb xml:id="r56c2p386" facs="#p386r56c2" n="317"/><term type="ethnic" ref="#Italiani">liani</term> e cerca, sebbene talvolta con troppa indulgenza, di
+                                <lb xml:id="r57c2p386" facs="#p386r57c2" n="318"/>respingere i rimproveri che vengono loro fatti abitualmente
+                                <lb xml:id="r58c2p386" facs="#p386r58c2" n="319"/>da altre nazioni. Ci sembra, per esempio, che vada troppo
+                                <lb xml:id="r59c2p386" facs="#p386r59c2" n="320"/>oltre volendo giustificare i <term type="theme" subtype="social">cattivi trattamenti usati contro</term>
+                                <lb xml:id="r60c2p386" facs="#p386r60c2" n="321"/><term type="theme" subtype="social">le bestie</term>, e la <term type="theme" subtype="social">poca puntualità nei rapporti commerciali</term>.
+                            </p>
+                            <p>
+                                <lb xml:id="r61c2p386" facs="#p386r61c2" n="322" next="r1c1p387"/>Tutte queste parti che formano la sostanza del libro
+
+                            </p>
+                        </div>
+                    </div>
+                    <div type="page" n="387">
+                        <div type="column" n="1">
+                            <p>
+                                <lb xml:id="r1c1p387" facs="#p387r1c1" n="323" previous="r61c2p386"/>meriterebbero di essere tradotte in italiano, perchè anche
+                                <lb xml:id="r2c1p387" facs="#p387r2c1" n="324"/>trattandosi di argomenti svolti diffusamente in opere ita-
+                                <lb xml:id="r3c1p387" facs="#p387r3c1" n="325"/>liane, il modo di vedere di uno straniero intelligente ha un
+                                <lb xml:id="r4c1p387" facs="#p387r4c1" n="326"/>valore particolare.
+                            </p>
+
+                            <p>
+                                <lb xml:id="r5c1p387" facs="#p387r5c1" n="327"/>Nei capitoli che sono aggiunti come appendice alla parte
+                                <lb xml:id="r6c1p387" facs="#p387r6c1" n="328"/>principale del libro, si discorre massimamente di cose che in
+                                <lb xml:id="r7c1p387" facs="#p387r7c1" n="329"/><placeName type="country" ref="#Italia">Italia</placeName> sono conosciute dai più; tuttavia esse divengono at-
+                                <lb xml:id="r8c1p387" facs="#p387r8c1" n="330"/>traenti e quasi nuove per l'aspetto sotto cui le guarda l'<abbr expan="Autore">A.</abbr>
+                                <lb xml:id="r9c1p387" facs="#p387r9c1" n="331"/>il quale ha seguito con interesse lo svolgimento dell'<placeName type="country" ref="#Italia">Italia</placeName>
+                                <lb xml:id="r10c1p387" facs="#p387r10c1" n="332"/>più forse di qualunque altro straniero. Qui egli tratta non
+                                <lb xml:id="r11c1p387" facs="#p387r11c1" n="333"/>solo della <term type="theme" subtype="politics">politica estera durante <date when="1859/1879">l'ultimo ventennio</date></term> ma
+                                <lb xml:id="r12c1p387" facs="#p387r12c1" n="334"/>anche delle cose interne. A questo proposito è certo cosa
+                                <lb xml:id="r13c1p387" facs="#p387r13c1" n="335"/>caratteristica l'avere assegnato il primo posto all'<orgName ref="#army" type="military">esercito</orgName>
+                                <lb xml:id="r14c1p387" facs="#p387r14c1" n="336"/>fra tutti i fattori del <term type="theme" subtype="culture">progresso intellettuale della nazione</term>.
+                                <lb xml:id="r15c1p387" facs="#p387r15c1" n="337"/>Il libro difetta di qualunque considerazione sulla <term type="theme" subtype="social">questione</term>
+                                <lb xml:id="r16c1p387" facs="#p387r16c1" n="338"/><term type="theme" subtype="social">sociale</term>. Questa mancanza risalta specialmente nel capitolo
+                                <lb xml:id="r17c1p387" facs="#p387r17c1" n="339"/>sulla <placeName type="region" ref="#Sicilia">Sicilia</placeName>, essendo rimasti ignoti all'<abbr expan="Autore">A.</abbr> i principali scritti
+                                <lb xml:id="r18c1p387" facs="#p387r18c1" n="340"/>sull'argomento. L'<author><persName type="real" ref="#VH">Hehn</persName></author> cita, per esempio, uno scritto del
+                                <lb xml:id="r19c1p387" facs="#p387r19c1" n="341"/><author><persName type="real" ref="#Pagano">Pagano</persName></author>. Ma se avesse conosciuto le <bibl><title type="monograph">Lettere meridionali</title></bibl> del
+                                <lb xml:id="r20c1p387" facs="#p387r20c1" n="342"/><author><persName type="real" ref="#PV">Villari</persName></author>, e le opere più recenti sulla <placeName type="region" ref="#Sicilia">Sicilia</placeName>, non avrebbe certa-
+                                <lb xml:id="r21c1p387" facs="#p387r21c1" n="343"/>mente sostenuto che la maggiore estensione della <orgName type="institution">mafia</orgName>
+                                <lb xml:id="r22c1p387" facs="#p387r22c1" n="344"/>nella <placeName type="region" subtype="west" ref="#SiciliaOvest">parte occidentale</placeName> dell'isola si possa spiegare colla
+                                <lb xml:id="r23c1p387" facs="#p387r23c1" n="345"/>origine principalmente <term type="ethnic" ref="#Semiti">semitica</term> della popolazione, e non
+                                <lb xml:id="r24c1p387" facs="#p387r24c1" n="346"/>avrebbe neppure riferite le migliori condizioni della <placeName type="region" subtype="east">parte</placeName>
+                                <lb xml:id="r25c1p387" facs="#p387r25c1" n="347"/><placeName type="region" subtype="east" ref="#SiciliaEst">orientale</placeName> alla origine <term type="ethnic" ref="#Greci">greca</term>. Tanto qui come là le <term type="theme" subtype="social">condi-</term>
+                                <lb xml:id="r26c1p387" facs="#p387r26c1" n="348"/><term type="theme" subtype="social">zioni agrarie</term> hanno esercitato, ormai è noto, la massima
+                                <lb xml:id="r27c1p387" facs="#p387r27c1" n="349"/>influenza sulle <term type="theme" subtype="social">condizioni sociali e morali della popolazione</term>.
+                                <lb xml:id="r28c1p387" facs="#p387r28c1" n="350"/>Nell'insieme il capitolo sulla <placeName type="region" ref="#Sicilia">Sicilia</placeName> è il più debole di tutto
+                                <lb xml:id="r29c1p387" facs="#p387r29c1" n="351"/>il libro, il che forse si può spiegare, almeno in parte, col
+                                <lb xml:id="r30c1p387" facs="#p387r30c1" n="352"/>non essersi l'<abbr expan="Autore">A.</abbr> abbastanza trattenuto nell'isola.
+                            </p>
+                        </div>
+                    </div>
+            </div>
+
+            <div type="subsection" n="scienze_militari">
+                <div type="page" n="387">
+                    <div type="column" n="1">
+                        <head>
+                            <title type="sub" xml:id="title_sub_p387c1" facs="#title_sub_p387c1">SCIENZE MILITARI.</title>
+                        
+                            <bibl facs="#bibl_ScienzeMilitari">
+                                <hi rend="italic"><title>Sull'ordinamento militare</title></hi>, pensieri di <author><abbr>F.P.</abbr></author> — 
+                                <pubPlace><placeName type="urban" ref="#Bologna" key="BO">Bologna</placeName></pubPlace>, 
+                                <publisher>tipografia Cenerelli</publisher>, 
+                                <date when="1878">1878</date>.
+                            </bibl>
+                        </head>
+
+                        <p>
+                            <lb xml:id="r31c1p387" facs="#p387r31c1" n="353"/>Come l'autore stesso dichiara nella prefazione, e come
+                            <lb xml:id="r32c1p387" facs="#p387r32c1" n="354"/>del resto si scorgerebbe di leggeri dopo una lettura anche
+                            <lb xml:id="r33c1p387" facs="#p387r33c1" n="355"/>superficiale, questo volumetto non è che un accozzo di ar-
+                            <lb xml:id="r34c1p387" facs="#p387r34c1" n="356"/>ticoli pubblicati successivamente in <term type="theme" subtype="politics">giornali politici</term>, dopo
+                            <lb xml:id="r35c1p387" facs="#p387r35c1" n="357"/>la caduta del <orgName ref="#Ministero" type="institution">Ministero</orgName> in cui reggeva l'amministrazione
+                            <lb xml:id="r36c1p387" facs="#p387r36c1" n="358"/>della guerra il generale <persName type="real" ref="#Ricotti">Ricotti</persName>. Sparsi per le colonne di
+                            <lb xml:id="r37c1p387" facs="#p387r37c1" n="359"/><term type="press" ref="#Bologna">giornali bolognesi</term> poco diffusi, questi articoli passerebbero
+                            <lb xml:id="r38c1p387" facs="#p387r38c1" n="360"/>inosservati dai più e non meriterebbe conto che se ne par-
+                            <lb xml:id="r39c1p387" facs="#p387r39c1" n="361"/>lasse; ristampati raccolti in volume, crediamo opportuno
+                            <lb xml:id="r40c1p387" facs="#p387r40c1" n="362"/>trattarne quanto più brevemente si potrà, nell'intento di
+                            <lb xml:id="r41c1p387" facs="#p387r41c1" n="363"/>sceverare in essi quanto vi troviamo di buono, da parecchi
+                            <lb xml:id="r42c1p387" facs="#p387r42c1" n="364"/>concetti che ci sembrano o inattuabili e esiziali all'<orgName ref="#army" type="military">eser-</orgName>
+                            <lb xml:id="r43c1p387" facs="#p387r43c1" n="365"/><orgName ref="#army" type="military">cito</orgName>.
+                        </p>
+
+                        <p>
+                            <lb xml:id="r44c1p387" facs="#p387r44c1" n="366"/>Premettiamo anzitutto che ragionando di cose militari,
+                            <lb xml:id="r45c1p387" facs="#p387r45c1" n="367"/>siamo assolutamente alieni dal seguire l'autore sul terreno
+                            <lb xml:id="r46c1p387" facs="#p387r46c1" n="368"/>politico in cui egli trascina la questione, sia colla dedica,
+                            <lb xml:id="r47c1p387" facs="#p387r47c1" n="369"/>dove mostra d'aver dimenticato qualche altro <quote>massimo</quote>
+                            <lb xml:id="r48c1p387" facs="#p387r48c1" n="370"/><quote>fattore della libertà e indipendenza d'<placeName type="country" ref="#Italia" key="IT">Italia</placeName></quote>; sia colle
+                            <lb xml:id="r49c1p387" facs="#p387r49c1" n="371"/>censure poco cavalleresche, per non dir altro, da lui mosse
+                            <lb xml:id="r50c1p387" facs="#p387r50c1" n="372"/>agli uomini d'un partito politico diverso dal suo.
+                        </p>
+
+                        <p>
+                            <lb xml:id="r51c1p387" facs="#p387r51c1" n="373"/>Ciò premesso, riassumiamo dal complesso di questi ar-
+                            <lb xml:id="r52c1p387" facs="#p387r52c1" n="374"/>ticoli i punti salienti, che l'autore intese propugnare. Essi
+                            <lb xml:id="r53c1p387" facs="#p387r53c1" n="375"/>sarebbero:
+                        </p>
+
+                        <list type="ordered">
+                            <item n="1">
+                                <lb xml:id="r54c1p387" facs="#p387r54c1" n="376"/>1. L'ordinamento <term type="theme" subtype="military" xml:id="term_territoriale">territoriale</term><ref target="#nota1">*</ref> dell'<orgName ref="#army" type="military">esercito italiano</orgName>,
+                                <lb xml:id="r55c1p387" facs="#p387r55c1" n="377" next="r1c2p387"/>modellandolo sul <term type="theme" subtype="military" ref="#Germania">germanico</term>; e ciò allo scopo precipuo di
+                            </item>
+                        </list>
+
+                        <note place="bottom" xml:id="nota1" corresp="#term_territoriale">
+                            <lb xml:id="r56c1p387" facs="#p387r56c1" n="378"/>* Per i lettori non pienamente al fatto di questi termini militari,
+                            <lb xml:id="r57c1p387" facs="#p387r57c1" n="379"/>giova notare che ordinamento <hi rend="italic"><term type="theme" subtype="military">territoriale</term></hi> chiamasi quello, in cui i <term type="theme" subtype="military">reg-</term>
+                            <lb xml:id="r58c1p387" facs="#p387r58c1" n="380"/><term type="theme" subtype="military">gimenti</term> sono composti da individui della medesima <placeName type="administrative" key="PR">provincia</placeName>, con sede
+                            <lb xml:id="r59c1p387" facs="#p387r59c1" n="381"/>fissa nel rispettivo territorio; invece è <term type="theme" subtype="military">nazionale</term> o <term type="theme" subtype="military">misto</term> quell'ordina-
+                            <lb xml:id="r60c1p387" facs="#p387r60c1" n="382"/>mento che forma i <term type="theme" subtype="military">reggimenti</term> con individui di varie <placeName type="administrative" key="PR">province</placeName>, con
+                            <lb xml:id="r61c1p387" facs="#p387r61c1" n="383"/>sede mutabile.
+                        </note>
+                    </div>
+                
+                    <div type="column" n="2">
+                        <list type="ordered" continues="true">
+                            <item n="1" continues="true">
+                                <lb xml:id="r1c2p387" facs="#p387r1c2" n="384" previous="r55c1p387"/>preparare gradatamente l'abolizione degli <term type="theme" subtype="military">eserciti perma-</term>
+                                <lb xml:id="r2c2p387" facs="#p387r2c2" n="385"/><term type="theme" subtype="military">nenti</term>;
+                            </item>
+                            
+                            <item n="2">
+                                <lb xml:id="r3c2p387" facs="#p387r3c2" n="386"/>2. La <hi rend="italic"><term type="theme" subtype="military">ferma unica di due anni</term></hi>, incorporando tutto il
+                                <lb xml:id="r4c2p387" facs="#p387r4c2" n="387"/><term type="theme" subtype="military">contingente annuo di leva</term>; col corollario di vari espedienti
+                                <lb xml:id="r5c2p387" facs="#p387r5c2" n="388"/>atti ad agevolarne l'applicazione;
+                            </item>
+                            
+                            <item n="3">
+                                <lb xml:id="r6c2p387" facs="#p387r6c2" n="389"/>3. <term type="theme" subtype="military">Stregua unica per regolare il conferimento dei gradi
+                                <lb xml:id="r7c2p387" facs="#p387r7c2" n="390"/>militari: esami</term>.
+                            </item>
+                        </list>
+
+                        <p>
+                            <lb xml:id="r8c2p387" facs="#p387r8c2" n="391"/>Quanto al primo punto non staremo a ripetere le assen-
+                            <lb xml:id="r9c2p387" facs="#p387r9c2" n="392"/>nate argomentazioni svolte da persone competenti, in <orgName ref="#Parlamento" type="institution">Par-</orgName>
+                            <lb xml:id="r10c2p387" facs="#p387r10c2" n="393"/><orgName ref="#Parlamento" type="institution">lamento</orgName> e per le stampe, in <placeName type="country" ref="#Italia" key="IT">Italia</placeName> come in <placeName type="country" ref="#Francia" key="FR">Francia</placeName>, per
+                            <lb xml:id="r11c2p387" facs="#p387r11c2" n="394"/>sostenere la tesi contraria. Ci limitiamo ad osservare come
+                            <lb xml:id="r12c2p387" facs="#p387r12c2" n="395"/>l'autore abbia scelto assai male alcuni suoi argomenti, at-
+                            <lb xml:id="r13c2p387" facs="#p387r13c2" n="396"/>tribuendo p. es. l'ordinamento esistente a diffidenza, o peg-
+                            <lb xml:id="r14c2p387" facs="#p387r14c2" n="397"/>gio. Sta per noi il fatto che l'<placeName type="country" ref="#Italia" key="IT">Italia</placeName> fu di recente costituita
+                            <lb xml:id="r15c2p387" facs="#p387r15c2" n="398"/>con elementi i cui <orgName type="institution">governi</orgName> si erano studiati con ogni arte
+                            <lb xml:id="r16c2p387" facs="#p387r16c2" n="399"/>a tenere estranei, se non ostili, gli uni agli altri. In tale
+                            <lb xml:id="r17c2p387" facs="#p387r17c2" n="400"/>stato di cose, una disposizione, mercè la quale <measure type="quantity" unit="persons">65 mila</measure> <term type="ethnic" ref="#Italiani">ita-</term>
+                            <lb xml:id="r18c2p387" facs="#p387r18c2" n="401"/><term type="ethnic" ref="#Italiani">liani</term> son tratti ogni anno ad affratellarsi con altri <term type="ethnic" ref="#Italiani">italiani</term>,
+                            <lb xml:id="r19c2p387" facs="#p387r19c2" n="402"/>ci sembra, ora e per molto tempo ancora, veramente prov-
+                            <lb xml:id="r20c2p387" facs="#p387r20c2" n="403"/>videnziale. La <placeName type="country" ref="#Francia" key="FR">Francia</placeName>, costituita tanto prima di noi a <term type="theme" subtype="politics">nazione</term>,
+                            <lb xml:id="r21c2p387" facs="#p387r21c2" n="404"/>serba gelosamente l'<term type="theme" subtype="military">ordinamento militare nazionale</term>, ed ha
+                            <lb xml:id="r22c2p387" facs="#p387r22c2" n="405"/>trovato modo di conciliare con esso la costituzione per-
+                            <lb xml:id="r23c2p387" facs="#p387r23c2" n="406"/>manente delle grandi <term type="theme" subtype="military">unità organiche</term> dell'<orgName ref="#army" type="military">esercito</orgName>, e un
+                            <lb xml:id="r24c2p387" facs="#p387r24c2" n="407"/><term type="theme" subtype="military">sistema di mobilitazione</term> altrettanto rapido ed ordinato,
+                            <lb xml:id="r25c2p387" facs="#p387r25c2" n="408"/>quanto quello basato sull'<term type="theme" subtype="military">ordinamento territoriale</term>. E se a
+                            <lb xml:id="r26c2p387" facs="#p387r26c2" n="409"/>noi fosse dato di spendere proporzionalmente per l'<orgName ref="#army" type="military">esercito</orgName>
+                            <lb xml:id="r27c2p387" facs="#p387r27c2" n="410"/>quello che spende <placeName type="country" ref="#Francia" key="FR">questa nazione</placeName>, creda pure il sig. <persName type="real" ref="#FP">F. P.</persName>
+                            <lb xml:id="r28c2p387" facs="#p387r28c2" n="411"/>che sparirebbero prontamente gli inconvenienti da lui a
+                            <lb xml:id="r29c2p387" facs="#p387r29c2" n="412"/>tale proposito lamentati.
+                        </p>
+
+                        <p>
+                            <lb xml:id="r30c2p387" facs="#p387r30c2" n="413"/>Quanto al volere l'<term type="theme" subtype="military">ordinamento territoriale</term> come avvia-
+                            <lb xml:id="r31c2p387" facs="#p387r31c2" n="414"/>mento all'abolizione degli <term type="theme" subtype="military">eserciti permanenti</term>, ci permet-
+                            <lb xml:id="r32c2p387" facs="#p387r32c2" n="415"/>tiamo queste due domande soltanto: — che cosa impedisce
+                            <lb xml:id="r33c2p387" facs="#p387r33c2" n="416"/>di abolirli, anche se ordinati col <term type="theme" subtype="military">sistema nazionale</term>? — e
+                            <lb xml:id="r34c2p387" facs="#p387r34c2" n="417"/>una volta aboliti, chi farebbe rispettare le decisioni del fa-
+                            <lb xml:id="r35c2p387" facs="#p387r35c2" n="418"/>moso <quote>arbitrato di pace delle nazioni</quote> che ad essi si pre-
+                            <lb xml:id="r36c2p387" facs="#p387r36c2" n="419"/>tenderebbe sostituire?
+                        </p>
+
+                        <p>
+                            <lb xml:id="r37c2p387" facs="#p387r37c2" n="420"/>Passando al secondo punto della <hi rend="italic"><term type="theme" subtype="military" xml:lang="ita">ferma unica</term></hi>, ci affret-
+                            <lb xml:id="r38c2p387" facs="#p387r38c2" n="421"/>tiamo ad affermare che ci troviamo pienamente d'accordo
+                            <lb xml:id="r39c2p387" facs="#p387r39c2" n="422"/>coll'autore e coi numerosi <term type="role">oratori</term> e <term type="role">pubblicisti</term> che lo pre-
+                            <lb xml:id="r40c2p387" facs="#p387r40c2" n="423"/>cedettero in simile proposta; ed uniamo ai loro i nostri
+                            <lb xml:id="r41c2p387" facs="#p387r41c2" n="424"/>voti, onde si addivenga all'<term type="theme" subtype="military">incorporazione effettiva</term> di tutto
+                            <lb xml:id="r42c2p387" facs="#p387r42c2" n="425"/>il <term type="theme" subtype="military">contingente annuo di leva</term>, riducendo la <term type="theme" subtype="military">ferma</term> a due
+                            <lb xml:id="r43c2p387" facs="#p387r43c2" n="426"/>anni per la <term type="theme" subtype="military">fanteria</term>, preparando inoltre e rendendo più at-
+                            <lb xml:id="r44c2p387" facs="#p387r44c2" n="427"/>tuabile tale misura, mediante l'<term type="theme" subtype="military">istruzione militare</term> nelle
+                            <lb xml:id="r45c2p387" facs="#p387r45c2" n="428"/>scuole, ed esonerando l'<orgName ref="#army" type="military">esercito</orgName> dai <term type="theme" subtype="institution">servizi di pubblica si-
+                            <lb xml:id="r46c2p387" facs="#p387r46c2" n="429"/>curezza</term>. Pur troppo però temiamo che pari all'utilità di
+                            <lb xml:id="r47c2p387" facs="#p387r47c2" n="430"/>siffatte disposizioni non sieno per ora nè le <term type="theme" subtype="administration">finanze</term> nè le
+                            <lb xml:id="r48c2p387" facs="#p387r48c2" n="431"/><term type="theme" subtype="administration">condizioni interne</term> nostre.
+                        </p>
+
+                        <p>
+                            <lb xml:id="r49c2p387" facs="#p387r49c2" n="432"/>Non possiamo trattenerci dal notare ancora come non
+                            <lb xml:id="r50c2p387" facs="#p387r50c2" n="433"/>regga affatto l'esempio della <placeName type="country" ref="#Prussia" key="DE-PR">Prussia</placeName> invocato dall'autore
+                            <lb xml:id="r51c2p387" facs="#p387r51c2" n="434"/>in appoggio a questa tesi, avvegnachè neanche in quel-
+                            <lb xml:id="r52c2p387" facs="#p387r52c2" n="435"/>l'<orgName ref="#army" type="military">esercito</orgName> sia incorporato annualmente l'intero contingente.
+                            <lb xml:id="r53c2p387" facs="#p387r53c2" n="436"/>Si compiaccia il signor <persName type="real" ref="#FP">F. P.</persName> di dare una guardata alle ta-
+                            <lb xml:id="r54c2p387" facs="#p387r54c2" n="437"/>belle relative alla costituzione dell'<term type="theme" subtype="military">esercito germanico</term> pub-
+                            <lb xml:id="r55c2p387" facs="#p387r55c2" n="438"/>blicate dal nostro <orgName type="military">corpo di stato maggiore</orgName>, e vedrà che,
+                            <lb xml:id="r56c2p387" facs="#p387r56c2" n="439"/>con altri nomi, vi sono eziandio in <placeName type="country" ref="#Prussia" key="DE-PR">Prussia</placeName> le varie <term type="theme" subtype="military">cate-</term>
+                            <lb xml:id="r57c2p387" facs="#p387r57c2" n="440"/><term type="theme" subtype="military">gorie di leva</term>, le diverse <term type="theme" subtype="military">milizie</term>, i <term type="theme" subtype="military">complementi</term> e le <term type="theme" subtype="military">riserve</term>
+                            <lb xml:id="r58c2p387" facs="#p387r58c2" n="441"/>esistenti presso di noi, e delle quali egli si mostra così pre-
+                            <lb xml:id="r59c2p387" facs="#p387r59c2" n="442"/>occupato, confessando ingenuamente che <quote>non riesce a rac-</quote>
+                            <lb xml:id="r60c2p387" facs="#p387r60c2" n="443"/><quote>capezzarne il bandolo</quote>.
+                        </p>
+
+                        <p>
+                            <lb xml:id="r61c2p387" facs="#p387r61c2" n="444"/>Ed eccoci al terzo punto, cioè quello degli <term type="theme" subtype="military">esami</term>. Sin-
+                            <lb xml:id="r62c2p387" facs="#p387r62c2" n="445"/>tantochè l'autore propugna di accordare i vantaggi del <term type="theme" subtype="military">vo-</term>
+                            <lb xml:id="r63c2p387" facs="#p387r63c2" n="446"/><term type="theme" subtype="military">lontariato d'un anno</term> al solo merito constatato con esami,
+                            <lb xml:id="r64c2p387" facs="#p387r64c2" n="447"/>anzichè al <term type="theme" subtype="administration">censo</term><ref target="#nota2">*</ref>. Non possiamo che associarci alla sua pro-
+                            <lb xml:id="r65c2p387" facs="#p387r65c2" n="448" next="r1c1p388"/>posta.
+                        </p>
+
+                        <note place="bottom" xml:id="nota2" corresp="#volontariato">
+                            <lb xml:id="r66c2p387" facs="#p387r66c2" n="449"/>* V. pure <bibl><biblScope unit="volume">vol. II</biblScope>, <biblScope unit="issue">n. 25</biblScope>, <biblScope unit="page">pag. 423</biblScope>, <hi rend="italic"><title type="article">I volontari d'un anno e gli uffi-</title></hi></bibl>
+                            <lb xml:id="r67c2p387" facs="#p387r67c2" n="450"/><bibl><title>ciali</title></bibl>.
+                        </note>
+
+                
+                    </div>
+                </div>
+
+                <div type="page" n="388">
+                    <div type="column" n="1">
+
+                       <p>
+                            <lb xml:id="r1c1p388" facs="#p388r1c1" n="451" previous="r65c2p387"/>Dove ci sentiamo poco disposti a seguirlo, si è nei prin-
+                            <lb xml:id="r2c1p388" facs="#p388r2c1" n="452"/>cipii da lui enunciati circa il <term type="theme" subtype="military">conferimento dei gradi</term>. Per
+                            <lb xml:id="r3c1p388" facs="#p388r3c1" n="453"/>arrivare al <term type="theme" subtype="military">grado di generale</term>, secondo il signor <persName type="real" ref="#FP" key="FP_author" role="writer">F. P.</persName>, non
+                            <lb xml:id="r4c1p388" facs="#p388r4c1" n="454"/>occorre aver prestato <term type="theme" subtype="military">lunghi servigi</term>..... <quote><term type="theme" subtype="military">nell'arte di vin-</term></quote>
+                            <lb xml:id="r5c1p388" facs="#p388r5c1" n="455"/><quote><term type="theme" subtype="military">cere in guerra</term> a poco o nulla giova l'essere saliti dalla</quote>
+                            <lb xml:id="r6c1p388" facs="#p388r6c1" n="456"/><quote><term type="theme" subtype="military">giberna</term> ai <term type="theme" subtype="military">sommi gradi</term> percorrendo tutta la <term type="theme" subtype="military">scala dell'an-</term></quote>
+                            <lb xml:id="r7c1p388" facs="#p388r7c1" n="457"/><quote><term type="theme" subtype="military">zianità</term>, pel cui tramite non sono mai rigorosamente passati</quote>
+                            <lb xml:id="r8c1p388" facs="#p388r8c1" n="458"/><quote>nè il <persName type="real" ref="#GC" key="Grand_Conde" role="military">Gran Condé</persName>, nè <persName type="real" ref="#GF" key="Gaston_de_Foix" role="military">Gaston de Foix</persName>, nè il <persName type="real" ref="#PE" key="Prince_Eugene" role="military">principe Euge-</persName></quote>
+                            <lb xml:id="r9c1p388" facs="#p388r9c1" n="459"/><quote><persName type="real" ref="#PE" key="Prince_Eugene" role="military">nio</persName>, nè l'<persName type="real" ref="#AG" key="Archduke_John" role="military">arciduca Giovanni</persName>, nè gli altri più celebri <term type="theme" subtype="military">capitani</term></quote>
+                            <lb xml:id="r10c1p388" facs="#p388r10c1" n="460"/><quote>dell'<date type="period" from="-800" to="476">antichità</date> e dell'<date type="period" from="1500" to="1800">evo moderno</date> da <persName type="real" ref="#AM" key="Alexander_Great" role="military">Alessandro</persName> a <persName type="real" ref="#NB" key="Napoleon_Bonaparte" role="military">Napo-</persName></quote>
+                            <lb xml:id="r11c1p388" facs="#p388r11c1" n="461"/><quote><persName type="real" ref="#NB" key="Napoleon_Bonaparte" role="military">leone</persName>..... Ben è vero che l'assistere alle <term type="theme" subtype="military">esercitazioni mili-</term></quote>
+                            <lb xml:id="r12c1p388" facs="#p388r12c1" n="462"/><quote><term type="theme" subtype="military">tari</term>, il prendervi talora parte attiva ed il vegliare alla</quote>
+                            <lb xml:id="r13c1p388" facs="#p388r13c1" n="463"/><quote>stretta osservanza dei <term type="theme" subtype="military">regolamenti</term> giova a formar l'occhio</quote>
+                            <lb xml:id="r14c1p388" facs="#p388r14c1" n="464"/><quote>ed accresce il prestigio in chi possa esser chiamato a <term type="theme" subtype="military">co-</term></quote>
+                            <lb xml:id="r15c1p388" facs="#p388r15c1" n="465"/><quote><term type="theme" subtype="military">mandare</term> l'<orgName type="military" key="army">esercito</orgName> ed è ciò che fanno tradizionalmente i</quote>
+                            <lb xml:id="r16c1p388" facs="#p388r16c1" n="466"/><quote><term type="role">principi</term> di <placeName type="country" ref="#Prussia" key="DE-PR">Prussia</placeName> e che fanno ora i <term type="role">granduchi</term> di <placeName type="country" ref="#Russia" key="RU">Russia</placeName>.</quote>
+                            <lb xml:id="r17c1p388" facs="#p388r17c1" n="467"/><quote>Il mestiere di <term type="theme" subtype="military">sergente istruttore</term> è dovunque il più utile</quote>
+                            <lb xml:id="r18c1p388" facs="#p388r18c1" n="468"/><quote>che gli usi moderni abbiano lasciato ai <term type="role">principi</term>, ed è cer-</quote>
+                            <lb xml:id="r19c1p388" facs="#p388r19c1" n="469"/><quote>tamente quello in cui sia più difficile il trovare da supplir-</quote>
+                            <lb xml:id="r20c1p388" facs="#p388r20c1" n="470"/><quote>li</quote>. //////Con questi ed altri simili argomenti il signor <persName type="real" ref="#FP" key="FP_author" role="writer">F. P.</persName> pro-
+                            <lb xml:id="r21c1p388" facs="#p388r21c1" n="471"/>pugna che non si debba più tenere alcun conto dei <term type="theme" subtype="military">servigi
+                            <lb xml:id="r22c1p388" facs="#p388r22c1" n="472"/>prestati</term>, ma si conferiscano i <term type="theme" subtype="military">gradi</term> ai più idonei per merito
+                            <lb xml:id="r23c1p388" facs="#p388r23c1" n="473"/>d'<term type="theme" subtype="military">esami</term>. Non ci pare di dovere spendere molte parole per
+                            <lb xml:id="r24c1p388" facs="#p388r24c1" n="474"/>confutarlo. Ci dia egli un periodo di <term type="theme" subtype="military">guerre continue</term>, come
+                            <lb xml:id="r25c1p388" facs="#p388r25c1" n="475"/>quelle in cui sorsero i grandi <term type="theme" subtype="military">capitani</term>, e lo <term type="theme" subtype="military">stato di guerra</term>
+                            <lb xml:id="r26c1p388" facs="#p388r26c1" n="476"/>prolungato formerà da sè e porterà a galla i migliori <term type="theme" subtype="military">ge-</term>
+                            <lb xml:id="r27c1p388" facs="#p388r27c1" n="477"/><term type="theme" subtype="military">nerali</term>, senza bisogno nè di <term type="theme" subtype="military">esami</term> nè dell'<term type="theme" subtype="military"><hi rend="italic">annuario militare</hi></term>.
+                            <lb xml:id="r28c1p388" facs="#p388r28c1" n="478"/>Coi lunghi periodi di pace e colle <term type="theme" subtype="military">guerre repentine e co-</term>
+                            <lb xml:id="r29c1p388" facs="#p388r29c1" n="479"/><term type="theme" subtype="military">lossali</term> del giorno d'oggi, i <term type="theme" subtype="military">generali</term> di 26 anni come <persName type="real" ref="#NB" key="Napoleon_Bonaparte" role="military">Bo-</persName>
+                            <lb xml:id="r30c1p388" facs="#p388r30c1" n="480"/><persName type="real" ref="#NB" key="Napoleon_Bonaparte" role="military">naparte</persName> non possono più emergere nè potrebbero altrimenti
+                            <lb xml:id="r31c1p388" facs="#p388r31c1" n="481"/>emergere sostenendo <term type="theme" subtype="military">esami</term>. L'autore che si mostra così te-
+                            <lb xml:id="r32c1p388" facs="#p388r32c1" n="482"/>nero degli <term type="theme" subtype="military">ordinamenti prussiani</term>, quando gli fanno comodo,
+                            <lb xml:id="r33c1p388" facs="#p388r33c1" n="483"/>cerchi di penetrarsi nello spirito che regge in quella forte
+                            <lb xml:id="r34c1p388" facs="#p388r34c1" n="484"/><term type="theme" subtype="politics">nazione</term> l'avanzamento degli <term type="theme" subtype="military">ufficiali</term>, e si convincerà forse
+                            <lb xml:id="r35c1p388" facs="#p388r35c1" n="485"/>allora che <quote><hi rend="italic">l'<term type="theme" subtype="military">anzianità combinata colla rigorosa esclusione dei</term></hi></quote>
+                            <lb xml:id="r36c1p388" facs="#p388r36c1" n="486"/><quote><hi><term type="theme" subtype="military">meno idonei, grado per grado</term></hi></quote>, è quella che produce i <term type="theme" subtype="military">gene-</term>
+                            <lb xml:id="r37c1p388" facs="#p388r37c1" n="487"/><term type="theme" subtype="military">rali vincitori</term> del <date when="1866">1866</date> e del <date when="1870/1871">1870-71</date>.
+                        </p>
+
+                        <p>
+                            <lb xml:id="r38c1p388" facs="#p388r38c1" n="488"/>Alle sue proposte organiche il signor <persName type="real" ref="#FP" key="FP_author" role="writer">F. P.</persName> volle aggiun-
+                            <lb xml:id="r39c1p388" facs="#p388r39c1" n="489"/>gere alcuni concetti morali sulla <term type="theme" subtype="military">disciplina e sullo spirito</term>
+                            <lb xml:id="r40c1p388" facs="#p388r40c1" n="490"/><term type="theme" subtype="military">militare</term>. A questo proposito, e per concludere, aggiunge-
+                            <lb xml:id="r41c1p388" facs="#p388r41c1" n="491"/>remo soltanto che col gittare a piene mani il discredito
+                            <lb xml:id="r42c1p388" facs="#p388r42c1" n="492"/>sopra uomini benemeriti e sopra istituzioni sancite dalla
+                            <lb xml:id="r43c1p388" facs="#p388r43c1" n="493"/><term type="theme" subtype="politics">nazione</term> per mezzo dei suoi rappresentanti, non si raggiunge
+                            <lb xml:id="r44c1p388" facs="#p388r44c1" n="494"/>certamente lo scopo di migliorare tale <term type="theme" subtype="military">disciplina e spirito</term>
+                            <lb xml:id="r45c1p388" facs="#p388r45c1" n="495"/><term type="theme" subtype="military">militare</term>.
+                        </p>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        
+        <div type="section" n="notizie">
+
+            <div type="page" n="388">
+                <div type="column" n="2">
+
+                    
+                    <title type="main" xml:id="title_main_p388c2">NOTIZIE.</title>
+
+                    
+                        <!-- Prima notizia - Bibliothèque -->
+                        <div type="entry" source="#AZ">
+                            <p>
+                                <lb xml:id="r41c2p388" facs="#p388r41c2" n="496"/>— Nella <title xml:lang="fra"><hi rend="italic">Bibliothèque de l'école des Chartes</hi></title> (primo fascicolo di que-
+                                <lb xml:id="r42c2p388" facs="#p388r42c2" n="497"/>st'anno), <persName type="real" ref="#GR" key="Gaston_Raynaud">Gaston Raynaud</persName> dà una descrizione particolareggiata del
+                                <lb xml:id="r43c2p388" facs="#p388r43c2" n="498"/><title xml:lang="fra"><hi rend="italic">Canzoniere Clairambault</hi></title> (raccolta importante di poesie francesi an-
+                                <lb xml:id="r44c2p388" facs="#p388r44c2" n="499"/>tiche) finora creduto perduto, e che trovasi nella biblioteca nazionale
+                                <lb xml:id="r45c2p388" facs="#p388r45c2" n="500"/>di <placeName type="urban" ref="#Parigi" key="PAR">Parigi</placeName>.
+                            </p>
+                        </div>
+
+                        <!-- Seconda notizia - Libro Ladino -->
+                        <div type="entry" source="#AZ">
+                            <p>
+                                <lb xml:id="r46c2p388" facs="#p388r46c2" n="501"/>— In questi giorni è uscito presso Weger a <placeName type="urban" ref="#Bressanone" key="IT-BZ">Brixen</placeName> (nel <placeName type="region" ref="#Tirolo" key="AT-TI">Tirolo</placeName>) il
+                                <lb xml:id="r47c2p388" facs="#p388r47c2" n="502"/>primo libro stampato nel dialetto chiamato propriamente <term xml:lang="lld">Ladin'</term>. Ha il
+                                <lb xml:id="r48c2p388" facs="#p388r48c2" n="503"/>titolo seguente: <hi rend="italic"><title xml:lang="lld">Storia di S. Genofefa trasportada t. nosc lingaz duò</title></hi>
+                                <lb xml:id="r49c2p388" facs="#p388r49c2" n="504"/><hi rend="italic"><title xml:lang="lld">l. Canonico Smid da M. D.</title> (<persName type="real" ref="#MD" key="Mathaus_Declara">Mathaus Declara</persName>) <term xml:lang="lld">plevang d' Marco</term>.</hi> (Sto-
+                                <lb xml:id="r50c2p388" facs="#p388r50c2" n="505"/>ria di Santa Genovieffa del Can. Smid tradotta nella nostra lingua da
+                                <lb xml:id="r51c2p388" facs="#p388r51c2" n="506"/><persName type="real" ref="#MD" key="Mathaus_Declara">M. D.</persName> parroco a <placeName type="urban" ref="#Ennenberg">Ennenberg</placeName>. <hi rend="italic"><placeName type="urban" ref="#Bressanone" key="IT-BZ">Porsena</placeName></hi> (<placeName type="urban" ref="#Bressanone" key="IT-BZ">Brixen</placeName>) <date when="1878">1878</date>. Quanto all'esten-
+                                <lb xml:id="r52c2p388" facs="#p388r52c2" n="507"/>sione di questo dialetto neolatino il <persName type="real" ref="#B" key="Bidermann">Bidermann</persName> nel suo libro sull'<title><hi rend="italic">esten-</hi></title>
+                                <lb xml:id="r53c2p388" facs="#p388r53c2" n="508"/><title><hi rend="italic">sione dei Neolatini in Austria</hi></title> conta circa <measure type="quantity" unit="persons">9000</measure> Ladini propriamente
+                                <lb xml:id="r54c2p388" facs="#p388r54c2" n="509"/>detti, più di <measure type="quantity" unit="persons">10,000</measure> che parlano un linguaggio simile (a <placeName type="urban" ref="#Fassa" key="IT">Fassa</placeName>, <placeName type="urban" ref="#Buchenstein" key="IT">Buchen-</placeName>
+                                <lb xml:id="r55c2p388" facs="#p388r55c2" n="510"/><placeName type="urban" ref="#Buchenstein" key="IT">stein</placeName>, <placeName type="urban" ref="#Ampezzo" key="IT">Ampezzo</placeName>), e finalmente <measure type="quantity" unit="persons">56,000</measure> Ladini friulani nelle parti di <placeName type="urban" ref="#Gradisca" key="IT">Gra-</placeName>
+                                <lb xml:id="r56c2p388" facs="#p388r56c2" n="511"/><placeName type="urban" ref="#Gradisca" key="IT">disca</placeName>. Inoltre vi sono circa <measure type="quantity" unit="persons">30,000</measure> Ladini occidentali nei <placeName type="region" ref="#Grigioni" key="CH">Grigioni</placeName>,
+                                <lb xml:id="r57c2p388" facs="#p388r57c2" n="512"/>(<placeName type="country" ref="#Svizzera" key="CH">Svizzera</placeName>) che hanno una letteratura e dei giornali propri.
+                            </p>
+                            <bibl facs="#p388r58c2"><title>(<orgName type="newspaper" ref="#AZ" key="Allgemeine_Zeitung">Allgemeine Zeitung</orgName>)</title></bibl>
+                        </div>
+                </div>
+            </div>
+        </div>
+      
+
+
+
+      </body>
+  </text>
+
+<back>
+   <div type="appendix">
+       <head>Glossario dei Termini</head>
+       <list type="gloss">
+           <!-- Termini Dialettali -->
+           <item xml:id="trappeto">
+               <term xml:lang="dialect">trappeto</term>
+               <gloss>Frantoio per olive</gloss>
+           </item>
+           <item xml:id="cozzali">
+               <term xml:lang="dialect">cozzali</term>
+               <gloss>Braccianti agricoli</gloss>
+           </item>
+           <item xml:id="caparrato">
+               <term xml:lang="dialect">caparrato</term>
+               <gloss>Assunto per lavorare</gloss>
+           </item>
+           <item xml:id="soprastante">
+               <term xml:lang="dialect">soprastante</term>
+               <gloss>Sorvegliante</gloss>
+           </item>
+           <item xml:id="ladin">
+               <term xml:lang="lld">Ladin'</term>
+               <gloss>Lingua ladina</gloss>
+           </item>
+           <item xml:id="state">
+               <term xml:lang="dialect">state</term>
+               <gloss>Estate</gloss>
+           </item>
+           <item xml:id="verno">
+               <term xml:lang="dialect">verno</term>
+               <gloss>Inverno</gloss>
+           </item>
+
+           <!-- Termini Agricoli -->
+           <item xml:id="vasca">
+               <term>vasca</term>
+               <gloss>Vasca per la frangitura delle olive</gloss>
+           </item>
+           <item xml:id="sanse">
+               <term>sanse</term>
+               <gloss>Sansa di olive</gloss>
+           </item>
+           <item xml:id="tomolo">
+               <term>tomolo</term>
+               <gloss>Unità di misura per le olive</gloss>
+           </item>
+           <item xml:id="staio">
+               <term>staio</term>
+               <gloss>Unità di misura per l'olio</gloss>
+           </item>
+           <item xml:id="frantoio">
+               <term>frantoio</term>
+               <gloss>Frantoio</gloss>
+           </item>
+           <item xml:id="macina">
+               <term>macina</term>
+               <gloss>Processo di macinazione</gloss>
+           </item>
+           <item xml:id="spremere">
+               <term>spremere</term>
+               <gloss>Processo di spremitura</gloss>
+           </item>
+
+           <!-- Termini Militari -->
+           <item xml:id="ordinamento_territoriale">
+               <term>ordinamento territoriale</term>
+               <gloss>Organizzazione militare territoriale</gloss>
+           </item>
+           <item xml:id="ordinamento_nazionale">
+               <term>ordinamento nazionale</term>
+               <gloss>Organizzazione militare nazionale</gloss>
+           </item>
+           <item xml:id="ferma">
+               <term>ferma</term>
+               <gloss>Periodo di servizio militare</gloss>
+           </item>
+           <item xml:id="giberna">
+               <term>giberna</term>
+               <gloss>Cartucciera militare</gloss>
+           </item>
+           <item xml:id="contingente">
+               <term>contingente annuo di leva</term>
+               <gloss>Contingente annuale di leva</gloss>
+           </item>
+           <item xml:id="eserciti_permanenti">
+               <term>eserciti permanenti</term>
+               <gloss>Eserciti permanenti</gloss>
+           </item>
+       </list>
+   </div>
+</back>
+
+</TEI>

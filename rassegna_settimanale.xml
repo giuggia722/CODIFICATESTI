@@ -1,0 +1,2227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="template.xsl"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="it">
+    <fileDesc>
+      <titleStmt>
+        <title type="main">La Rassegna Settimanale</title>
+        <title type="sub">Di politica, scienza, lettere ed arti</title>
+        <author ref="#SS">Sidney Sonnino</author>
+        <author ref="#LF">Leopoldo Franchetti</author>
+        
+      </titleStmt>
+
+      <editionStmt>
+        <edition>Edizione digitale realizzata per l'esame di Codifica di Testi del Corso di Laurea in Informatica Umanistica, a.a. 2023-24</edition>
+        <respStmt>
+          <resp>Progetto coordinato da:</resp>
+          <name ref="#AMDG">Angelo Mario Del Grosso</name>
+        </respStmt>
+        <respStmt>
+          <resp>Grafica e conversione TEI P5 a cura di:</resp>
+          <name ref="#GC">Giulio Caligiore</name>
+        </respStmt>
+      </editionStmt>
+
+      <publicationStmt>
+        <publisher>
+          <orgName full="yes" ref="#UniPi">Università di Pisa</orgName>
+        </publisher>
+        <pubPlace ref="#PI">Pisa</pubPlace>
+        <address>
+          <postCode>56127</postCode>
+          <name type="place">Italia</name>
+        </address>
+        <availability status="free">
+          <p>Opera ad accesso libero</p>
+        </availability>
+        <date when="2025-02">Febbraio 2025</date>
+      </publicationStmt>
+
+      <notesStmt>
+            <note><p>Link al sito ufficiale della Rassegna Settimanale: <ref target="https://rassegnasettimanale.animi.it/"></ref></p></note>
+      </notesStmt>
+
+
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Firenze</settlement>
+            <repository>Biblioteca Nazionale Centrale</repository>
+            <idno>RS-1878</idno>
+          </msIdentifier>
+          <msContents>
+            <p>
+                <bibl>
+                    <title>La Rassegna Settimanale</title>
+                    <biblScope unit="volume">Vol. 3°</biblScope>, <pubPlace ref="#Roma">Roma</pubPlace>, <date when="1879-05-18">18 Maggio 1879</date>, <biblScope unit="issue">N° 72</biblScope>
+                </bibl>
+            </p>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <support>Carta stampata</support>
+                
+              </supportDesc>
+              <layoutDesc>
+                <layout columns="2">Due colonne per pagina, testo giustificato.</layout>
+              </layoutDesc>
+            </objectDesc>
+            <typeDesc>
+              <p>Giornale</p>
+              <p>Pubblicazione settimanale di carattere politico, culturale e informativo.</p>
+            </typeDesc>
+          </physDesc>
+          <history>
+            <origin>
+              <date when="1878-01-06">6 gennaio 1878</date>
+              <placeName ref="#FI">Firenze</placeName>
+              <p>La pubblicazione è iniziata a Firenze.</p>
+            </origin>
+            <provenance>
+              <date when="1878-11-03">3 novembre 1878</date>
+              <placeName ref="#Roma">Roma</placeName>
+              <p>Dal fascicolo n. 18, la sede della rivista è stata trasferita a Roma.</p>
+            </provenance>
+            <provenance>
+              <date when="1882-01-29">29 gennaio 1882</date>
+              <p>L'ultimo numero pubblicato è il n. 213.</p>
+            </provenance>
+          </history>
+        </msDesc>
+
+        <biblStruct>
+            <analytic>
+                <title>CORRISPONDENZA DA LECCE LA RACCOLTA DEGLI ULIVI</title>
+            </analytic>
+            <analytic>
+                <title>LE PREVISIONI FINANZIARIE.</title>
+            </analytic>
+            <analytic>
+                <title>BIBLIOGRAFIA (ETNOLOGIA, SCIENZE MILITARI)</title>
+            </analytic>
+            <analytic>
+                <title>NOTIZIE (prime due)</title>
+            </analytic>
+
+            <monogr>
+                <editor ref="#CEB">Casa editrice Barbéra</editor>
+                <title>La Rassegna Settimanale di Politica, Scienze, Lettere ed Arti</title>
+                <textLang mainLang="it">Italiano</textLang>
+                <respStmt>
+                <resp>Fondata da</resp>
+                <name>Leopoldo Franchetti</name>
+                <name>Sydney Sonnino</name>
+                </respStmt>
+                <imprint>
+                <pubPlace>Firenze</pubPlace>
+                <publisher>Tipografia Barbéra</publisher>
+                <date>1878</date>
+                </imprint>
+                <biblScope unit="volume">3</biblScope>
+                <biblScope unit="issue">72</biblScope>
+                <biblScope unit="page">382,383,384,386,387,388</biblScope>
+            </monogr>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+
+
+    <encodingDesc>
+        <projectDesc>
+            <p>I testi seguono le linee guida TEI P5, il progetto è stato realizzato per il corso di Codifica Di Testi dell'Università di Pisa</p>
+        </projectDesc>
+
+        <samplingDecl>
+            <p>Sono stati selezionati per la codifica due articoli, due entrate della sezione Bibliografia e due entrate della sezione Notizie, nello stesso fascicolo.</p>
+        </samplingDecl>
+
+        <editorialDecl> 
+            <correction status="high" method="markup"> 
+            <p>Per la correzione di errori sono stati usati i tag <gi>sic</gi> e <gi>corr</gi>.</p>
+            </correction>
+            <normalization method="markup">
+            <p>Per le normalizzazioni sono stati usati i tag <gi>orig</gi> e <gi>reg</gi>.</p>
+            </normalization>
+            
+        </editorialDecl>
+
+            <classDecl>
+    <taxonomy>
+        <!-- Categorie per i titoli -->
+        <category xml:id="title">
+            <catDesc>Tipologie di titoli</catDesc>
+            <category xml:id="title.main"><catDesc>Titolo principale</catDesc></category>
+            <category xml:id="title.sub"><catDesc>Titolo secondario</catDesc></category>
+            <category xml:id="title.translated"><catDesc>Titolo tradotto</catDesc></category>
+            <category xml:id="title.article"><catDesc>Titolo articolo</catDesc></category>
+        </category>
+        
+        <!-- Categorie per i luoghi -->
+        <category xml:id="placeName">
+            <catDesc>Tipologie di luoghi</catDesc>
+            <category xml:id="placeName.city"><catDesc>Città</catDesc></category>
+            <category xml:id="placeName.urban"><catDesc>Luogo urbano</catDesc></category>
+            <category xml:id="placeName.natural"><catDesc>Luogo naturale</catDesc></category>
+            <category xml:id="placeName.country"><catDesc>Nazione</catDesc></category>
+            <category xml:id="placeName.historical-country"><catDesc>Nazione storica</catDesc></category>
+            <category xml:id="placeName.continent"><catDesc>Continente</catDesc></category>
+            <category xml:id="placeName.region">
+                <catDesc>Regione</catDesc>
+                <category xml:id="placeName.region.west"><catDesc>Ovest</catDesc></category>
+                <category xml:id="placeName.region.east"><catDesc>Est</catDesc></category>
+            </category>
+        </category>
+        
+        <!-- Categorie per i termini -->
+        <category xml:id="term">
+            <catDesc>Tipologie di termini</catDesc>
+            <category xml:id="term.genre"><catDesc>Genere</catDesc></category>
+            <category xml:id="term.volume"><catDesc>Volume</catDesc></category>
+            <category xml:id="term.issue"><catDesc>Numero</catDesc></category>
+            <category xml:id="term.ethnic"><catDesc>Gruppo etnico</catDesc></category>
+            <category xml:id="term.verbum"><catDesc>Termine dialettale o specifico</catDesc></category>
+            <category xml:id="term.concept"><catDesc>Concetto</catDesc></category>
+            <category xml:id="term.role"><catDesc>Ruolo</catDesc></category>
+            <category xml:id="term.country"><catDesc>Nazione (come termine)</catDesc></category>
+        </category>
+
+        <!-- Categorie per le misure -->
+        <category xml:id="measure">
+            <catDesc>Tipologie di misure</catDesc>
+            <category xml:id="measure.population"><catDesc>Popolazione</catDesc></category>
+            <category xml:id="measure.area"><catDesc>Area</catDesc></category>
+            <category xml:id="measure.currency"><catDesc>Valuta</catDesc></category>
+            <category xml:id="measure.time"><catDesc>Tempo</catDesc></category>
+            <category xml:id="measure.duration"><catDesc>Durata</catDesc></category>
+            <category xml:id="measure.age"><catDesc>Età</catDesc></category>
+            <category xml:id="measure.volume"><catDesc>Volume</catDesc></category>
+            <category xml:id="measure.quantity"><catDesc>Quantità generica</catDesc></category>
+        </category>
+
+        <!-- Categorie per segmenti tematici -->
+        <category xml:id="seg">
+            <catDesc>Segmenti tematici</catDesc>
+            <category xml:id="seg.theme">
+                <catDesc>Tema</catDesc>
+                <category xml:id="seg.theme.social_condition"><catDesc>Condizione sociale</catDesc></category>
+                <category xml:id="seg.theme.labor"><catDesc>Lavoro</catDesc></category>
+                <category xml:id="seg.theme.production"><catDesc>Produzione</catDesc></category>
+            </category>
+        </category>
+
+        <!-- Categorie per riferimenti generici -->
+        <category xml:id="rs">
+            <catDesc>Riferimenti generici</catDesc>
+            <category xml:id="rs.event"><catDesc>Evento</catDesc></category>
+            <category xml:id="rs.place"><catDesc>Luogo</catDesc></category>
+            <category xml:id="rs.person"><catDesc>Persona</catDesc></category>
+            <category xml:id="rs.org"><catDesc>Organizzazione</catDesc></category>
+            <category xml:id="rs.military"><catDesc>Militare</catDesc></category>
+            <category xml:id="rs.political"><catDesc>Politico</catDesc></category>
+            <category xml:id="rs.historical"><catDesc>Storico</catDesc></category>
+        </category>
+
+        <!-- Categorie per i nomi di persona -->
+        <category xml:id="persName">
+            <catDesc>Tipologie di persone</catDesc>
+            <category xml:id="persName.real"><catDesc>Persona reale</catDesc></category>
+            <category xml:id="persName.fictional"><catDesc>Persona fittizia</catDesc></category>
+            <category xml:id="persName.military"><catDesc>Militare</catDesc></category>
+            <category xml:id="persName.ethnic"><catDesc>Persona etnica</catDesc></category>
+        </category>
+
+        <!-- Categorie per i nomi di organizzazioni -->
+        <category xml:id="orgName">
+            <catDesc>Tipologie di organizzazioni</catDesc>
+            <category xml:id="orgName.military"><catDesc>Organizzazione militare</catDesc></category>
+            <category xml:id="orgName.institution"><catDesc>Istituzione</catDesc></category>
+            <category xml:id="orgName.publisher"><catDesc>Editore</catDesc></category>
+            <category xml:id="orgName.newspaper"><catDesc>Giornale</catDesc></category>
+            <category xml:id="orgName.typography"><catDesc>Tipografia</catDesc></category>
+        </category>
+
+        <!-- Categorie per le divisioni strutturali -->
+        <category xml:id="div">
+            <catDesc>Divisioni strutturali del testo</catDesc>
+            <category xml:id="div.titlePage"><catDesc>Pagina titolo</catDesc></category>
+            <category xml:id="div.subsection"><catDesc>Sottosezione</catDesc></category>
+            <category xml:id="div.entry"><catDesc>Voce</catDesc></category>
+            <category xml:id="div.appendix"><catDesc>Appendice</catDesc></category>
+        </category>
+
+        <!-- Categorie per i nomi aggiuntivi -->
+        <category xml:id="addName">
+            <catDesc>Nomi aggiuntivi</catDesc>
+            <category xml:id="addName.nobility"><catDesc>Nobiltà</catDesc></category>
+        </category>
+
+        <!-- Categorie per le date -->
+        <category xml:id="date">
+            <catDesc>Tipologie di date</catDesc>
+            <category xml:id="date.period"><catDesc>Periodo</catDesc></category>
+        </category>
+    </taxonomy>
+</classDecl>
+        
+    </encodingDesc>
+
+        <profileDesc>
+    <textClass>
+      <keywords>
+        <term type="genre">Pubblicazione settimanale di carattere politico, culturale e informativo</term>
+      </keywords>
+      <classCode scheme="http://www.tei-c.org/ns/1.0">Article</classCode>
+    </textClass>
+  </profileDesc>
+        
+    </teiHeader>
+    <facsimile>
+        <surface xml:id="p382">
+            <!-- pagina 382 -->
+            <graphic url='images/p382.jpg' width='1126' height='1640' />
+            <zone xml:id='titolo_p382' points=' 732,901  732,922  962,922  964,904 ' rendition="default" />
+        
+            <zone xml:id='subtitolo_p382' points=' 701,926  701,944  994,943  994,928 ' rendition="default" />
+        
+            <zone xml:id='p382_p1' points=' 598,947  600,1073  1105,1074  1104,948 ' rendition="default" />
+        
+            <zone xml:id='p382_p2' points=' 595,1079  598,1267  1104,1270  1103,1080 ' rendition="default" />
+        
+            <zone xml:id='p382_p3' points=' 598,1271  600,1547  1102,1548  1104,1270 ' rendition="default" />
+        
+    
+               
+        </surface>
+
+        <surface xml:id="p383">
+            <!-- pagina 383 -->
+            
+            <graphic url='images/p383.jpg' width='1118' height='1637' />
+            
+            <zone xml:id='p383_p1' points=' 54,122  559,119  557,310  53,313 ' rendition="default" />
+        
+            <zone xml:id='p383_p2' points=' 52,316  55,612  557,614  557,314 ' rendition="default" />
+        
+            <zone xml:id='p383_p3' points=' 54,616  58,1087  561,1090  561,618 ' rendition="default" />
+        
+            <zone xml:id='p383_p4' points=' 560,1095  558,1565  58,1569  55,1090 ' rendition="default" />
+        
+            <zone xml:id='p383_p5' points=' 571,124  571,204  1072,204  1073,120 ' rendition="default" />
+        
+            <zone xml:id='p383_p6' points=' 571,207  570,421  1074,419  1073,209 ' rendition="default" />
+        
+            <zone xml:id='p383_p7' points=' 572,423  572,549  1075,548  1076,423 ' rendition="default" />
+        
+            <zone xml:id='p383_p8' points=' 572,552  575,1132  1078,1133  1075,550 ' rendition="default" />
+        
+            <zone xml:id='p383_p9' points=' 577,1137  574,1565  1077,1566  1078,1136 ' rendition="default" />
+        
+               
+        </surface>
+        <surface xml:id="p384">
+            <!-- pagina 384 -->
+
+            <graphic url='images/p384.jpg' width='1139' height='1683' />
+            <zone xml:id='p384_p1' points=' 49,127  559,127  557,1011  50,1010 ' rendition="default" />
+        
+            <zone xml:id='p384_p2' points=' 47,1014  557,1015  558,1309  49,1309 ' rendition="default" />
+        
+            <zone xml:id='p384_p3' points=' 50,1315  559,1315  557,1547  51,1547 ' rendition="default" />
+        
+            <zone xml:id='p384_p4' points=' 74,1575  75,1553  556,1551  555,1576 ' rendition="default" />
+        
+            <zone xml:id='p384_p5' points=' 572,130  570,402  1082,401  1085,124 ' rendition="default" />
+        
+            <zone xml:id='p384_p6' points=' 569,551  570,409  1079,406  1080,553 ' rendition="default" />
+        
+
+
+            <zone xml:id='titolo_LPF_p384' points=' 656,574  656,574  995,567  993,595  656,596 ' rendition="default" />
+        
+            <zone xml:id='p384byline' points=' 633,600  748,598  751,620  631,619 ' rendition="default" />
+        
+            <zone xml:id='p384data' points=' 888,619  888,600  1057,600  1058,620 ' rendition="default" />
+        
+            <zone xml:id='p384_p7' points=' 571,621  1084,620  1078,728  570,729 ' rendition="default" />
+        
+            <zone xml:id='p384_p8' points=' 573,729  1082,729  1082,824  573,834 ' rendition="default" />
+        
+            <zone xml:id='p384_p9' points=' 566,965  1081,967  1083,836  576,837 ' rendition="default" />
+        
+            <zone xml:id='p384_p10' points=' 572,1201  569,968  1080,969  1078,1198 ' rendition="default" />
+        
+            <zone xml:id='p384_p11' points=' 570,1397  1076,1397  1078,1205  572,1205 ' rendition="default" />
+        
+            <zone xml:id='p384_p12' points=' 570,1403  571,1440  690,1441  693,1420  1078,1418  1080,1398 ' rendition="default" />
+        
+            <zone xml:id='p384_p13' points=' 913,1442  914,1422  1051,1421  1053,1439 ' rendition="default" />
+        
+        
+
+
+        </surface>
+        <surface xml:id="p386">
+            <!-- pagina 386 -->
+            
+            
+            <graphic url='images/p386.jpg' width='1134' height='1686' />
+
+            <!-- colonna dx -->
+            <zone xml:id='title_p386' points=' 788,699  892,701  894,719  784,718 ' rendition="default" />
+        
+            <zone xml:id='bibl_p386' points=' 587,723  1093,724  1091,810  591,809 ' rendition="default" />
+        
+            <zone xml:id='p386_p1' points=' 590,813  1093,815  1091,1031  587,1023 ' rendition="default" />
+        
+            <zone xml:id='p386_p2' points=' 1091,1035  591,1030  590,1222  1085,1222 ' rendition="default" />
+        
+            <zone xml:id='p386_p3' points=' 588,1225  1088,1226  1089,1540  588,1544 ' rendition="default" />
+        
+            <zone xml:id='p386_p4' points=' 594,1569  593,1547  1089,1544  1089,1564 ' rendition="default" />
+        
+            
+        </surface>
+        
+
+        <surface xml:id="p387">
+                <graphic url='images/p387.jpg' width='1154' height='1665' />
+
+                <zone xml:id='p387_p1' points=' 34,131  539,124  537,214  36,215 ' rendition="default" />
+        
+                <zone xml:id='p387_p2' points=' 36,223  539,220  538,782  32,782 ' rendition="default" />
+
+
+
+                <zone xml:id='title_p387' points=' 191,808  368,802  368,830  189,830 ' rendition="default" />
+        
+            <zone xml:id='bibl_ScienzeMilitari' points=' 29,834  29,882  538,883  539,838 ' rendition="default" />
+        
+            <zone xml:id='p387_p3' points=' 32,888  538,889  534,1167  31,1169 ' rendition="default" />
+        
+            <zone xml:id='p387_p4' points=' 31,1174  534,1172  534,1318  31,1322 ' rendition="default" />
+        
+            <zone xml:id='p387_p5' points=' 30,1326  539,1323  534,1437  29,1432 ' rendition="default" />
+        
+            <zone xml:id='nota_1' points=' 28,1457  536,1453  535,1572  26,1575 ' rendition="default" />
+        
+            <zone xml:id='p387_p6' points=' 553,134  551,282  1053,280  1055,134 ' rendition="default" />
+        
+            <zone xml:id='p387_p7' points=' 553,286  1055,285  1054,752  552,754 ' rendition="default" />
+        
+            <zone xml:id='p387_p8' points=' 553,759  1056,754  1059,902  551,906 ' rendition="default" />
+        
+            <zone xml:id='p387_p9' points=' 553,911  1059,907  1054,1161  550,1163 ' rendition="default" />
+        
+            <zone xml:id='p387_p10' points=' 551,1167  1054,1168  1052,1420  554,1420 ' rendition="default" />
+        
+            <zone xml:id='p387_p11' points=' 551,1426  1052,1423  1053,1527  551,1530 ' rendition="default" />
+        
+            <zone xml:id='nota_2' points=' 550,1540  549,1570  1051,1570  1052,1537 ' rendition="default" />
+        
+        
+
+          
+
+        </surface>
+
+        <surface xml:id="p388">
+
+        <graphic url='images/p388.jpg' width='1163' height='1673' />
+
+             <!-- scienza militari -->
+
+            <zone xml:id='p388_p1' points=' 118,146  629,150  632,944  128,944 ' rendition="default" />
+        
+            <zone xml:id='p388_p2' points=' 124,947  631,946  629,1113  124,1114 ' rendition="default" />
+        
+
+             <!-- notizie -->
+
+             <zone xml:id='title_p388' points=' 841,1024  949,1027  950,1052  843,1048 ' rendition="default" />
+        
+            <zone xml:id='p388_p3' points=' 645,1055  644,1148  1150,1144  1150,1054 ' rendition="default" />
+        
+            <zone xml:id='p388_p4' points=' 645,1152  1150,1148  1147,1378  646,1384 ' rendition="default" />
+        
+            <zone xml:id='AllZei' points=' 979,1402  979,1385  1126,1381  1125,1403 ' rendition="default" />
+        
+
+    
+        </surface>
+
+    </facsimile>
+
+  <!-- Corpo del testo -->
+  <text>
+    <front>
+        <!-- Testata del giornale -->
+        <div type="titlePage">
+        <head><title>La Rassegna Settimanale</title></head>
+        <p>Di politica, scienze, lettere ed arti.</p>
+        <p>
+            <term type="volume">Vol. 3°</term>, 
+            <placeName type="urban" ref="#Roma">Roma</placeName>, 
+            <date when="1879-05-18">18 Maggio 1879</date>, 
+            <term type="issue">N° 72</term>.
+        </p>
+        </div>
+    </front>
+    <body>
+        <div type="article" n="1">
+            <pb n="382"/>
+                <cb n="2"/>
+                    <head>
+                        <title type="main" xml:id="title_main_p382c2" facs="#titolo_p382">CORRISPONDENZA DA <placeName type="urban" ref="#Lecce">LECCE</placeName></title>
+                        <title type="sub" xml:id="title_sub_p382c2" facs="#subtitolo_p382">LA RACCOLTA DELLE OLIVE</title>
+                    </head>
+                    <p facs="#p382_p1">
+                        <lb/>Appena cessato l'allegro canto della vendemmia, si co-
+                        <lb/>mincia la raccolta delle olive. Alla tiepida aria d'autunno,
+                        <lb/>profumata dal forte odore del mosto <placeName type="region" ref="#Puglia">pugliese</placeName>, succede la
+                        <lb/>rigida atmosfera invernale, impregnata dal grato odore del
+                        <lb/>nocciolo di olive che brucia <choice><orig>continuatamente</orig><reg>continuamente</reg></choice> nei frantoi, qui 
+                        <lb/>detti volgarmente <term type="verbum" xml:lang="it-pug" ref="#trappeto"><hi rend="italic"><choice><orig>trappeti</orig><reg>frantoi</reg></choice></hi></term>.
+                    </p>
+                    <p facs="#p382_p2">
+                        <lb/>Gli <placeName type="natural" ref="#Appennini">Appennini</placeName> presso <placeName type="urban" ref="#Avigliano">Avigliano</placeName> si biforcano; un ramo
+                        <lb/>si avanza per la <placeName type="region" ref="#Basilicata">Basilicata</placeName> e le <placeName type="region" ref="#Calabria">Calabrie</placeName> giù fino allo stretto
+                        <lb/>di <placeName type="urban" ref="#Messina">Messina</placeName>, ed un altro con più umili altezze corre sul <placeName type="urban" ref="#Bari">Ba-
+                        <lb/>rese</placeName> ed il <placeName type="urban" ref="#Lecce">Leccese</placeName>, formando le così dette <placeName type="natural" ref="#Murge">Murge</placeName>, che non
+                        <lb/>sono in verità monti, ma colline, anzi altipiani, che segnano
+                        <lb/>il confine naturale della <placeName type="urban" ref="#ProvinciaDiBari">Provincia di Bari</placeName> e della <placeName type="region" ref="#Basilicata">Basilicata</placeName>.
+                    
+                        <lb/>Le <placeName type="natural" ref="#Murge">Murge</placeName>, dopo aver raggiunto la maggiore loro <choice><orig>elevatezza</orig><reg>altezza</reg></choice>
+                        <lb/>presso <placeName type="urban" ref="#Oria">Oria</placeName>, si abbassano e si <choice><sic>spandono</sic><corr>espandono</corr></choice> nel <placeName type="urban" ref="#Lecce">Leccese</placeName>, dando
+                        <lb/>al suolo la più capricciosa varietà.
+                    </p>
+                    <p facs="#p382_p3">
+                        <lb/>L'operosità degli abitanti ha fatto mutar faccia alla <placeName type="urban" ref="#ProvinciaDiBari">Pro-
+                        <lb/>vincia di Bari</placeName> che, quasi deserta negli altipiani delle <placeName type="natural" ref="#Murge">Murge</placeName>,
+                        <lb/>a misura che scende con dolce pendio fino al mare si co-
+                        <lb/>pre di vigne ed oliveti, tempestata qua e là di giardini fio-
+                        <lb/>riti e di agrumeti. Questa artificiale e varia <choice><orig>floridezza</orig><reg>prosperità</reg></choice> di 
+                        <lb/>suolo va cessando nelle terre d'<placeName type="urban" ref="#Otranto">Otranto</placeName>, dove si addensano 
+                        <lb/>foreste di olive, che col loro cinereo fogliame danno un ma-
+                        <lb/>linconico aspetto alla provincia. La vite sul <choice><sic>littorale</sic><corr>litorale</corr></choice> <placeName type="urban" ref="#ProvinciaDiBari">barese</placeName>
+                        <lb/>è consociata all'ulivo, crescono da anni ed anni insieme, e 
+                        <lb/>non si sa quasi concepire un vigneto spogliato di ulivi. La 
+                        <lb/>vite allevata, curata, accarezzata dal contadino <persName type="ethnic" ref="#Barese">barese</persName> <choice><orig>colle</orig><reg>con le</reg></choice> 
+                        <lb/>maggiori sollecitudini ed esposta ai perpetui raggi del sole,
+                        <lb/>qui nel <placeName type="urban" ref="#ProvinciadiLecce">Leccese</placeName> serpeggia per terra, sporca il suo frutto,
+                    </p>
+            
+            <pb n="383"/>
+                <cb n="1"/>
+                    <p facs="#p383_p1">
+                        <lb/>che quasi per rinfaccio offre al colono il più generoso vino
+                        <lb/>della <placeName type="urban" ref="#Italia">penisola</placeName>; e invece si eleva sovra essa gigante e mae-
+                        <lb/>stoso l'olivo. Non è già che il <persName type="ethnic" ref="#Barese">Barese</persName> dia solo più cura alla
+                        <lb/>vite e il <persName type="ethnic" ref="#Leccese">Leccese</persName> all'olivo; ma perché l'ulivo nella terra d'<placeName type="urban" ref="#Otranto">O-
+                        <lb/>tranto</placeName> cresce per forza ingenita del suolo a bosco e a fore-
+                        <lb/>sta. Gli alberi coi loro rami vigorosi e colossali in qualche
+                        <lb/>luogo si avvicinano, s'intrecciano, vietando fin ai raggi
+                        <lb/>del sole di farsi strada al suolo, su cui cresce umido e ver-
+                        <lb/>de di muschio e non altra vegetazione.
+                    </p>
+                    <p facs="#p383_p2">
+                        <lb/>Dalle vicine province di <placeName type="urban" ref="#Basilicata">Basilicata</placeName> e di <placeName type="urban" ref="#ProvinciaDiBari">Bari</placeName> scendono
+                        <lb/>in quella di <placeName type="urban" ref="#ProvinciaDiLecce">Lecce</placeName> numerose schiere di contadini, che finiti
+                        <lb/>i lavori della stagione risalgono ai villaggi o ai monti na-
+                        <lb/>tali, per ridiscendere ai bisogni della stagione novella. Que-
+                        <lb/>sta emigrazione ed immigrazione di lavoratori è una specie
+                        <lb/>di marea vivente, che si rinnova tre volte l'anno. La <placeName type="urban" ref="#ProvinciaDiLecce">provincia
+                        <lb/>di Lecce</placeName> ha una popolazione di <measure type="population" unit="people" quantity="493594">493.594 abitanti</measure> sparsa sopra
+                        <lb/>un'estensione di suolo di <measure type="area" unit="km2" quantity="8529">chilometri quadrati 8.529</measure> coltivati in
+                        <lb/>parte a vigne e a ulivi, il rimanente a pascoli ed a granaglie.
+                        <lb/>La popolazione è insufficiente ai bisogni dell'agricoltura, spe-
+                        <lb/>cialmente per le raccolte delle granaglie e delle ulive. A questa
+                        <lb/>insufficienza della popolazione si aggiunge un'altra causa, che
+                        <lb/>determina questa immigrazione di contadini nella <placeName type="urban" ref="#ProvinciaDiLecce">provin-
+                        <lb/>cia di Lecce</placeName>.
+                    </p>
+                    <p facs="#p383_p3">
+                        <lb/>Nel <placeName type="region" ref="#ProvinciaDiBari">Barese</placeName> <seg type="theme" subtype="social_condition">la condizione della plebe campagnola è mi-
+                        <lb/>serissima; l'agricoltura specialmente lungo il litorale vive
+                        <lb/>miserabilmente.</seg> Chi non è stato nelle province meridio-
+                        <lb/>nali, o, per dir più specificatamente, nelle <placeName type="region" ref="#Puglia">Puglie</placeName>, avrà un
+                        <lb/>falso concetto del comune rurale e del comune urbano.
+                        <lb/>Nelle nostre statistiche sono ritenuti per urbani quei co-
+                        <lb/>muni che hanno un centro almeno di di <measure type="population" unit="people" quantity="6000">6.000 abitanti</measure> di po-
+                        <lb/>polazione agglomerata. Or bene, in <placeName type="region" ref="#Puglia">Puglia</placeName> il grosso della
+                        <lb/>popolazione delle grandi città è costituito da contadini,
+                        <lb/>tranne soltanto quella di <placeName type="urban" ref="#Bari">Bari</placeName> e di <placeName type="urban" ref="#Trani">Trani</placeName>. Da ciascuno di
+                        <lb/>questi grossi casolani, come <placeName type="urban" ref="#Andria">Andria</placeName>, <placeName type="urban" ref="#Bitonto">Bitonto</placeName>, <placeName type="urban" ref="#Bisceglie">Bisceglie</placeName>, <placeName type="urban" ref="#Corato">Co-
+                        <lb/>rato</placeName>, <placeName type="urban" ref="#Altamura">Altamura</placeName>, ogni mattina esce una popolazione di <measure type="population" unit="people" quantity="4000-5000"><num type="range">quattro
+                        <lb/>o cinque</num> mila abitanti</measure>, il fiore della popolazione più vigorosa
+                        <lb/>d'ambo i sessi, che si spande nelle campagne per far ritorno
+                        <lb/>in città al tramonto del sole. Gli altipiani, come le <placeName type="natural" ref="#Murge">Murge</placeName>
+                        <lb/>di <placeName type="urban" ref="#Gravina">Gravina</placeName> e di <placeName type="urban" ref="#Altamura">Altamura</placeName>, sono deserti di abitanti, mentre
+                        <lb/>nelle città brulicano innumerevoli famiglie di miseri e fa-
+                        <lb/>melici <term type="concept" xml:lang="it-pug" ref="#cozzali"><hi rend="italic"><choice><orig>cozzali</orig><reg>braccianti</reg></choice></hi></term> per altro operosi e intelligenti, che ad ogni
+                        <lb/>nuova bisogna dei campi si rovesciano a ondate nella <placeName type="urban" ref="#Capitanata">Capi-
+                        <lb/>tanata</placeName> e nel <placeName type="urban" ref="#Lecce">Leccese</placeName>. L'abilità di questi diseredati nella
+                        <lb/>coltura specialmente degli ulivi è tale, che da per tutto si
+                        <lb/>dice in <placeName type="region" ref="#Puglia">Puglia</placeName> <quote>che l'accetta del <persName type="ethnic" ref="#MarinaDiGinosa">marinese</persName> ha il taglio d'oro</quote>.
+                    </p>
+                    <p facs="#p383_p4">
+                        <lb/><seg type="theme" subtype="social_condition">Più lagrimevole ancora è la condizione del contadino
+                        <lb/>della <placeName type="region" ref="#Basilicata">Basilicata</placeName>; che, come tutti sanno e italiani e stranieri,
+                        <lb/>caccia i figli errabondi <choice><orig>pel</orig><reg>per il</reg></choice> mondo, incapace a sostenerli.</seg>
+                        <lb/>Prima che avessero conosciuto ed agognato nuovi cieli e lon-
+                        <lb/>tani posti, i <persName type="ethnic" ref="#Lucani">Lucani</persName> discendevano con più modesti desideri
+                        <lb/>alla pianura pugliese. La loro abilità essendo di tutto in-
+                        <lb/>feriore a quella del contadino <persName type="ethnic" ref="#Barese">Barese</persName>, essi sono rimunerati
+                        <lb/>assai meno di questo. Ai primi venti del novembre, che
+                        <lb/>sgravano gli alberi di buona parte di ulive, scendono dunque
+                        <lb/>alla buona di Dio compagnie numerose d'ambo i sessi di tutte
+                        <lb/>le età e si spandono per tutta la provincia fra questi immensi
+                        <lb/>boschi d'ulivi, dove comincia la raccolta che dura per quasi
+                        <lb/>tutto l'inverno. Per la sterminata estensione degli oliveti
+                        <lb/>non si pone cura alla qualità, ma alla quantità del prodotto;
+                        <lb/>quindi si raccolgono le olive quando sono già nere e quando
+                        <lb/>già gli alberi agitati dai venti ne hanno lasciato cadere
+                        <lb/>buona parte al suolo. Gli uomini montano su gli alberi e
+                        <lb/><choice><orig>squassano</orig><reg>SCUOTONO</reg></choice> vigorosamente i rami, o li percuotono con per-
+                        <lb/>tiche, sicché <choice><orig>colle</orig><reg>con le</reg></choice> olive cadono al suolo foglie e messe no-
+                        <lb/>velle, che al prossimo anno sarebbero state fruttifere. Non
+                        <lb/>voglio già dire che non vi siano padroni che costringono
+                        <lb/>questi barbari contadini a usare altri mezzi meno distrut-
+                    </p>
+
+                
+                <cb n="2"/>
+                    <p facs="#p383_p5">
+                        <lb/>tivi; ma per lo più il padrone diretto è assente dai suoi
+                        <lb/>feudi, e tutta la sua campagna è affidata alle cure di un
+                        <lb/>estraneo. Le donne raccolgono dal suolo le olive cadute,
+                        <lb/>che con appositi carri vengono trasportate al <term type="verbum" xml:lang="it-pug" ref="#trappeto"><hi rend="italic"><choice><orig>trappeto</orig><reg>frantoio</reg></choice></hi></term>.
+                    </p>
+                    <p facs="#p383_p6">
+                        <lb/>I <persName type="ethnic" ref="#Toscani">Toscani</persName> difficilmente possono giungere a concepire
+                        <lb/>uno di questi nostri <seg type="theme" subtype="labor">frantoi, oscuri, immondi, nauseanti. Im-
+                        <lb/>mensi fabbricati dove giorno e notte si lavora a luce d'olio</seg>, e
+                        <lb/>dove brucia perpetuamente il nocciolo per dar all'am-
+                        <lb/>biente il maggiore calore possibile e fare staccare facil-
+                        <lb/>mente le molecole oleose dalle altre materie, che le impri-
+                        <lb/>gionano. Le olive sono gettate e ammassate in fossi profondi
+                        <lb/>e quadrati dove si lasciano fermentare, dando quell'odore
+                        <lb/>fetido, che è la ragione prima del deprezzamento dell'olio
+                        <lb/><placeName type="urban" ref="#Lecce">leccese</placeName>.
+                    </p>
+                    <p facs="#p383_p7">
+                        <lb/>I <term type="verbum" xml:lang="it-pug" ref="#trappeto"><hi rend="italic"><choice><orig>trappeti</orig><reg>frantoi</reg></choice></hi></term> sono affatto insufficienti in proporzione all'esten-
+                        <lb/>sione degli oliveti, perciò alcuni signori hanno introdotto il
+                        <lb/>motore a vapore per macinare e comprimere le olive. Del resto
+                        <lb/>generalmente si adoperano i torchi di ferro e di legno e più
+                        <lb/>raramente strettoi idraulici, dopo averle stritolate sotto
+                        <lb/>ruote di pietra dura, meccanismo detto <term type="verbum" ref="#vasca"><hi rend="italic">vasca</hi></term>.
+                    </p>
+                    <p facs="#p383_p8">
+                        <lb/>Non è già che quivi <choice><sic>sieno</sic><corr>siano</corr></choice> ignorati i migliori metodi di
+                        <lb/>fabbricazione degli oli, per cui sono così pregiati da poco
+                        <lb/>tempo quelli della vicina <placeName type="urban" ref="#ProvinciaDiBari">provincia di Bari</placeName> e da gran tempo
+                        <lb/>quelli di <placeName type="region" ref="#Toscana">Toscana</placeName>. Si sa, per esempio, che le olive debbono
+                        <lb/>essere raccolte quando sono ancor verdi, e a mano e non
+                        <lb/>già a quella maniera vandalica; che se non possono essere
+                        <lb/>frante e compresse appena raccolte, debbono essere almeno
+                        <lb/>depositate, non ammonticchiate, in luoghi asciutti e ventilati
+                        <lb/>per non farle riscaldare; che i frantoi debbono essere arieg-
+                        <lb/>giati, e pulitissimi i tini, dove si lascia a raffinare l'olio;
+                        <lb/>poiché <choice><orig>colla</orig><reg>con la</reg></choice> estrazione dell'olio a freddo si ottengono oli della
+                        <lb/>migliore qualità; e niuno vieta di sottoporre al caldo le acque
+                        <lb/>fecciose e gli altri residui, come le <term type="verbum"  ref="#sanse">sanse</term> per ottenere una qua-
+                        <lb/>lità scadente di oli. I nemici capitali degli oli fini sono il
+                        <lb/>calore e il cattivo odore, che quasi istantaneamente si pro-
+                        <lb/>paga e infetta qualunque gran massa d'olio. Sono novità
+                        <lb/>queste di cui son già piene le fosse, ma tant'è, l'uomo è
+                        <lb/>anch'esso un animale d'abitudini, e la nostra coscienza, di-
+                        <lb/>ceva bene <persName ref="#Shakespeare" type="real">Shakespeare</persName>, <quote>è un accumulazione di queste abi-
+                        <lb/>tudini</quote>. <seg type="theme">Il contadino è per sua natura tenace del passato,
+                        <lb/>è conservatore per eccellenza</seg>; e questo vi spiega in parte
+                        <lb/>perché l'agricoltura sia fra le industrie la più tarda a pro-
+                        <lb/>gredire. Essa specialmente si giova degli ultimi strati sociali;
+                        <lb/>e non c'è verso di farla avanzare d'un passo, se capitali ed
+                        <lb/>istituzioni economiche e politiche non facciano da leva per
+                        <lb/>smuovere e infondere nuovo vigore nell'infima plebe cam-
+                        <lb/>pagnuola.
+                    </p>
+
+                    <p facs="#p383_p9">
+                        <lb/>La <placeName type="urban" ref="#ProvinciadiLecce">Provincia di Lecce</placeName> sente il disagio comune ad altre
+                        <lb/>provincie; anzi per essa ci sono pure ragioni speciali di
+                        <lb/>desideri nutriti o fatti nutrire, di speranze accarezzate
+                        <lb/>invano, che accrescono vie più il malcontento. Al princi-
+                        <lb/>pio della <rs type="event">unificazione italiana</rs>, e quando specialmente co-
+                        <lb/>minciarono i lavori ferroviari e quelli del porto di <placeName type="urban" ref="#Brindisi">Brin-
+                        <lb/>disi</placeName>, i prezzi di tutte le derrate salirono; quindi contenti i
+                        <lb/>lavoratori, contentissimi i proprietari; gli oli lucidi leccesi
+                        <lb/>ebbero un rapido slancio di prezzo per il gran numero
+                        <lb/>cresciuto delle macchine, per uso delle quali furono trovati
+                        <lb/>eccellenti. Ma le macchine non potevano crescere tutti i
+                        <lb/>giorni e la richiesta venne a mancare; e il porto di <placeName type="urban" ref="#Brindisi">Brin-
+                        <lb/>disi</placeName> che prometteva mari e mondi, e le ferrovie interne
+                        <lb/>promesse e mancate furono una vera disillusione. Il pro-
+                        <lb/>prietario di oli si vide ben presto diminuire le entrate dei
+                        <lb/>suoi oliveti, quando già aveva intrapreso lavori di miglioria
+                        <lb/>così nei frantoi, come nei fondi, ma non si vide certo
+                        <lb/>scemare le tasse. I contadini, che avevano gongolato nei
+                        <lb/>primi anni al luccicare delle belle monete d'argento e alla
+                        <lb/>gran richiesta dei lavori, non avevano badato al prezzo sem-
+                    </p>
+
+
+
+
+                
+            
+            
+            <pb n="384"/>
+                <cb n="1"/>
+                    <p facs="#p384_p1">
+                        <lb/>pre crescente del pane e delle altre materie prime. Ma ora...
+                        <lb/>ai danni provenienti da ordine economico si sono aggiunti
+                        <lb/>quelli di ordine naturale: per un decennio gli oliveti si sono
+                        <lb/>ostinati a non produrre affatto. E i proprietari, pur <choice><orig>colle</orig><reg>con le</reg></choice>
+                        <lb/>migliori intenzioni del mondo per la deficienza di numera-
+                        <lb/>rio e per la vastità delle tenute a oliveto, non hanno potuto
+                        <lb/>migliorare sensibilmente la coltivazione degli ulivi e la fab-
+                        <lb/>bricazione degli oli. Per contraccolpo ne ha patito anche
+                        <lb/>quel povero popolo emigrante, già <choice><orig><foreign> <hi rend="italic">caparrato</hi></foreign></orig><reg>ingaggiato</reg></choice> nella <choice><orig><foreign><hi rend="italic">state</hi></foreign></orig><reg>estate</reg></choice> <choice><orig>pei</orig><reg>per i</reg></choice>
+                        <lb/>lavori del <choice><orig><foreign><hi rend="italic">verno</hi></foreign></orig><reg>inverno</reg></choice>; sicché le magre mercedi giornaliere sono
+                        <lb/>in parte sfumate prima ancora che cominci la raccolta delle
+                        <lb/>olive. Come sempre, il maschio <choice><orig>piglia</orig><reg>prende</reg></choice> maggiore mercede
+                        <lb/>della donna, l'uno da <measure type="currency" unit="LIT" quantity="1.00-1.50">una lira a 1,50</measure> e l'altra da <measure type="currency" unit="LIT" quantity="0.50-0.75">10 a 15
+                        <lb/>soldi</measure>(s'intende bene senza pane), secondo le varie costuman-
+                        <lb/>ze agricole locali e la generosità dei padroni. Le ragazze
+                        <lb/>anch'esse sono <choice><orig><foreign><hi rend="italic">caparrate</hi></foreign></orig><reg>ingaggiate</reg></choice> e talora corrono alla rinfusa in
+                        <lb/>cerca di lavoro, o affidate a conoscenti o in mezzo ad altre
+                        <lb/>amiche; o se no alla buona di Dio! <seg type="theme">Queste fanciulle slom-
+                        <lb/>bate dalle fatiche, e accasciate dalla miseria hanno molto
+                        <lb/>limitato il sentimento del pudore; la loro cara gioventù fugge,
+                        <lb/>fugge via presto, e chi l'ha goduta, l'ha goduta. Dormono
+                        <lb/>in grandi stanzoni delle fattorie, per lo più separati i maschi
+                        <lb/>dalle femmine; talvolta anche insieme negli stessi stanzoni.
+                        <lb/>Qual paura vi sarebbe? Prostrati sulla paglia, oppressi dal
+                        <lb/>sonno, giacciano come carcami; se qualche più potente istin-
+                        <lb/>to giovanile tiene desta qualche pupilla, non oso dire che
+                        <lb/>quella gente sia più corrotta della plebe cittadina. Del resto
+                        <lb/>certi peccati sono peccati veniali nei bassi fondi sociali,
+                        <lb/>dove l'ambiente e l'aria stessa è satura di vizi, e la donna,
+                        <lb/>come l'uomo, è costretta ad affrontare <choice><orig>colla</orig><reg>con la</reg></choice> sua audacia
+                        <lb/>giorno per giorno le asprezze e le urgenze della vita fisica;
+                        <lb/>e che pudore, e che virtù, e che istruzione! vivere e solo
+                        <lb/>vivere per non morire è il premio d'ogni suo sforzo, della sua
+                        <lb/>lotta indeclinabile ed incessante. Se le donne o le fanciulle non
+                        <lb/>perdono affatto l'onestà, la verecondia e la grazia restano nel
+                        <lb/>loro cuore qualità alterate, come corde che non danno più
+                        <lb/>l'usata armonia. Chi prima di tutti e più di tutti usufruisce
+                        <lb/>di quella prostrazione morale è un qualche <persName type="fictional" ref="#DonRodrigo" source="IPromessiSposi"><choice><orig>D.</orig><reg>Don</reg></choice> Rodrigo</persName>
+                        <lb/>del luogo; e sono quasi tentato a dire che non c'è peccato
+                        <lb/>di quella classe al quale l'agiato ed ozioso proprietari non
+                        <lb/>abbia dato causa o almeno stimoli.</seg>
+                    </p>
+
+                    
+                    <p facs="#p384_p2">
+                        <lb/>Compiuta la raccolta, tutta questa gente torna alla
+                        <lb/>spicciolata ai lontani casali; ci torna gaia e frettolosa;
+                        <lb/>il <seg type="theme">guadagno è scarso</seg> e la fatica ha consumato qualche
+                        <lb/>anno della loro giovinezza; ma che monta? Con quel
+                        <lb/>po' di <choice><orig>danaro</orig><reg>denaro</reg></choice> serbato hanno innanzi a loro dei giorni si-
+                        <lb/>curi e tanto basta per farli contenti; e il mattino non si
+                        <lb/>desteranno intirizziti sulla paglia della fattoria al vociare
+                        <lb/><choice><sic>autipatico</sic><corr>antipatico</corr></choice> del soprastante, e poi rivedranno qualche persona
+                        <lb/>cara, qualche viso sognato; poiché un po' di cuore, crede-
+                        <lb/>telo a me, resta sempre sotto quelle vesti di fustagno. Ri-
+                        <lb/>tornano dunque ai luoghi natali; avanti! la strada non ha
+                        <lb/>più ciottoli e l'aria sferza invano quelle facce gioconde; e
+                        <lb/>la loro mesta cantilena è un ultimo saluto alla fattoria del
+                        <lb/>padrone, agli abitanti che restano, a quei boschi d'ulivi.
+                    </p>
+                    <p facs="#p384_p3">
+                        <lb/>La raccolta è finita, ma dura ancora nei chiusi <term type="concept">frantoi</term>
+                        <lb/>la estrazione degli <term type="concept">oli</term>; e quivi sono adoperati gli operai
+                        <lb/>più intelligenti, che faticano eccessivamente, ma sono per
+                        <lb/>altro rimunerati per questi paesi molto bene. <seg type="theme" subtype="labor">È difficile ri-
+                        <lb/>durre in cifre le mercedi di questi operai, poiché i patti che
+                        <lb/>stabiliscono <choice><orig>coi</orig><reg>con i</reg></choice> padroni differiscono da luogo a luogo e ta-
+                        <lb/>lora da padrone a padrone</seg>; alcuni proprietari di fatti si
+                        <lb/>obbligano di somministrare una minestra di legumi con pane
+                        <lb/>e <measure type="volume" unit="L" quantity="0.5">mezzo litro</measure> di vino al giorno per individuo e la mercede
+                        <lb/>in tal caso non è mai superiore ad <measure type="currency" unit="LIT" quantity="1">una lira</measure>: altri poi non
+                        <lb/>danno cibo di sorta ma pagano da <measure type="currency" unit="LIT" quantity="1.50-2.00">1,50 a L. 2.00</measure> al giorno.
+                    </p>
+                    <p facs="#p384_p4">
+                       <lb/>Io mi trovo molto imbrogliato a dirvi la rendita di un
+                    </p> 
+                
+                <cb n="2"/>
+                    <p facs="#p384_p5">
+                        <lb/>oliveto, innanzi tutto perchè dovrei trovarvi la media pro-
+                        <lb/>duzione di un decennio, e poi, perchè l'olio subisce varia
+                        <lb/>zione di prezzo molto sensibili secondo che il frantoio o
+                        <lb/>la conserva degli oli è posta vicino o lontano dalla fer-
+                        <lb/>rovia; poichè l'olio, più di qualunque liquido, ha bisogno
+                        <lb/>di forti ed ottimi recipienti, e, <choice><orig>pel</orig><reg>per il</reg></choice> suo grande valore, di
+                        <lb/>essere custodito da persone di somma fiducia. E poi in ta-
+                        <lb/>lune contrade gli olivi sono serrati e fitti a foreste, al-
+                        <lb/>trove piuttosto lontani, e di sotto si semina ogni sorta di
+                        <lb/>granaglie. <seg type="theme" subtype="production">Questo soltanto posso dire, che ogni <measure type="volume" unit="L" quantity="55.5" corresp="#tomolo">tomolo</measure> di
+                        <lb/>olive dà circa uno <measure type="volume" unit="L" quantity="20" corresp="#staio">staio</measure> di olio</seg>; ma il prezzo commerciale
+                        <lb/>di quest'oli, ognuno può leggerlo nei listini di borsa, è
+                        <lb/>sempre da una metà a un terzo inferiore a quello di <placeName type="urban" ref="#Bari">Bari</placeName>.
+                    </p>
+                    <p facs="#p384_p6">
+                        <lb/>Non debbo qui tralasciare di dire che molti proprietari
+                        <lb/>di centri commerciali s'ingegnano a produrre oli fini coi
+                        <lb/>metodi novelli, ed io non posso che fare un augurio a questa
+                        <lb/>terra geniale e a questi intelligentissimi abitanti, nella cui
+                        <lb/>terra suona il più gentile dialetto meridionale: che, cioè,
+                        <lb/><choice><orig>sieno</orig><reg>siano</reg></choice> al più presto soddisfatti i desideri che nutrono da pa-
+                        <lb/>recchi anni di buone vie e di migliori porti.
+                    </p>
+
+
+
+
+                
+                 
+        </div>
+        <div type="article" n="2">
+            <pb n="384"/>
+                <cb n="2"/>    
+                    
+                    
+                   
+                    <head>
+                    <title type="main" xml:id="title_LPF_p384" facs="#titolo_LPF_p384">LE PREVISIONI FINANZIARIE.</title>
+                    </head>
+                    
+                    <opener>
+                    <byline xml:id="p384line" facs="#p384byline">Ai Direttori.</byline>
+                    <dateline facs="#p384data">
+                        <placeName type="urban" ref="#Roma"><hi rend="italic">Roma</hi></placeName>
+                        <docDate when="1879-05-15"><hi rend="italic">15 maggio 1879</hi></docDate>
+                    </dateline>
+                    </opener>
+
+                    <p facs="#p384_p7">
+                        <lb/>Bisogna bene che le voci sparse con insistenza, ancor-
+                        <lb/>chè dimostrate erronee, lascino pure delle tracce, se anche la
+                        <lb/><orgName ref="#Rassegna"><hi rend="italic">Rassegna</hi></orgName>, che ha tanta cura di essere e di mostrarsi impar-
+                        <lb/>ziale, raccoglie e ripete un'accusa spesso lanciatami e da
+                        <lb/>me in <orgName ref="#Parlamento">Parlamento</orgName> più volte respinta.
+                    </p>
+
+                    <p facs="#p384_p8">
+                        <lb/>Dice la <orgName ref="#Rassegna"><hi rend="italic">Rassegna</hi></orgName> nel suo ultimo numero (<ref type="issue" n="71"><choice><abbr>N.</abbr><expan>Numero</expan></choice> 71</ref>): <quote>Fin
+                        <lb/>dal <date when="1863">1863</date> quando la dura realtà s'era rivelata in un disa-
+                        <lb/>vanzo di <measure type="currency" unit="LIT">parecchie centinaia di milioni</measure>, il <persName type="real" ref="#MM">Minghetti</persName> non
+                        <lb/>esitò a tracciare un piano per il quale il bilancio si sarebbe
+                        <lb/>pareggiato in <measure type="time" unit="year" quantity="4">quattro anni</measure>.</quote>
+                    </p>
+
+                    <p facs="#p384_p9">
+                        <lb/>So bene che l'articolo non attribuisce questo difetto sol-
+                        <lb/>tanto a me, ma <choice><orig>eziandio</orig><reg>anche</reg></choice> a tutti i <rs ref="#MDF">ministri di finanza</rs> passati ed
+                        <lb/>al presente; e non ha altro scopo che di mostrare la incertezza
+                        <lb/>delle previsioni un po' lontane in materia di Bilancio. Ma,
+                        <lb/>senza contraddire al concetto generale, mi sia lecito rettifi-
+                        <lb/>care quanto mi riguarda.
+                    </p>
+                    <p facs="#p384_p10">
+                        <lb/>Nel piano esposto il <date when="1863-02-14">14 febbraio 1863</date> al quale si allude,
+                        <lb/>io parlai soltanto del pareggio delle spese ordinarie, e posi
+                        <lb/>dinanzi agli occhi del <orgName ref="#Parlamento">Parlamento</orgName> come per molti anni an-
+                        <lb/>cora le forze contributive del paese non avrebbero potuto
+                        <lb/>provvedere alle spese straordinarie. Le quali però io rac-
+                        <lb/>comandava non superassero possibilmente i <measure type="currency" unit="LIT" quantity="100000000">100 milioni
+                        <lb/>annui</measure>. E più tardi dovendo ritornare sull'argomento, in
+                        <lb/><orgName ref="#Senato">Senato</orgName> espressi di nuovo il concetto con queste parole:
+                        <lb/><quote>Io non posso non ripetere che l'<placeName type="country" ref="#Italia">Italia</placeName> avrà per molto
+                        <lb/>tempo mestieri di spese straordinarie, alle quali dovrà far
+                        <lb/>fronte con risorse straordinarie.</quote>
+                    </p>
+
+                    <p facs="#p384_p11">
+                        <lb/>Non è mio compito di fare la storia successiva della
+                        <lb/>nostra finanza, e di ricordare i trasferimenti della capitale,
+                        <lb/>le guerre, le agitazioni interne che allora e poi per lungo
+                        <lb/>tempo perturbarono le previsioni. Però dopo tanti sforzi e
+                        <lb/>tanti sacrifizi l'<placeName type="country" ref="#Italia">Italia</placeName> trionfò di tutti gli ostacoli. Ed io conto
+                        <lb/>fra i più bei giorni della mia vita quel <date when="1876-03-16">16 marzo 1876</date>
+                        <lb/>nel quale potei presentare al <orgName ref="#Parlamento">Parlamento</orgName> un bilancio pareg-
+                        <lb/>giato non solo nelle spese ordinarie, ma <choice><orig>eziandio</orig><reg>anche</reg></choice> nelle straor-
+                        <lb/>dinarie.
+                    </p>
+
+                    <p facs="#p384_p12">
+                        <lb/>Gradiscano, signori Direttori, i sensi del mio amiche-
+                        <lb/>vole rispetto.
+                    </p>
+                    <closer facs="#p384_p13">
+                        <signed>
+                            <persName ref="#MM">M. MINGHETTI.</persName>
+                        </signed>
+                    </closer>
+                
+        </div>
+        <div type="article" n="3">
+            <div type="subsection" n="etnologia">
+                <pb n="386"/>
+                    <cb n="2"/>   
+
+
+                        <head>
+                            <title type="main" xml:id="titleETN_p386" facs="#title_p386">ETNOLOGIA.</title>
+
+                            
+                        </head>    
+                            <bibl facs="#bibl_p386">
+                                <lb/><author><persName type="real" ref="#VH">VICTOR HEHN</persName></author>, <hi rend="italic"><title type="main" xml:lang="deu"><ref target="https://books.google.it/books/about/Italien.html?id=v1SSrBPmf8cC&amp;redir_esc=y">Italien. Ansichten und Streiflichter Zweite stark 
+                                <lb/>vermehrte Auflage</ref></title></hi> (<title type="translated" xml:lang="ita"><placeName type="country" ref="#Italia">Italia</placeName>. Vedute e accidenti di luce. Se-
+                                <lb/>conda ediz. molto accresciuta</title>). — <pubPlace><placeName type="urban" ref="#Berlino">Berlino</placeName></pubPlace>, <publisher>Borntraeger</publisher>, 
+                                <lb/><date when="1879">1879</date>.
+                            </bibl>
+                        
+
+
+                            <p facs="#p386_p1">
+                                <lb/>Quelli che conoscono il libro di <persName type="real" ref="#VH">Victor Hehn</persName> sull'<placeName type="country" ref="#Italia">Italia</placeName>
+                                <lb/>si <choice><orig>maravigliano</orig><reg>meravigliano</reg></choice> che sia così poco letto in proporzione del
+                                <lb/>suo merito: e non soltanto in <placeName type="country" ref="#Italia">Italia</placeName>, dov'è rimasto quasi
+                                <lb/>sconosciuto sebbene gl'<persName type="ethnic" ref="#Italiani">Italiani</persName> non abbiano trovato in nessun
+                                <lb/>altro scrittore maggiori simpatie, ma perfino in <placeName type="country" ref="#Germania">Germania</placeName>,
+                                <lb/>dove i pregi della esposizione avrebbero dovuto più spe-
+                                <lb/>cialmente invitare a leggerlo. Nè possiamo rintracciare
+                                <lb/>nessun'altra ragione di questo strano fenomeno tranne la
+                                <lb/>circostanza che la prima edizione (<date when="1867">1867</date>) è comparsa a <placeName type="urban" ref="#Pietroburgo">Pie-
+                                <lb/>troburgo</placeName>, di dove era meno facile la diffusione.
+                            </p>
+                        
+                            <p facs="#p386_p2">
+                                <lb/>Questo lavoro che, sebbene in ristretto, ci dà un qua-
+                                <lb/>dro generale della natura e degli abitanti d'<placeName type="country" ref="#Italia">Italia</placeName>, ci sem-
+                                <lb/>bra commendevole non solo per la forma (cosa che inte-
+                                <lb/>ressa più i <persName type="ethnic" ref="#Tedeschi">Tedeschi</persName> che gl'<persName type="ethnic" ref="#Italiani">Italiani</persName>) la quale da parecchie
+                                <lb/><choice><orig>diecine</orig><reg>decine</reg></choice> di anni non è stata superata in bellezza e originalità
+                                <lb/>forse da nessun'altra prosa tedesca, ma specialmente per
+                                <lb/>le acute osservazioni sulla storia della civiltà, che occor-
+                                <lb/>rono in maggior copia nei capitoli ove l'<choice><abbr>A.</abbr><expan>Autore</expan></choice> tratta delle
+                                <lb/>piante coltivate, degli animali domestici e della lingua.
+                            </p>
+
+                            <p facs="#p386_p3">
+                                <lb/>L'autorità dell'<persName type="real" ref="#VH">Hehn</persName> in queste materie è generalmente
+                                <lb/>riconosciuta dopo la pubblicazione del suo pregevole libro:
+                                <lb/><bibl><hi rend="italic"><title xml:lang="ita">Le piante da cultura e gli animali domestici nel loro passaggio
+                                <lb/>dall'<placeName type="continent" ref="#Asia">Asia</placeName> in <placeName type="country" ref="#Grecia">Grecia</placeName> e nel rimanente d'<placeName type="continent" ref="#Europa">Europa</placeName></title></hi></bibl>. Oltre alla molta
+                                <lb/>erudizione in tal genere egli ha un talento particolare per
+                                <lb/>mettere in rilievo, nella loro importanza rispetto alla storia
+                                <lb/>storia della civiltà, i fenomeni della vita e degli oggetti da cui
+                                <lb/>siamo circondati ed ai quali ordinariamente facciamo appena
+                                <lb/>attenzione. È pure di grande interesse il capitolo intito-
+                                <lb/>lato <title xml:lang="lat"><hi rend="italic">Pro populo italico</hi></title>, il quale tratta del carattere degl'<persName type="ethnic" ref="#Italiani">Ita-
+                                <lb/>liani</persName> e cerca, sebbene talvolta con troppa indulgenza, di
+                                <lb/>respingere i rimproveri che vengono loro fatti abitualmente
+                                <lb/>da altre nazioni. Ci sembra, per esempio, che vada troppo
+                                <lb/>oltre volendo giustificare i cattivi trattamenti usati contro
+                                <lb/>le bestie, e la poca puntualità nei rapporti commerciali.
+                            </p>
+                            <p facs="#p386_p4">
+                                <lb/>Tutte queste parti che formano la sostanza del libro
+
+                            </p>
+
+                            
+                        
+                    
+                    <pb n="387"/>
+                        <cb n="1"/>
+                            
+                            <p facs="#p387_p1">
+                                <lb/>meriterebbero di essere tradotte in italiano, perchè anche
+                                <lb/>trattandosi di argomenti svolti diffusamente in opere ita-
+                                <lb/>liane, il modo di vedere di uno straniero intelligente ha un
+                                <lb/>valore particolare.
+                            </p>
+
+                            <p facs="#p387_p2">
+                                <lb/>Nei capitoli che sono aggiunti come appendice alla parte
+                                <lb/>principale del libro, si discorre massimamente di cose che in
+                                <lb/><placeName type="country" ref="#Italia">Italia</placeName> sono conosciute dai più; tuttavia esse divengono at-
+                                <lb/>traenti e quasi nuove per l'aspetto sotto cui le guarda l'<choice><abbr>A.</abbr><expan>Autore</expan></choice>
+                                <lb/>il quale ha seguito con interesse lo svolgimento dell'<placeName type="country" ref="#Italia">Italia</placeName>
+                                <lb/>più forse di qualunque altro straniero. Qui egli tratta non
+                                <lb/>solo della politica estera durante <date when="1859/1879">l'ultimo ventennio</date> ma
+                                <lb/>anche delle cose interne. A questo proposito è certo cosa
+                                <lb/>caratteristica l'avere assegnato il primo posto all'esercito
+                                <lb/>fra tutti i fattori del progresso intellettuale della nazione.
+                                <lb/>Il libro difetta di qualunque considerazione sulla questione
+                                <lb/>sociale. Questa mancanza risalta specialmente nel capitolo
+                                <lb/>sulla <placeName type="region" ref="#Sicilia">Sicilia</placeName>, essendo rimasti ignoti all'<choice><abbr>A.</abbr><expan>Autore</expan></choice> i principali scritti
+                                <lb/>sull'argomento. L'<persName type="real" ref="#VH">Hehn</persName> cita, per esempio, uno scritto del
+                                <lb/><persName type="real" ref="#FMP">Pagano</persName>. Ma se avesse conosciuto le <bibl><title><ref target="https://books.google.it/books/about/Le_lettere_meridionali_ed_altri_scritti.html?id=xjpvT-HA7MYC&amp;redir_esc=y">Lettere meridionali</ref></title></bibl> del
+                                <lb/><persName type="real" ref="#PV">Villari</persName>, e le opere più recenti sulla <placeName type="region" ref="#Sicilia">Sicilia</placeName>, non avrebbe certa-
+                                <lb/>mente sostenuto che la maggiore estensione della <orgName type="institution" ref="#mafia">mafia</orgName>
+                                <lb/>nella <placeName type="region" subtype="west" ref="#SiciliaOvest">parte occidentale</placeName> dell'isola si possa spiegare <choice><orig>colla</orig><reg>con la</reg></choice>
+                                <lb/>origine principalmente <persName type="ethnic" ref="#Semiti">semitica</persName> della popolazione, e non
+                                <lb/>avrebbe neppure riferite le migliori condizioni della <placeName type="region" subtype="east" ref="#SiciliaEst">parte
+                                <lb/>orientale</placeName> alla origine <placeName type="country" ref="#Grecia">greca</placeName>. Tanto qui come là le condi-
+                                <lb/>zioni agrarie hanno esercitato, ormai è noto, la massima
+                                <lb/>influenza sulle condizioni sociali e morali della popolazione.
+                                <lb/>Nell'insieme il capitolo sulla <placeName type="region" ref="#Sicilia">Sicilia</placeName> è il più debole di tutto
+                                <lb/>il libro, il che forse si può spiegare, almeno in parte, col
+                                <lb/>non essersi l'<choice><abbr>A.</abbr><expan>Autore</expan></choice> abbastanza trattenuto nell'isola.
+                            </p>
+                        
+            
+            </div>
+            <div type="subsection" n="scienze_militari">
+                <pb n="387"/>
+                        <cb n="1"/>
+                        <head>
+                            <title type="main" xml:id="title_sub_p387c1" facs="#title_p387">SCIENZE MILITARI.</title>
+                        </head>
+                            <bibl facs="#bibl_ScienzeMilitari">
+                                <lb/><hi rend="italic"><title>Sull'ordinamento militare</title></hi>, pensieri di <author ref="#FP" >F.P.</author> — <pubPlace><placeName type="urban" ref="#Bologna" >Bologna</placeName></pubPlace>, <publisher>tipo-
+                                <lb/>grafia Cenerelli</publisher>, <date when="1878">1878</date>.
+                            </bibl>
+                        
+
+                        <p facs="#p387_p3">
+                            <lb/>Come l'autore stesso dichiara nella prefazione, e come
+                            <lb/>del resto si scorgerebbe di <choice><sic>leggeri</sic><corr>leggere</corr></choice> dopo una lettura anche
+                            <lb/>superficiale, questo <choice><sic>volumento</sic><corr>volumetto</corr></choice> non è che un <choice><orig>accozzamento</orig><reg>mescolanza</reg></choice> di ar-
+                            <lb/>ticoli pubblicati successivamente in giornali politici, dopo
+                            <lb/>la caduta del <orgName ref="#MinisteroMinghetti" type="institution">Ministero</orgName> in cui reggeva l'amministrazione
+                            <lb/>della guerra il generale <persName type="real" ref="#Ricotti">Ricotti</persName>. Sparsi per le colonne di
+                            <lb/>giornali bolognesi poco diffusi, questi articoli passerebbero
+                            <lb/>inosservati dai più e non meriterebbe conto che se ne par-
+                            <lb/>lasse; ristampati raccolti in volume, crediamo opportuno
+                            <lb/>trattarne quanto più brevemente si potrà, nell'intento di
+                            <lb/>sceverare in essi quanto vi troviamo di buono, da parecchi
+                            <lb/>concetti che ci sembrano o inattuabili e esiziali all'eser-
+                            <lb/>cito.
+                        </p>
+
+                        <p facs="#p387_p4">
+                            <lb/>Premettiamo anzitutto che ragionando di cose militari,
+                            <lb/>siamo assolutamente alieni dal seguire l'<persName ref="#FP" >autore</persName> sul terreno
+                            <lb/>politico in cui egli trascina la questione, sia <choice><orig>colla</orig><reg>con la</reg></choice> dedica,
+                            <lb/>dove mostra d'aver dimenticato qualche altro <quote>massimo
+                            <lb/>fattore della libertà e indipendenza d'<placeName type="country" ref="#Italia" >Italia</placeName></quote>; sia <choice><orig>colle</orig><reg>con le</reg></choice>
+                            <lb/>censure poco cavalleresche, per non dir altro, da lui mosse
+                            <lb/>agli uomini d'un partito politico diverso dal suo.
+                        </p>
+
+                        <p facs="#p387_p5">
+                            <lb/>Ciò premesso, riassumiamo dal complesso di questi ar-
+                            <lb/>ticoli i punti salienti, che l'autore intese propugnare. Essi
+                            <lb/>sarebbero:
+                        
+
+                        <list type="ordered">
+                            <item n="1">
+                                <lb/>1. L'ordinamento <term type="verbum" xml:id="term_territoriale"><hi rend="italic">territoriale</hi></term><ref target="#nota1">*</ref> dell'<rs type="organization" subtype="military">esercito italiano</rs>,
+                                <lb/>modellandolo sul germanico; e ciò allo scopo <choice><orig>precipuo</orig><reg>principale</reg></choice> di
+                            </item>
+                        </list>
+                        </p>
+
+                        <note place="bottom" xml:id="nota1" corresp="#term_territoriale" facs="#nota_1">
+                            <lb/>* Per i lettori non pienamente al <choice><orig>fatto</orig><reg>corrente</reg></choice> di questi termini militari,
+                            <lb/>giova notare che ordinamento <term type="verbum"><hi rend="italic">territoriale</hi></term> chiamasi quello, in cui i reg
+                            <lb/>gimenti sono composti da individui della medesima provincia, con sede
+                            <lb/>fissa nel rispettivo territorio; invece è <term type="verbum"><hi rend="italic">nazionale</hi></term> o <term type="verbum"><hi rend="italic">misto</hi></term> quell'ordina-
+                            <lb/>mento che forma i reggimenti con individui di varie province, con
+                            <lb/>sede mutabile.
+                        </note>
+                    
+                
+                    
+                    <cb n="2"/>
+                    <p facs="#p387_p6">
+                        <list type="ordered" >
+                            <item n="1">
+                                <lb/>preparare gradatamente l'abolizione degli <rs type="organization" subtype="military">eserciti perma-
+                                <lb/>nenti;</rs>
+                            </item>
+                            
+                            <item n="2">
+                                <lb/>2. La <term type="verbum">ferma <hi rend="italic">unica</hi></term> di due anni, incorporando tutto il
+                                <lb/>contingente annuo di leva; <choice><orig>col</orig><reg>con il</reg></choice> corollario di vari espedienti
+                                <lb/>atti ad agevolarne l'applicazione;
+                            </item>
+                            
+                            <item n="3">
+                                <lb/>3. Stregua unica per regolare il conferimento dei gradi
+                                <lb/>militari: esami.
+                            </item>
+                        </list>
+                        </p>
+                        <p facs="#p387_p7">
+                            <lb/>Quanto al primo punto non staremo a ripetere le assen-
+                            <lb/>nate argomentazioni svolte da persone competenti, in <orgName ref="#Parlamento" type="institution">Par-
+                            <lb/>lamento</orgName> e per le stampe, in <placeName type="country" ref="#Italia" >Italia</placeName> come in <placeName type="country" ref="#Francia">Francia</placeName>, per
+                            <lb/>sostenere la tesi contraria. Ci limitiamo ad osservare come
+                            <lb/>l'autore abbia scelto assai male alcuni suoi argomenti, at-
+                            <lb/>tribuendo <choice><abbr>p. es.</abbr><expan>per esempio</expan></choice> l'ordinamento esistente a diffidenza, o peg-
+                            <lb/>gio. Sta per noi il fatto che l'<placeName type="country" ref="#Italia">Italia</placeName> fu di recente costituita
+                            <lb/>con elementi i cui <rs type="organization" subtype="institution">governi</rs> si erano studiati con ogni arte
+                            <lb/>a tenere estranei, se non ostili, gli uni agli altri. In tale
+                            <lb/>stato di cose, una disposizione, mercè la quale <measure type="quantity" unit="persons">65 mila</measure> <persName type="ethnic" ref="#Italiani">ita-
+                            <lb/>liani</persName> tratti ogni anno ad affratellarsi con altri <persName type="ethnic" ref="#Italiani">italiani</persName>,
+                            <lb/>ci sembra, ora e per molto tempo ancora, veramente prov-
+                            <lb/>videnziale. La <placeName type="country" ref="#Francia">Francia</placeName>, costituita tanto prima di noi a nazione,
+                            <lb/>serba gelosamente l'ordinamento militare nazionale, ed ha
+                            <lb/>trovato modo di conciliare con esso la costituzione per-
+                            <lb/>manente delle grandi unità organiche dell'<rs type="organization" subtype="military">esercito</rs>, e un
+                            <lb/>sistema di mobilitazione altrettanto rapido ed ordinato,
+                            <lb/>quanto quello basato sull'ordinamento territoriale. E se a
+                            <lb/>noi fosse dato di spendere proporzionalmente per l'<rs type="organization" subtype="military">esercito</rs>
+                            <lb/>quello che spende questa nazione, creda pure il sig. <persName type="real" ref="#FP">F. P.</persName>
+                            <lb/>che sparirebbero prontamente gli inconvenienti da lui a
+                            <lb/>tale proposito lamentati.
+                        </p>
+
+                        
+                        <p facs="#p387_p8">
+                            <lb/>Quanto al volere l'ordinamento territoriale come avvia-
+                            <lb/>mento all'abolizione degli <rs type="organization" subtype="military">eserciti permanenti</rs>, ci permet-
+                            <lb/>tiamo queste due domande soltanto: <distinct type="rhetorical"><q>— che cosa impedisce
+                            <lb/>di abolirli, anche se ordinati col sistema nazionale? —</q></distinct> e
+                            <lb/><distinct type="rhetorical"><q>una volta aboliti, chi farebbe rispettare le decisioni del fa-
+                            <lb/>moso <quote>arbitrato di pace delle nazioni</quote> che ad essi si pre-
+                            <lb/>tenderebbe sostituire?</q></distinct>
+                        </p>
+
+                        <p facs="#p387_p9">
+                            <lb/>Passando al secondo punto della <term type="verbum"><hi rend="italic">ferma unica</hi></term>, ci affret-
+                            <lb/>tiamo ad affermare che ci troviamo pienamente d'accordo
+                            <lb/><choice><orig>coll'</orig><reg>con l'</reg></choice>autore e coi numerosi oratori e pubblicisti che lo pre-
+                            <lb/>cedettero in simile proposta; ed uniamo ai loro i nostri
+                            <lb/>voti, onde si <choice><orig>addivenga</orig><reg>giunga</reg></choice> all'incorporazione effettiva di tutto
+                            <lb/>il contingente annuo di leva, riducendo la ferma a <measure type="duration" unit="years" quantity="2">due
+                            <lb/>anni</measure> per la <orgName ref="#fanteria" type="military">fanteria</orgName>, preparando inoltre e rendendo più at-
+                            <lb/>tuabile tale misura, mediante l'istruzione militare nelle
+                            <lb/>scuole, ed esonerando l'esercito dai servizi di pubblica si-
+                            <lb/>curezza. Pur troppo però temiamo che pari all'utilità di
+                            <lb/>siffatte disposizioni non <choice><orig>sieno</orig><reg>siano</reg></choice> per ora nè le finanze nè le
+                            <lb/>condizioni interne nostre.
+                        </p>
+
+                        <p facs="#p387_p10">
+                            <lb/>Non possiamo trattenerci dal notare ancora come non
+                            <lb/>regga affatto l'esempio della <placeName type="country" ref="#Prussia">Prussia</placeName> invocato dall'autore
+                            <lb/>in appoggio a questa tesi, <choice><orig>avvegnaché</orig><reg>benché</reg></choice> neanche in quel-
+                            <lb/>l'<rs type="organization" subtype="military">esercito</rs> sia incorporato annualmente l'intero contingente.
+                            <lb/>Si compiaccia il signor <persName type="real" ref="#FP">F. P.</persName> di dare una guardata alle ta-
+                            <lb/>belle relative alla costituzione dell'<rs type="organization" subtype="military">esercito germanico</rs> pub-
+                            <lb/>blicate dal nostro <orgName type="military">corpo di stato maggiore</orgName>, e vedrà che,
+                            <lb/>con altri nomi, vi sono <choice><orig>eziandio</orig><reg>anche</reg></choice> in <placeName type="country" ref="#Prussia">Prussia</placeName> le varie cate-
+                            <lb/>gorie di leva, le diverse milizie, i complementi e le riserve
+                            <lb/>esistenti presso di noi, e delle quali egli si mostra così pre-
+                            <lb/>occupato, confessando ingenuamente che <quote>non riesce a rac-
+                            <lb/>capezzarne il bandolo</quote>.
+                        </p>
+
+                        <p facs="#p387_p11">
+                            <lb/>Ed eccoci al terzo punto, cioè quello degli <hi rend="italic">esami</hi>. Sin-
+                            <lb/>tantochè l'autore propugna di accordare i vantaggi del vo-
+                            <lb/>lontariato d'un anno al solo merito constatato con esami,
+                            <lb/>anzichè al <term type="verbum" xml:id="term_censo">censo</term><ref target="#nota2">*</ref>. Non possiamo che associarci alla sua pro-
+                            <lb/>posta.
+                        </p>
+
+                        <note place="bottom" xml:id="nota2" corresp="#term_censo" facs="#nota_2">
+                            <lb/>* V. pure <bibl><biblScope unit="volume">vol. II</biblScope>, <biblScope unit="issue">n. 25</biblScope>, <biblScope unit="page">pag. 423</biblScope>, <hi rend="italic"><title type="article">I volontari d'un anno e gli uffi-
+                            <lb/>ciali.</title></hi></bibl>
+                        </note>
+
+                
+                    
+
+                <pb n="388"/>
+                        <cb n="1"/>
+
+                       <p facs="#p388_p1">
+                            <lb/>Dove ci sentiamo poco disposti a seguirlo, si è nei prin-
+                            <lb/>cipii da lui enunciati circa il conferimento dei gradi. Per
+                            <lb/>arrivare al grado di generale, secondo il signor <persName type="real" ref="#FP" role="writer">F. P.</persName>, non
+                            <lb/>occorre aver prestato lunghi servigi..... <quote>nell'arte di vin.
+                            <lb/>cere in guerra a poco o nulla giova l'essere saliti dalla
+                            <lb/>giberna ai sommi gradi percorrendo tutta la scala dell'an-
+                            <lb/>zianità, <choice><orig>pel</orig><reg>per il</reg></choice> cui tramite non sono mai rigorosamente passati
+                            <lb/>nè il <persName type="real" ref="#LGC" role="military">Gran Condé</persName>, nè <persName type="real" ref="#GDF" role="military">Gaston de Foix</persName>, nè il <persName type="real" ref="#PrEug" role="military">principe Euge-
+                            <lb/>nio</persName>, nè l'<persName type="real" ref="#ArcGiov" role="military">arciduca Giovanni</persName>, nè gli altri più celebri capitani
+                            <lb/>dell'antichità e dell'<date type="period" from="1500" to="1800">evo moderno</date> da <persName type="real" ref="#AlMa" role="military">Alessandro</persName> a <persName type="real" ref="#NapBon" role="military">Napo-
+                            <lb/>leone</persName>..... Ben è vero che l'assistere alle esercitazioni mili-
+                            <lb/>tari, il prendervi talora parte attiva ed il vegliare alla
+                            <lb/>stretta osservanza dei regolamenti giova a formar l'occhio
+                            <lb/>ed accresce il prestigio in chi possa esser chiamato a co-
+                            <lb/>mandare l'<rs type="organization" subtype="military">esercito</rs> ed è ciò che fanno tradizionalmente i
+                            <lb/><term type="role">principi</term> di <placeName type="country" ref="#Prussia">Prussia</placeName> e che fanno ora i <term type="role">granduchi</term> di <placeName type="country" ref="#Russia">Russia</placeName>.
+                            <lb/>Il mestiere di sergente istruttore è dovunque il più utile
+                            <lb/>che gli usi moderni abbiano lasciato ai <term type="role">principi</term>, ed è cer-
+                            <lb/>tamente quello in cui sia più difficile il trovare da supplir-
+                            <lb/>li</quote>. Con questi ed altri simili argomenti il signor <persName type="real" ref="#FP" role="writer">F. P.</persName> pro-
+                            <lb/>pugna che non si debba più tenere alcun conto dei servigi
+                            <lb/>prestati, ma si conferiscano i gradi ai più idonei per merito
+                            <lb/>d'esami. Non ci pare di dovere spendere molte parole per
+                            <lb/>confutarlo. Ci dia egli un periodo di guerre continue, come
+                            <lb/>quelle in cui sorsero i grandi capitani, e lo stato di guerra
+                            <lb/>prolungato formerà da sè e porterà a galla i migliori ge-
+                            <lb/>nerali, senza bisogno nè di <hi rend="italic">esami</hi> nè dell'<hi rend="italic">annuario militare</hi>.
+                            <lb/>Coi lunghi periodi di pace e colle guerre repentine e co-
+                            <lb/>lossali del giorno d'oggi, i generali di <measure type="age" unit="year" quantity="26">26 anni</measure> come <persName type="real" ref="#NapBon" role="military">Bo-
+                            <lb/>naparte</persName> non possono più emergere nè potrebbero altrimenti
+                            <lb/>emergere sostenendo esami. L'autore che si mostra così te-
+                            <lb/>nero degli ordinamenti prussiani, quando gli fanno comodo,
+                            <lb/>cerchi di penetrarsi nello spirito che regge in quella forte
+                            <lb/>nazione l'avanzamento degliufficiali, e si convincerà forse
+                            <lb/>allora che <quote><hi rend="italic">l'anzianità combinata colla rigorosa esclusione dei
+                            <lb/>meno idonei, grado per grado</hi></quote>, è quella che produce i gene-
+                            <lb/>rali vincitori del <date when="1866">1866</date> e del <date when="1870/1871">1870-71</date>.
+                        </p>
+
+                        <p facs="#p388_p2">
+                            <lb/>Alle sue proposte organiche il signor <persName type="real" ref="#FP" role="writer">F. P.</persName> volle aggiun-
+                            <lb/>gere alcuni concetti morali sulla disciplina e sullo spirito
+                            <lb/>militare. A questo proposito, e per concludere, aggiunge-
+                            <lb/>remo soltanto che col gittare a piene mani il discredito
+                            <lb/>sopra uomini benemeriti e sopra istituzioni sancite dalla
+                            <lb/>nazione per mezzo dei suoi rappresentanti, non si raggiunge
+                            <lb/>certamente lo scopo di migliorare tale disciplina e spirito
+                            <lb/>militare.
+                        </p>
+
+
+                    
+
+
+            </div>
+
+
+        </div>
+        
+        <div type="article" n="4">
+
+            <pb n="388"/>
+                    <cb n="2"/>
+
+                    <head>
+                    <title type="main" xml:id="titlep388" facs="#title_p388">NOTIZIE.</title>
+                    </head>
+                    
+                        <!-- Prima notizia - Bibliothèque -->
+                        <div type="entry" source="#AZ">
+                            <p facs="#p388_p3">
+                                <lb/>— Nella <orgName type="publisher" ref="#title_bibliotheque" xml:lang="fra"><hi rend="italic">Bibliothèque de l'école des Chartes</hi></orgName> (primo fascicolo di que-
+                                <lb/>st'anno), <persName type="real" ref="#GR" >Gaston Raynaud</persName> dà una descrizione particolareggiata del
+                                <lb/><title ref="#title_canzoniere" xml:lang="fra"><hi rend="italic"><ref target="https://books.google.com/books/about/Chansonnier_historique_du_XVIIIe_si%C3%A8cle.html?id=iGsFSsTDwbMC">Canzoniere Clairambault</ref></hi></title> (raccolta importante di poesie francesi an-
+                                <lb/>tiche) finora creduto perduto, e che trovasi nella biblioteca nazionale
+                                <lb/>di <placeName type="urban" ref="#Parigi" >Parigi</placeName>.
+                            </p>
+                        </div>
+
+                        <!-- Seconda notizia - Libro Ladino -->
+                        <div type="entry" source="#AZ">
+                            <p facs="#p388_p4">
+                                <lb/>— In questi giorni è uscito presso <orgName type="typography" ref="#Weger">Weger</orgName> a <placeName type="urban" ref="#Bressanone">Brixen</placeName> (nel <placeName type="region" ref="#Tirolo">Tirolo</placeName>) il
+                                <lb/>primo libro stampato nel dialetto chiamato propriamente <term xml:lang="lld">Ladin'</term>. Ha il
+                                <lb/>titolo seguente: <title xml:lang="lld"><hi rend="italic"><ref target="https://www.google.it/books/edition/Storia_d_S_Genofefa/GVWo7htVBNsC?hl=it&amp;gbpv=0">Storia di S. Genofefa trasportada t. nosc lingaz duò
+                                <lb/>l. Canonico Smid da<persName type="real" ref="#MD" >M. D.</persName> (<persName type="real" ref="#MD" >Mathaeus Declara</persName>) <term xml:lang="lld">plevang d' Marco</term>.</ref></hi></title> (Sto-
+                                <lb/>ria di Santa Genovieffa del Can. Smid tradotta nella nostra lingua da
+                                <lb/><persName type="real" ref="#MD" >M. D.</persName> parroco a <placeName type="urban" ref="#Ennenberg">Ennenberg</placeName>. <placeName type="urban" ref="#Bressanone" ><hi rend="italic">Porsena</hi></placeName> (<placeName type="urban" ref="#Bressanone" >Brixen</placeName>) <date when="1878">1878</date>. Quanto all'esten-
+                                <lb/>sione di questo dialetto neolatino il <persName type="real" ref="#FB" >Bidermann</persName> nel suo libro sull'<title><hi rend="italic">esten-
+                                <lb/>sione dei <term type="ethnic" ref="#Neolatini">Neolatini</term> in <placeName type="country" ref="#Austria">Austria</placeName></hi></title> conta circa <measure type="quantity" unit="persons">9000</measure> <term type="ethnic" ref="#Neolatini">Ladini</term> propriamente
+                                <lb/>detti, più di <measure type="quantity" unit="persons">10,000</measure> che parlano un linguaggio simile (a <placeName type="urban" ref="#Fassa" >Fassa</placeName>, <placeName type="urban" ref="#Buchenstein" >Buchen-
+                                <lb/>stein</placeName>, <placeName type="urban" ref="#Ampezzo">Ampezzo</placeName>), e finalmente <measure type="quantity" unit="persons">56,000</measure> <term type="ethnic" ref="#Neolatini">Ladini</term> friulani nelle parti di <placeName type="urban" ref="#Gradisca" >Gra-
+                                <lb/>disca</placeName>. Inoltre vi sono circa <measure type="quantity" unit="persons">30,000</measure> <term type="ethnic" ref="#Neolatini">Ladini</term> occidentali nei <placeName type="region" ref="#Grigioni" >Grigioni</placeName>,
+                                <lb/>(<placeName type="country" ref="#Svizzera" >Svizzera</placeName>) che hanno una letteratura e dei giornali propri.
+                            </p>
+                            <bibl facs="#AllZei"><title>(<orgName type="newspaper" ref="#AZ" >Allgemeine Zeitung</orgName>)</title></bibl>
+                        </div>
+                
+        </div>
+      
+
+
+
+      </body>
+  
+<back>
+  <div type="appendix">
+    <head>Glossario dei Termini</head>
+
+    <list type="gloss">
+   
+    <label xml:id="tomolo"><ref target="https://www.treccani.it/vocabolario/tomolo/">Tomolo su Treccani</ref>tomolo</label>
+    <item>Unità di misura di volume usata nel sud Italia, equivalente a circa 55,5 litri, principalmente utilizzata per granaglie e olive.</item>
+    
+    <label xml:id="staio"><ref target="https://www.treccani.it/vocabolario/staio/">Staio su Treccani</ref>staio</label>
+    <item>Unità di misura tradizionale italiana per aridi o liquidi, equivalente a circa 20 litri nella misurazione dell'olio in Puglia.</item>
+    
+    <label xml:id="trappeto"><ref target="https://www.treccani.it/vocabolario/trappeto/">Trappeto su Treccani</ref>trappeto (pl. trappeti)</label>
+    <item>Termine dialettale pugliese per indicare i frantoi delle olive. Si tratta di edifici, spesso sotterranei, dove avveniva la macinazione e spremitura delle olive.</item>
+    
+    <label xml:id="cozzali"><ref target="">Cozzali su Treccani</ref>cozzali</label>
+    <item>Termine dialettale pugliese che indica i braccianti agricoli giornalieri, generalmente molto poveri.</item>
+    
+    <label  xml:id="sanse"><ref target="https://www.treccani.it/vocabolario/sansa/">Sansa su Treccani</ref>sanse</label>
+    <item>Residui solidi della spremitura delle olive, composti da buccia, polpa e frammenti di nocciolo, utilizzati per estrarre olio di qualità inferiore.</item>
+    
+    
+    <label xml:id="vasca"><ref target="">Vasca su Treccani</ref>vasca</label>
+    <item>Meccanismo utilizzato nei frantoi, composto da ruote di pietra dura per la macinazione delle olive.</item>
+  </list>
+
+    <!-- List of Persons -->
+    <listPerson>
+      <!-- Autori e Contributori -->
+      <person xml:id="SS">
+        <persName>
+          <ref target="https://www.treccani.it/enciclopedia/sonnino-sidney-costantino-barone/">Sidney Sonnino su Treccani</ref>
+          <forename>Sidney</forename>
+          <surname>Sonnino</surname>
+        </persName>
+        <occupation>Politico, giornalista</occupation>
+        <note>Co-fondatore de La Rassegna Settimanale</note>
+      </person>
+
+      <person xml:id="LF">
+        <persName>
+          <ref target="https://www.treccani.it/enciclopedia/leopoldo-franchetti_(Dizionario-Biografico)/">Leopoldo Franchetti su Treccani</ref>
+          <forename>Leopoldo</forename>
+          <surname>Franchetti</surname>
+        </persName>
+        <occupation>Politico, giornalista</occupation>
+        <note>Co-fondatore de La Rassegna Settimanale</note>
+      </person>
+
+      <person xml:id="PV">
+        <persName>
+          <ref target="https://www.treccani.it/enciclopedia/pasquale-villari">Pasquale Villari su Treccani</ref>
+          <forename>Pasquale</forename>
+          <surname>Villari</surname>
+        </persName>
+        <occupation>Storico, politico</occupation>
+        <note>Autore delle "Lettere meridionali", citato da Victor Hehn</note>
+      </person>
+
+      <person xml:id="VH">
+        <persName>
+          <ref target="https://www.treccani.it/enciclopedia/victor-hehn_(Enciclopedia-Italiana)/">Victor Hehn su Treccani</ref>
+          <forename>Victor</forename>
+          <surname>Hehn</surname>
+        </persName>
+        <occupation>Autore, storico della cultura</occupation>
+        <note>Autore di "Italien. Ansichten und Streiflighter"</note>
+      </person>
+
+      <person xml:id="GR">
+        <persName>
+          <ref target="https://en.wikipedia.org/wiki/Gaston_Raynaud">Gaston Raynaud su Wikipedia</ref>
+          <forename>Gaston</forename>
+          <surname>Raynaud</surname>
+        </persName>
+        <occupation>Studioso</occupation>
+        <note>Autore della descrizione del "Canzoniere Clairambault"</note>
+      </person>
+
+      <person xml:id="MD">
+        <persName>
+          <forename>Mathaeus</forename>
+          <surname>Declara</surname>
+        </persName>
+        <occupation>Sacerdote, traduttore</occupation>
+        <note>Parroco di Ennenberg, traduttore di "Storia di S. Genofefa" in ladino</note>
+      </person>
+
+      <person xml:id="MM">
+        <persName>
+          <ref target="https://www.treccani.it/enciclopedia/marco-minghetti">Marco Minghetti su Treccani</ref>
+          <forename>Marco</forename>
+          <surname>Minghetti</surname>
+        </persName>
+        <occupation>Politico, diplomatico, giornalista</occupation>
+        <note>Membro della Destra Storica, autore di "Le Previsioni Finanziarie"</note>
+      </person>
+
+      <person xml:id="Shakespeare">
+        <persName>
+          <ref target="https://www.treccani.it/enciclopedia/william-shakespeare">William Shakespeare su Treccani</ref>
+          <forename>William</forename>
+          <surname>Shakespeare</surname>
+        </persName>
+        <occupation>Drammaturgo, poeta</occupation>
+        <note>Quoted regarding habits and conscience</note>
+      </person>
+
+      <person xml:id="Ricotti">
+        <persName>
+          <ref target="https://www.treccani.it/enciclopedia/cesare-ricotti-magnani_(Dizionario-Biografico)/">Cesare Francesco Ricotti-Magnani su Treccani</ref>
+          <forename>Cesare Francesco</forename>
+          <surname>Ricotti-Magnani</surname>
+        </persName>
+        <occupation>Generale</occupation>
+        <note>Ex Ministro della Guerra durante il Ministero Minghetti</note>
+      </person>
+
+      <person xml:id="FP">
+        <persName>
+          <forename>F.</forename>
+          <surname>P.</surname>
+        </persName>
+        <occupation>Autore, scrittore militare</occupation>
+        <note>Autore di "Sull'ordinamento militare" (Bologna, 1878). Identità completa sconosciuta, probabilmente utilizzava iniziali come pseudonimo.</note>
+      </person>
+
+      <person xml:id="FMP">
+        <persName>
+          <ref target="https://www.treccani.it/enciclopedia/francesco-mario-pagano">Francesco Mario Pagano su Treccani</ref>
+          <forename>Francesco Mario</forename>
+          <surname>Pagano</surname>
+        </persName>
+        <occupation>Giurista, filosofo, drammaturgo</occupation>
+        <note>Illuminista italiano citato da Victor Hehn</note>
+      </person>
+
+      <person xml:id="FB">
+        <persName>
+          <ref target="https://en.wikipedia.org/wiki/Friedrich_Karl_Biedermann">Friedrich Karl Bidermann su Wikipedia</ref>
+          <forename>Friedrich Karl</forename>
+          <surname>Bidermann</surname>
+        </persName>
+        <occupation>Autore</occupation>
+        <note>Autore di un'opera sull'estensione dei neolatini in Austria</note>
+      </person>
+
+      <!-- Figure Militari Storiche -->
+      <person xml:id="LGC">
+        <persName>
+          <ref target="https://www.treccani.it/enciclopedia/conde-luigi-ii-principe-di_(Enciclopedia-Italiana)/">Luigi II di Borbone-Condé su Treccani</ref>
+          <forename>Luigi</forename>
+          <addName type="nobility">Grand Condé</addName>
+          <surname>di Borbone-Condé</surname>
+        </persName>
+        <birth when="1621">1621</birth>
+        <death when="1686">1686</death>
+        <occupation>Comandante militare</occupation>
+        <note>Generale francese e stratega militare</note>
+      </person>
+
+      <person xml:id="GDF">
+        <persName>
+          <ref target="https://www.treccani.it/enciclopedia/foix-gaston-de-duca-di-nemours/">Gaston de Foix su Treccani</ref>
+          <forename>Gaston</forename>
+          <surname>de Foix</surname>
+        </persName>
+        <birth when="1489">1489</birth>
+        <death when="1512">1512</death>
+        <occupation>Comandante militare</occupation>
+        <note>Comandante militare francese, Duca di Nemours</note>
+      </person>
+
+      <person xml:id="PrEug">
+        <persName>
+          <ref target="https://www.treccani.it/enciclopedia/eugenio-di-savoia">Eugenio di Savoia su Treccani</ref>
+          <forename>Eugenio</forename>
+          <addName type="nobility">Principe di Savoia</addName>
+        </persName>
+        <birth when="1663">1663</birth>
+        <death when="1736">1736</death>
+        <occupation>Comandante militare</occupation>
+        <note>Generale dell'Armata Imperiale</note>
+      </person>
+
+      <person xml:id="ArcGiov">
+        <persName>
+          <ref target="https://www.treccani.it/enciclopedia/asburgo-giovanni-d-arciduca/">Giovanni d'Asburgo-Lorena su Treccani</ref>
+          <forename>Giovanni</forename>
+          <addName type="nobility">Arciduca d'Austria</addName>
+          <surname>d'Asburgo-Lorena</surname>
+        </persName>
+        <birth when="1782">1782</birth>
+        <death when="1859">1859</death>
+        <occupation>Comandante militare</occupation>
+        <note>Comandante austriaco</note>
+      </person>
+
+      <person xml:id="AM">
+        <persName>
+          <ref target="https://www.treccani.it/enciclopedia/alessandro-magno_(Dizionario-di-Storia)/">Alessandro Magno su Treccani</ref>
+          <forename>Alessandro</forename>
+          <addName>Magno</addName>
+        </persName>
+        <birth when="-356">356 a.C.</birth>
+        <death when="-323">323 a.C.</death>
+        <occupation>Comandante militare, re</occupation>
+        <note>Re di Macedonia e conquistatore</note>
+      </person>
+
+      <person xml:id="NapBon">
+        <persName>
+          <ref target="https://www.treccani.it/enciclopedia/napoleone-bonaparte_(Enciclopedia-dei-ragazzi)/">Napoleone Bonaparte su Treccani</ref>
+          <forename>Napoleone</forename>
+          <surname>Bonaparte</surname>
+        </persName>
+        <birth when="1769">1769</birth>
+        <death when="1821">1821</death>
+        <occupation>Comandante militare, imperatore</occupation>
+        <note>Imperatore francese e stratega militare</note>
+      </person>
+
+      <!-- Contributori del Progetto -->
+      <person xml:id="AMDG">
+        <persName>
+          <forename>Angelo Mario</forename>
+          <surname>Del Grosso</surname>
+        </persName>
+        <occupation>Coordinatore accademico</occupation>
+        <note>Coordinatore del progetto digitale per l'Università di Pisa</note>
+      </person>
+
+      <person xml:id="GC">
+        <persName>
+          <forename>Giulio</forename>
+          <surname>Caligiore</surname>
+        </persName>
+        <occupation>Curatore grafico</occupation>
+        <note>Responsabile della grafica e della conversione in TEI P5</note>
+      </person>
+
+      <!-- Personaggi Fittizi -->
+      <person xml:id="DonRodrigo">
+        <persName>
+          <ref target="https://www.treccani.it/enciclopedia/don-rodrigo">Don Rodrigo su Treccani</ref>
+          <forename>Don</forename>
+          <surname>Rodrigo</surname>
+        </persName>
+        <occupation>Personaggio fittizio</occupation>
+        <note>Personaggio de "I Promessi Sposi" di Alessandro Manzoni</note>
+      </person>
+      
+      
+
+      <!-- Etnie -->
+      <person xml:id="Barese">
+        <persName type="ethnic">
+          <ref target="https://www.treccani.it/vocabolario/barese/">Barese su Treccani</ref>
+          <name>Barese</name>
+        </persName>
+        <trait type="ethnicity">
+          <label>Gruppo etnico</label>
+        </trait>
+        <residence>Bari e provincia</residence>
+        <occupation>Abitanti di Bari e della sua provincia</occupation>
+        <note>Persone originarie di Bari o della sua provincia, citate nell'articolo sulla raccolta delle olive per la loro abilità agricola</note>
+      </person>
+    
+
+    <person xml:id="Leccese">
+        <persName type="ethnic">
+          <ref target="https://www.treccani.it/vocabolario/leccese/">Leccese su Treccani</ref>
+          <name>Leccese</name>
+        </persName>
+        <trait type="ethnicity">
+          <label>Gruppo etnico</label>
+        </trait>
+        <residence>Bari e provincia</residence>
+        <occupation>Abitanti di Lecce e della sua provincia</occupation>
+        <note>Persone originarie di Lecce o della sua provincia</note>
+      </person>
+    
+      <person xml:id="Semiti" >
+        <persName type="ethnic">
+          <ref target="https://www.treccani.it/vocabolario/semita">Semiti su Treccani</ref>
+          <name>Semiti</name>
+        </persName>
+        <trait type="ethnicity">
+          <label>Gruppo etnico</label>
+        </trait>
+        <note>Popolazione di origine semitica, menzionata nell'articolo di Victor Hehn in riferimento alla supposta origine degli abitanti della parte occidentale della Sicilia e alla loro possibile influenza sulla diffusione della mafia.</note>
+      </person>
+      
+      <person xml:id="Italiani">
+        <persName type="ethnic">
+          <ref target="https://www.treccani.it/vocabolario/italiano/">Italiani su Treccani</ref>
+          <name>Italiani</name>
+        </persName>
+        <trait type="ethnicity">
+          <label>Gruppo etnico</label>
+        </trait>
+        <residence>Italia</residence>
+        <note>Abitanti dell'Italia, oggetto dell'analisi di Victor Hehn nel capitolo "Pro populo italico"</note>
+      </person>
+      
+      <person xml:id="Toscani">
+        <persName type="ethnic">
+          <ref target="https://www.treccani.it/vocabolario/toscano/">Toscani su Treccani</ref>
+          <name>Toscani</name>
+        </persName>
+        <trait type="ethnicity">
+          <label>Gruppo etnico</label>
+        </trait>
+        <residence>Toscana</residence>
+        <note>Persone originarie della Toscana, menzionate nell'articolo sulla raccolta delle olive</note>
+      </person>
+      
+      <person xml:id="Lucani">
+        <persName type="ethnic">
+          <ref target="https://www.treccani.it/vocabolario/lucano/">Lucani su Treccani</ref>
+          <name>Lucani</name>
+        </persName>
+        <trait type="ethnicity">
+          <label>Gruppo etnico</label>
+        </trait>
+        <residence>Basilicata</residence>
+        <note>Abitanti della Basilicata (antica Lucania), menzionati come lavoratori migranti</note>
+      </person>
+      
+      <person xml:id="Tedeschi">
+        <persName type="ethnic">
+          <ref target="https://www.treccani.it/vocabolario/tedesco/">Tedeschi su Treccani</ref>
+          <name>Tedeschi</name>
+        </persName>
+        <trait type="ethnicity">
+          <label>Gruppo etnico</label>
+        </trait>
+        <residence>Germania</residence>
+        <note>Abitanti della Germania, menzionati in relazione alla ricezione del libro di Victor Hehn</note>
+      </person>
+      
+      <person xml:id="Neolatini">
+        <persName type="ethnic">
+          <ref target="https://www.treccani.it/enciclopedia/lingue-neolatine/">Neolatini su Treccani</ref>
+          <name>Neolatini</name>
+        </persName>
+        <trait type="ethnicity">
+          <label>Gruppo etnico</label>
+        </trait>
+        <note>Popolazioni che parlano lingue derivate dal latino, come i Ladini, menzionati nell'articolo sulle lingue ladine</note>
+      </person>
+    </listPerson>
+    
+
+    
+
+    <!-- List of Organizations -->
+   <listOrg>
+      <!-- Istituzioni Accademiche -->
+      <org xml:id="UniPi">
+        <orgName>
+          <name full="yes">Università di Pisa</name>
+          <ref target="https://it.wikipedia.org/wiki/Universit%C3%A0_di_Pisa">Università di Pisa su Wikipedia</ref>
+        </orgName>
+        <desc>Università di Pisa, editore dell'edizione digitale</desc>
+      </org>
+
+      <!-- Case Editrici -->
+      <org xml:id="CEB">
+        <orgName>
+          <name full="yes">Casa Editrice Barbèra</name>
+          <ref target="https://it.wikipedia.org/wiki/Casa_Editrice_Barb%C3%A8ra">Casa Editrice Barbèra su Wikipedia</ref>
+        </orgName>
+        <desc>Casa editrice con sedi a Firenze e Roma</desc>
+      </org>
+
+      <org xml:id="Weger">
+        <orgName>
+          <name full="yes">Weger</name>
+          <ref target="https://de.wikipedia.org/wiki/Weger_Verlag">Weger su Treccani</ref>
+        </orgName>
+        <desc>Casa editrice a Bressanone, responsabile della pubblicazione del primo libro in ladino</desc>
+      </org>
+
+      <!-- Pubblicazioni -->
+      <org xml:id="Rassegna">
+        <orgName>
+          <name full="yes">La Rassegna Settimanale</name>
+          <ref target="https://it.wikipedia.org/wiki/Rassegna_settimanale">Rassegna Settimanale su Wikipedia</ref>
+        </orgName>
+        <desc>Giornale di politica, scienza, lettere e arti fondato nel 1878</desc>
+      </org>
+
+      <org xml:id="AZ">
+        <orgName>
+          <name full="yes">Allgemeine Zeitung</name>
+          <ref target="https://it.wikipedia.org/wiki/Allgemeine_Zeitung_(Germania)">Allgemeine Zeitung su Treccani</ref>
+        </orgName>
+        <desc>Giornale tedesco, fonte di notizie</desc>
+      </org>
+
+      <org xml:id="title_bibliotheque">
+        <orgName>
+          <name full="yes">Bibliothèque de l'école des Chartes</name>
+          <ref target="https://www.treccani.it/enciclopedia/ecole-des-chartes/">Bibliothèque de l'école des Chartes su Treccani</ref>
+        </orgName>
+        <desc>Rivista francese di storia e archeologia</desc>
+      </org>
+
+      <!-- Istituzioni Politiche -->
+      <org xml:id="Parlamento">
+        <orgName>
+          <name full="yes">Parlamento</name>
+          <ref target="https://www.treccani.it/enciclopedia/parlamento_(Enciclopedia-dei-ragazzi)/">Parlamento italiano su Treccani</ref>
+        </orgName>
+        <desc>Parlamento italiano, citato in "Le Previsioni Finanziarie"</desc>
+      </org>
+
+      <org xml:id="Senato">
+        <orgName>
+          <name full="yes">Senato</name>
+          <ref target="https://www.treccani.it/enciclopedia/senato/">Senato della Repubblica su Treccani</ref>
+        </orgName>
+        <desc>Senato della Repubblica Italiana, citato in "Le Previsioni Finanziarie"</desc>
+      </org>
+
+      <org xml:id="MinisteroMinghetti">
+        <orgName>
+          <name full="yes">Ministero Minghetti</name>
+          <ref target="https://www.treccani.it/enciclopedia/marco-minghetti_(L%27Unificazione)/">Ministero Minghetti su Treccani</ref>
+        </orgName>
+        <desc>Governo italiano sotto Marco Minghetti</desc>
+      </org>
+
+      <!-- Organizzazioni Militari -->
+      <org xml:id="fanteria">
+        <orgName>
+          <name full="yes">Fanteria</name>
+          <ref target="https://www.treccani.it/enciclopedia/fanteria">Fanteria su Treccani</ref>
+        </orgName>
+        <desc>Divisione di fanteria dell'esercito italiano</desc>
+      </org>
+
+      <org xml:id="esercito">
+        <orgName>
+          <name full="yes">Esercito</name>
+          <ref target="https://it.wikipedia.org/wiki/Esercito_Italiano">Esercito italiano su Wiki</ref>
+        </orgName>
+        <desc>Forza armata italiana, citata in "Sull'ordinamento militare"</desc>
+      </org>
+      <org xml:id="mafia">
+        <orgName type="institution">
+          <name full="yes">Mafia</name>
+          <ref target="https://www.treccani.it/enciclopedia/mafia">Mafia su Treccani</ref>
+        </orgName>
+        <place>
+          <region key="SiciliaOvest">Sicilia Occidentale</region>
+          <country key="IT">Italia</country>
+        </place>
+        <desc>Organizzazione criminale siciliana, menzionata da Hehn nel contesto dell'analisi sulla Sicilia. Più diffusa nella parte occidentale dell'isola secondo il testo.</desc>
+      </org>
+    </listOrg>
+
+    <!-- List of Places -->
+    <listPlace>
+      <!-- Regioni -->
+      <place xml:id="Puglia" type="region">
+        <placeName>
+          <name full="yes">Puglia</name>
+          <ref target="https://www.treccani.it/enciclopedia/puglia">Puglia su Treccani</ref>
+        </placeName>
+        <country key="IT">Italia</country>
+        <desc>Regione discussa nell'articolo sulla raccolta delle olive</desc>
+      </place>
+
+      <place xml:id="Basilicata" type="region">
+        <placeName>
+          <name full="yes">Basilicata</name>
+          <ref target="https://www.treccani.it/enciclopedia/basilicata">Basilicata su Treccani</ref>
+        </placeName>
+        <country key="IT">Italia</country>
+        <desc>Regione che fornisce lavoratori a Lecce</desc>
+      </place>
+
+      <place xml:id="Calabria" type="region">
+        <placeName>
+          <name full="yes">Calabria</name>
+          <ref target="https://www.treccani.it/enciclopedia/calabria">Calabria su Treccani</ref>
+        </placeName>
+        <country key="IT">Italia</country>
+        <desc>Regione lungo gli Appennini</desc>
+      </place>
+
+      <place xml:id="Sicilia" type="region">
+        <placeName>
+          <name full="yes">Sicilia</name>
+          <ref target="https://www.treccani.it/enciclopedia/sicilia_res-51b7c2ab-973b-11e5-8844-00271042e8d9/">Sicilia su Treccani</ref>
+        </placeName>
+        <country key="IT">Italia</country>
+        <desc>Regione analizzata da Victor Hehn</desc>
+      </place>
+
+      <place xml:id="Toscana" type="region">
+        <placeName>
+          <name full="yes">Toscana</name>
+          <ref target="https://www.treccani.it/enciclopedia/toscana">Toscana su Treccani</ref>
+        </placeName>
+        <country key="IT">Italia</country>
+        <desc>Regione nota per l'olio d'oliva di alta qualità</desc>
+      </place>
+
+      <place xml:id="Tirolo" type="region">
+        <placeName>
+          <name full="yes">Tirolo</name>
+          <ref target="https://www.treccani.it/enciclopedia/tirolo">Tirolo su Treccani</ref>
+        </placeName>
+        <country key="IT/AT">Italia/Austria</country>
+        <desc>Regione dove si trova Bressanone</desc>
+      </place>
+
+      <place xml:id="Grigioni" type="region">
+        <placeName>
+          <name full="yes">Grigioni</name>
+          <ref target="https://www.treccani.it/enciclopedia/cantone-dei-grigioni">Canton Grigioni su Treccani</ref>
+        </placeName>
+        <country >Svizzera</country>
+        <desc>Regione con parlanti ladini</desc>
+      </place>
+
+      <place xml:id="SiciliaOvest" type="region">
+        <placeName>
+          <name full="yes">Sicilia Occidentale</name>
+          <ref target="https://www.treccani.it/enciclopedia/sicilia_res-51b7c2ab-973b-11e5-8844-00271042e8d9/">Sicilia Occidentale su Treccani</ref>
+        </placeName>
+        <region>Sicilia</region>
+        <country key="IT">Italia</country>
+        <desc>Parte occidentale della Sicilia discussa da Hehn</desc>
+      </place>
+
+      <place xml:id="SiciliaEst" type="region">
+        <placeName>
+          <name full="yes">Sicilia Orientale</name>
+          <ref target="https://www.treccani.it/enciclopedia/sicilia_res-51b7c2ab-973b-11e5-8844-00271042e8d9/">Sicilia Orientale su Treccani</ref>
+        </placeName>
+        <region>Sicilia</region>
+        <country key="IT">Italia</country>
+        <desc>Parte orientale della Sicilia discussa da Hehn</desc>
+      </place>
+
+      <place xml:id="Capitanata" type="region">
+        <placeName>
+          <name full="yes">Capitanata</name>
+          <ref target="https://www.treccani.it/enciclopedia/capitanata">Capitanata su Treccani</ref>
+        </placeName>
+        <region>Puglia</region>
+        <country key="IT">Italia</country>
+        <desc>Regione storica in Puglia</desc>
+      </place>
+
+      <!-- Città -->
+      <place xml:id="FI" type="city">
+        <placeName>
+          <name full="yes">Firenze</name>
+          <ref target="https://www.treccani.it/enciclopedia/firenze">Firenze su Treccani</ref>
+        </placeName>
+        <region key="Toscana">Toscana</region>
+        <country key="IT">Italia</country>
+        <desc>Luogo di pubblicazione originale de "La Rassegna Settimanale"</desc>
+      </place>
+
+      <place xml:id="Roma" type="city">
+        <placeName>
+          <name full="yes">Roma</name>
+          <ref target="https://www.treccani.it/enciclopedia/roma">Roma su Treccani</ref>
+        </placeName>
+        <region key="Lazio">Lazio</region>
+        <country key="IT">Italia</country>
+        <desc>Luogo di pubblicazione successivo e ambientazione di "Le Previsioni Finanziarie"</desc>
+      </place>
+
+      <place xml:id="PI" type="city">
+        <placeName>
+          <name full="yes">Pisa</name>
+          <ref target="https://www.treccani.it/enciclopedia/pisa">Pisa su Treccani</ref>
+        </placeName>
+        <region key="Toscana">Toscana</region>
+        <country key="IT">Italia</country>
+        <desc>Sede dell'Università di Pisa</desc>
+      </place>
+
+      <place xml:id="Bari" type="city">
+        <placeName>
+          <name full="yes">Bari</name>
+          <ref target="https://www.treccani.it/enciclopedia/bari">Bari su Treccani</ref>
+        </placeName>
+        <region key="Puglia">Puglia</region>
+        <country key="IT">Italia</country>
+        <desc>Città e provincia discussa nell'articolo sulle olive</desc>
+      </place>
+
+      <place xml:id="ProvinciaDiBari" type="administrative">
+        <placeName>
+          <name full="yes">Provincia di Bari</name>
+          <ref target="https://it.wikipedia.org/wiki/Provincia_di_Bari">Provincia di Bari su Wikipedia</ref>
+        </placeName>
+        <region key="Puglia">Puglia</region>
+        <country key="IT">Italia</country>
+        <desc>Provincia storica pugliese menzionata nell'articolo sulle olive</desc>
+      </place>
+
+      <place xml:id="Lecce" type="city">
+        <placeName>
+          <name full="yes">Lecce</name>
+          <ref target="https://www.treccani.it/enciclopedia/lecce">Lecce su Treccani</ref>
+        </placeName>
+        <region key="Puglia">Puglia</region>
+        <country key="IT">Italia</country>
+        <desc>Oggetto dell'articolo "Corrispondenza da Lecce"</desc>
+      </place>
+      <place xml:id="ProvinciadiLecce" type="administrative">
+        <placeName>
+          <name full="yes">Provincia di Bari</name>
+          <ref target="https://it.wikipedia.org/wiki/Provincia_di_Lecce">Provincia di Lecce su Wiki</ref>
+        </placeName>
+        <region key="Puglia">Puglia</region>
+        <country key="IT">Italia</country>
+        <desc>Provincia storica pugliese menzionata nell'articolo sulle olive</desc>
+      </place>
+
+      <place xml:id="Messina" type="city">
+        <placeName>
+          <name full="yes">Messina</name>
+          <ref target="https://www.treccani.it/enciclopedia/messina">Messina su Treccani</ref>
+        </placeName>
+        <region key="Sicilia">Sicilia</region>
+        <country key="IT">Italia</country>
+        <desc>Località alla fine della catena degli Appennini</desc>
+      </place>
+
+      <place xml:id="Andria" type="city">
+        <placeName>
+          <name full="yes">Andria</name>
+          <ref target="https://www.treccani.it/enciclopedia/andria">Andria su Treccani</ref>
+        </placeName>
+        <region key="Puglia">Puglia</region>
+        <country key="IT">Italia</country>
+        <desc>Città con una grande popolazione rurale</desc>
+      </place>
+
+      <place xml:id="Bitonto" type="city">
+        <placeName>
+          <name full="yes">Bitonto</name>
+          <ref target="https://www.treccani.it/enciclopedia/bitonto">Bitonto su Treccani</ref>
+        </placeName>
+        <region key="Puglia">Puglia</region>
+        <country key="IT">Italia</country>
+        <desc>Città con una grande popolazione rurale</desc>
+      </place>
+
+      <place xml:id="Bisceglie" type="city">
+        <placeName>
+          <name full="yes">Bisceglie</name>
+          <ref target="https://www.treccani.it/enciclopedia/bisceglie">Bisceglie su Treccani</ref>
+        </placeName>
+        <region key="Puglia">Puglia</region>
+        <country key="IT">Italia</country>
+        <desc>Città con una grande popolazione rurale</desc>
+      </place>
+
+      <place xml:id="Corato" type="city">
+        <placeName>
+          <name full="yes">Corato</name>
+          <ref target="https://www.treccani.it/enciclopedia/corato_(Enciclopedia-Italiana)/">Corato su Treccani</ref>
+        </placeName>
+        <region key="Puglia">Puglia</region>
+        <country key="IT">Italia</country>
+        <desc>Città con una grande popolazione rurale</desc>
+      </place>
+
+      <place xml:id="Altamura" type="city">
+        <placeName>
+          <name full="yes">Altamura</name>
+          <ref target="https://www.treccani.it/enciclopedia/altamura">Altamura su Treccani</ref>
+        </placeName>
+        <region key="Puglia">Puglia</region>
+        <country key="IT">Italia</country>
+        <desc>Città con una grande popolazione rurale</desc>
+      </place>
+
+      <place xml:id="Gravina" type="city">
+        <placeName>
+          <name full="yes">Gravina</name>
+          <ref target="https://www.treccani.it/enciclopedia/gravina-in-puglia">Gravina in Puglia su Treccani</ref>
+        </placeName>
+        <region key="Puglia">Puglia</region>
+        <country key="IT">Italia</country>
+        <desc>Località nelle Murge</desc>
+      </place>
+
+      <place xml:id="Otranto" type="city">
+        <placeName>
+          <name full="yes">Otranto</name>
+          <ref target="https://www.treccani.it/enciclopedia/otranto">Otranto su Treccani</ref>
+        </placeName>
+        <region key="Puglia">Puglia</region>
+        <country key="IT">Italia</country>
+        <desc>Zona con vaste foreste di ulivi</desc>
+      </place>
+
+      <place xml:id="Parigi" type="city">
+        <placeName>
+          <name full="yes">Parigi</name>
+          <ref target="https://www.treccani.it/enciclopedia/parigi">Parigi su Treccani</ref>
+        </placeName>
+        <country key="FR">Francia</country>
+        <desc>Sede della Bibliothèque Nationale con il Canzoniere Clairambault</desc>
+      </place>
+
+      <place xml:id="Pietroburgo" type="city">
+        <placeName>
+          <name full="yes">San Pietroburgo</name>
+          <ref target="https://www.treccani.it/enciclopedia/san-pietroburgo">San Pietroburgo su Treccani</ref>
+        </placeName>
+        <country key="RU">Russia</country>
+        <desc>Primo luogo di pubblicazione del libro di Victor Hehn</desc>
+      </place>
+
+      <place xml:id="Bressanone" type="city">
+        <placeName>
+          <name full="yes">Bressanone</name>
+          <ref target="https://www.treccani.it/enciclopedia/bressanone">Bressanone su Treccani</ref>
+        </placeName>
+        <region key="Tirolo">Tirolo</region>
+        <country key="IT">Italia</country>
+        <desc>Luogo di pubblicazione del primo libro in ladino</desc>
+      </place>
+
+      <place xml:id="Ennenberg" type="city">
+        <placeName>
+          <name full="yes">Ennenberg</name>
+          <ref target="https://www.treccani.it/enciclopedia/marebbe">Marebbe su Treccani</ref>
+        </placeName>
+        <region key="Tirolo">Tirolo</region>
+        <country key="IT">Italia</country>
+        <desc>Località del parroco Mathaeus Declara</desc>
+      </place>
+
+      <place xml:id="Fassa" type="city">
+        <placeName>
+          <name full="yes">Fassa</name>
+          <ref target="https://www.treccani.it/enciclopedia/val-di-fassa">Val di Fassa su Treccani</ref>
+        </placeName>
+        <region key="Trentino">Trentino</region>
+        <country key="IT">Italia</country>
+        <desc>Zona dove si parla un dialetto simile al ladino</desc>
+      </place>
+
+      <place xml:id="Buchenstein" type="city">
+        <placeName>
+          <name full="yes">Buchenstein</name>
+          <ref target="https://www.treccani.it/enciclopedia/valle-di-livinallongo/">Livinallongo del Col di Lana su Treccani</ref>
+        </placeName>
+        <region key="Veneto">Veneto</region>
+        <country key="IT">Italia</country>
+        <desc>Zona dove si parla un dialetto simile al ladino</desc>
+      </place>
+
+      <place xml:id="Ampezzo" type="city">
+        <placeName>
+          <name full="yes">Ampezzo</name>
+          <ref target="https://www.treccani.it/enciclopedia/cortina-d-ampezzo">Cortina d'Ampezzo su Treccani</ref>
+        </placeName>
+        <region key="Veneto">Veneto</region>
+        <country key="IT">Italia</country>
+        <desc>Zona dove si parla un dialetto simile al ladino</desc>
+      </place>
+
+      <place xml:id="Gradisca" type="city">
+        <placeName>
+          <name full="yes">Gradisca</name>
+          <ref target="https://www.treccani.it/enciclopedia/gradisca-d-isonzo">Gradisca d'Isonzo su Treccani</ref>
+        </placeName>
+        <region key="Friuli">Friuli Venezia Giulia</region>
+        <country key="IT">Italia</country>
+        <desc>Zona con parlanti ladini friulani</desc>
+      </place>
+
+      <place xml:id="Trani" type="city">
+        <placeName>
+          <name full="yes">Trani</name>
+          <ref target="https://www.treccani.it/enciclopedia/trani">Trani su Treccani</ref>
+        </placeName>
+        <region key="Puglia">Puglia</region>
+        <country key="IT">Italia</country>
+        <desc>Città con una significativa popolazione urbana</desc>
+      </place>
+
+      <place xml:id="Avigliano" type="city">
+        <placeName>
+          <name full="yes">Avigliano</name>
+          <ref target="https://www.treccani.it/enciclopedia/avigliano">Avigliano su Treccani</ref>
+        </placeName>
+        <region key="Basilicata">Basilicata</region>
+        <country key="IT">Italia</country>
+        <desc>Località vicino agli Appennini</desc>
+      </place>
+
+      <place xml:id="Oria" type="city">
+        <placeName>
+          <name full="yes">Oria</name>
+          <ref target="https://www.treccani.it/enciclopedia/oria">Oria su Treccani</ref>
+        </placeName>
+        <region key="Puglia">Puglia</region>
+        <country key="IT">Italia</country>
+        <desc>Località dove le Murge raggiungono l'altezza massima</desc>
+      </place>
+
+      <place xml:id="Brindisi" type="city">
+        <placeName>
+          <name full="yes">Brindisi</name>
+          <ref target="https://www.treccani.it/enciclopedia/brindisi">Brindisi su Treccani</ref>
+        </placeName>
+        <region key="Puglia">Puglia</region>
+        <country key="IT">Italia</country>
+        <desc>Città portuale citata in contesto economico</desc>
+      </place>
+
+      <place xml:id="Bologna" type="city">
+        <placeName>
+          <name full="yes">Bologna</name>
+          <ref target="https://www.treccani.it/enciclopedia/bologna">Bologna su Treccani</ref>
+        </placeName>
+        <region key="Emilia-Romagna">Emilia-Romagna</region>
+        <country key="IT">Italia</country>
+        <desc>Luogo di pubblicazione di "Sull'ordinamento militare"</desc>
+      </place>
+
+      <place xml:id="Berlino" type="city">
+        <placeName>
+          <name full="yes">Berlino</name>
+          <ref target="https://www.treccani.it/enciclopedia/berlino">Berlino su Treccani</ref>
+        </placeName>
+        <country key="DE">Germania</country>
+        <desc>Luogo di pubblicazione del libro di Victor Hehn (1879)</desc>
+      </place>
+
+      <place xml:id="MarinaDiGinosa" type="city">
+        <placeName>
+          <name full="yes">Marina di Ginosa</name>
+          <ref target="https://it.wikipedia.org/wiki/Marina_di_Ginosa">Marina di Ginosa su Wikipedia</ref>
+        </placeName>
+        <region key="Puglia">Puglia</region>
+        <country key="IT">Italia</country>
+        <desc>Località nota per i lavoratori esperti di ulivi</desc>
+      </place>
+
+      <!-- Elementi naturali -->
+      <place xml:id="Murge" type="natural">
+        <placeName>
+          <name full="yes">Murge</name>
+          <ref target="https://www.treccani.it/enciclopedia/murge">Murge su Treccani</ref>
+        </placeName>
+        <desc>Altopiano carsico</desc>
+        <region key="Puglia">Puglia</region>
+        <country key="IT">Italia</country>
+      </place>
+
+      <place xml:id="Appennini" type="natural">
+        <placeName>
+          <name full="yes">Appennini</name>
+          <ref target="https://www.treccani.it/enciclopedia/appennini_(Enciclopedia-dei-ragazzi)/">Appennini su Treccani</ref>
+        </placeName>
+        <desc>Catena montuosa</desc>
+        <country key="IT">Italia</country>
+      </place>
+
+      <!-- Stati -->
+      <place xml:id="Italia" type="country">
+        <placeName>
+          <name full="yes">Italia</name>
+          <ref target="https://www.treccani.it/enciclopedia/italia">Italia su Treccani</ref>
+        </placeName>
+        <bloc key="EU">Europa</bloc>
+        <desc>Paese che include le regioni discusse</desc>
+      </place>
+
+      <place xml:id="Francia" type="country">
+        <placeName>
+          <name full="yes">Francia</name>
+          <ref target="https://www.treccani.it/enciclopedia/francia">Francia su Treccani</ref>
+        </placeName>
+        <bloc key="EU">Europa</bloc>
+        <desc>Paese citato per l'organizzazione militare</desc>
+      </place>
+
+      <place xml:id="Germania" type="country">
+        <placeName>
+          <name full="yes">Germania</name>
+          <ref target="https://www.treccani.it/enciclopedia/germania">Germania su Treccani</ref>
+        </placeName>
+        <bloc key="EU">Europa</bloc>
+        <desc>Paese dove il libro di Hehn è meno letto del previsto</desc>
+      </place>
+
+      <place xml:id="Prussia" type="historical-country">
+        <placeName>
+          <name full="yes">Prussia</name>
+          <ref target="https://www.treccani.it/enciclopedia/prussia">Prussia su Treccani</ref>
+        </placeName>
+        <bloc key="EU">Europa</bloc>
+        <desc>Paese storico citato per l'organizzazione militare</desc>
+      </place>
+
+      <place xml:id="Grecia" type="country">
+        <placeName>
+          <name full="yes">Grecia</name>
+          <ref target="https://www.treccani.it/enciclopedia/grecia">Grecia su Treccani</ref>
+        </placeName>
+        <bloc key="EU">Europa</bloc>
+        <desc>Paese storico citato nel contesto della migrazione culturale</desc>
+      </place>
+
+      <place xml:id="Russia" type="country">
+        <placeName>
+          <name full="yes">Russia</name>
+          <ref target="https://www.treccani.it/enciclopedia/russia">Russia su Treccani</ref>
+        </placeName>
+        <bloc key="EU">Europa</bloc>
+        <desc>Paese citato per tradizioni militari</desc>
+      </place>
+
+      <place xml:id="Svizzera" type="country">
+        <placeName>
+          <name full="yes">Svizzera</name>
+          <ref target="https://www.treccani.it/enciclopedia/svizzera">Svizzera su Treccani</ref>
+        </placeName>
+        <bloc key="EU">Europa</bloc>
+        <desc>Paese che include i Grigioni</desc>
+      </place>
+
+      <place xml:id="Austria" type="country">
+        <placeName>
+          <name full="yes">Austria</name>
+          <ref target="https://www.treccani.it/enciclopedia/austria">Austria su Treccani</ref>
+        </placeName>
+        <bloc key="EU">Europa</bloc>
+        <desc>Paese citato per le popolazioni neolatine</desc>
+      </place>
+
+      <!-- Continenti -->
+      <place xml:id="Europa" type="continent">
+        <placeName>
+          <name full="yes">Europa</name>
+          <ref target="https://www.treccani.it/enciclopedia/europa">Europa su Treccani</ref>
+        </placeName>
+        <desc>Continente che include l'Italia e altri paesi citati</desc>
+      </place>
+
+      <place xml:id="Asia" type="continent">
+        <placeName>
+          <name full="yes">Asia</name>
+          <ref target="https://www.treccani.it/enciclopedia/asia">Asia su Treccani</ref>
+        </placeName>
+        <desc>Continente citato nel contesto della migrazione culturale</desc>
+      </place>
+    </listPlace>
+
+  </div>
+</back>
+</text>
+</TEI>
